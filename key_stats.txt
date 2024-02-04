@@ -1,0 +1,15 @@
+Total Record Wins and Losses 
+Home avgPointsfor
+Home avgPointsAgainst
+Away avgPointsfor
+Away avgPointsAgainst
+Home powerPlayOpportunities
+Away powerPlayOpportunities
+Home powerPlayGoals
+Away powerPlayGoals
+Home timesShortHanded
+Away timesShortHanded
+Home powerPlayGoalsAgainst
+Away powerPlayGoalsAgainst
+Home facesoffs differential
+away faceoffs differential
