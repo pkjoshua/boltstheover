@@ -1,0 +1,1532 @@
+TeamID,Date,Home/Away,Opponent,GameID,Win/Loss,Result Score,Record,Goalie,Top Performer
+25,"Sat, Oct 14",Away,Vegas,401559266,L,4-1,0-1-0,Gibson,Gibson
+25,"Sun, Oct 15",Home,Carolina,401559269,W,6-3,1-1-0,Dostal,Vatrano
+25,"Thu, Oct 19",Home,Dallas,401559294,L,3-2,1-2-0,Gibson,Terry
+25,"Sat, Oct 21",Away,Arizona,401559301,L,2-1,1-3-0,Dostal,Dostal
+25,"Sun, Oct 22",Home,Boston,401559316,L,3-1,1-4-0,Gibson,Vatrano
+25,"Tue, Oct 24",Away,Columbus,401559319,W,3-2 OT,2-4-0,Dostal,Dostal
+25,"Thu, Oct 26",Away,Boston,401559335,W,4-3 OT,3-4-0,Gibson,Carlsson
+25,"Sat, Oct 28",Away,Philadelphia,401559352,W,7-4,4-4-0,Dostal,Vatrano
+25,"Mon, Oct 30",Away,Pittsburgh,401559367,W,4-3,5-4-0,Dostal,McTavish
+25,"Wed, Nov 1",Home,Arizona,401559378,W,4-3 OT,6-4-0,Dostal,Terry
+25,"Sun, Nov 5",Home,Vegas,401559409,W,4-2,7-4-0,Gibson,Gibson
+25,"Tue, Nov 7",Home,Pittsburgh,401559421,L,2-0,7-5-0,Gibson,Gibson
+25,"Fri, Nov 10",Home,Philadelphia,401559442,L,6-3,7-6-0,Dostal,Carlsson
+25,"Sun, Nov 12",Home,San Jose,401559459,W,4-1,8-6-0,Gibson,Vatrano
+25,"Tue, Nov 14",Away,Nashville,401559467,W,3-2,9-6-0,Gibson,Gibson
+25,"Wed, Nov 15",Away,Colorado,401559473,L,8-2,9-7-0,Dostal,Gudas
+25,"Fri, Nov 17",Home,Florida,401559484,L,2-1,9-8-0,Gibson,Gibson
+25,"Sun, Nov 19",Home,St. Louis,401559500,L,3-1,9-9-0,Gibson,McTavish
+25,"Wed, Nov 22",Home,Montreal,401559520,L,4-3,9-10-0,Gibson,McTavish
+25,"Fri, Nov 24",Home,Los Angeles,401559528,L,5-2,9-11-0,Gibson,Killorn
+25,"Sun, Nov 26",Away,Edmonton,401559549,L,8-2,9-12-0,Dostal,Jones
+25,"Tue, Nov 28",Away,Vancouver,401559555,L,3-1,9-13-0,Gibson,Gibson
+25,"Thu, Nov 30",Home,Washington,401559582,L,5-4,9-14-0,Gibson,Luneau
+25,"Sat, Dec 2",Home,Colorado,401559597,W,4-3 SO,10-14-0,Gibson,Carlsson
+25,"Tue, Dec 5",Away,Colorado,401559614,L,3-2,10-15-0,Gibson,Carrick
+25,"Thu, Dec 7",Away,Chicago,401559628,L,1-0,10-16-0,Dostal,Dostal
+25,"Sun, Dec 10",Home,Winnipeg,401559654,L,4-2,10-17-0,Gibson,Killorn
+25,"Wed, Dec 13",Away,New York,401559673,L,4-3,10-18-0,Gibson,Henrique
+25,"Fri, Dec 15",Away,New York,401559684,L,5-1,10-19-0,Dostal,Leason
+25,"Sun, Dec 17",Away,New Jersey,401559705,W,5-1,11-19-0,Gibson,Henrique
+25,"Mon, Dec 18",Away,Detroit,401559708,W,4-3,12-19-0,Dostal,Terry
+25,"Thu, Dec 21",Home,Calgary,401559737,L,3-0,12-20-0,Dostal,Dostal
+25,"Sat, Dec 23",Home,Seattle,401559753,L,3-2,12-21-0,Dostal,Vatrano
+25,"Wed, Dec 27",Home,Vegas,401559769,W,5-2,13-21-0,Gibson,McTavish
+25,"Fri, Dec 29",Home,Arizona,401559782,L,2-0,13-22-0,Gibson,Gibson
+25,"Sun, Dec 31",Home,Edmonton,401559801,L,7-2,13-23-0,Gibson,Jones
+25,"Wed, Jan 3",Home,Toronto,401559816,L,2-1 OT,13-23-1,Dostal,Dostal
+25,"Fri, Jan 5",Home,Winnipeg,401559832,L,3-1,13-24-1,Gibson,Killorn
+25,"Sun, Jan 7",Home,Detroit,401559848,L,3-2,13-25-1,Dostal,Zegras
+25,"Tue, Jan 9",Away,Nashville,401559858,W,5-3,14-25-1,Dostal,Dostal
+25,"Thu, Jan 11",Away,Carolina,401559873,L,6-3,14-26-1,Gibson,Lundestrom
+25,"Sat, Jan 13",Away,Tampa Bay,401559888,L,5-1,14-27-1,Dostal,Vatrano
+25,"Mon, Jan 15",Away,Florida,401559901,W,5-4 OT,15-27-1,Gibson,Killorn
+25,"Tue, Jan 16",Away,Washington,401559911,L,2-0,15-28-1,Gibson,Gibson
+25,"Sat, Jan 20",Away,San Jose,401559945,L,5-3,15-29-1,Gibson,Terry
+25,"Sun, Jan 21",Home,New York,401559951,L,5-2,15-30-1,Dostal,Henrique
+25,"Tue, Jan 23",Home,Buffalo,401559966,W,4-2,16-30-1,Gibson,Silfverberg
+25,"Thu, Jan 25",Away,Dallas,401559980,L,4-3 OT,16-30-2,Gibson,Silfverberg
+25,"Sat, Jan 27",Away,Minnesota,401559999,W,3-2,17-30-2,Dostal,Dostal
+24,"Fri, Oct 13",Away,New Jersey,401559253,W,4-3 SO,1-0-0,Vejmelka,Vejmelka
+24,"Mon, Oct 16",Away,New York,401559272,L,2-1,1-1-0,Ingram,Ingram
+24,"Tue, Oct 17",Away,New York,401559278,L,1-0,1-2-0,Vejmelka,Vejmelka
+24,"Thu, Oct 19",Away,St. Louis,401559291,W,6-2,2-2-0,Ingram,Zucker
+24,"Sat, Oct 21",Home,Anaheim,401559301,W,2-1,3-2-0,Vejmelka,Vejmelka
+24,"Tue, Oct 24",Away,Los Angeles,401559332,L,6-3,3-3-0,Vejmelka,Bjugstad
+24,"Fri, Oct 27",Home,Los Angeles,401559351,L,5-4,3-4-0,Vejmelka,Moser
+24,"Mon, Oct 30",Home,Chicago,401559371,W,8-1,4-4-0,Ingram,Carcone
+24,"Wed, Nov 1",Away,Anaheim,401559378,L,4-3 OT,4-4-1,Vejmelka,Crouse
+24,"Thu, Nov 2",Home,Montreal,401559387,W,3-2,5-4-1,Ingram,Schmaltz
+24,"Sat, Nov 4",Home,Winnipeg,401559394,L,5-3,5-5-1,Vejmelka,Crouse
+24,"Tue, Nov 7",Home,Seattle,401559419,W,4-3 SO,6-5-1,Ingram,Ingram
+24,"Thu, Nov 9",Away,St. Louis,401559432,L,2-1,6-6-1,Vejmelka,Vejmelka
+24,"Sat, Nov 11",Away,Nashville,401559451,W,7-5,7-6-1,Ingram,Cooley
+24,"Tue, Nov 14",Away,Dallas,401559468,L,4-3 OT,7-6-2,Vejmelka,Crouse
+24,"Thu, Nov 16",Away,Columbus,401559477,W,3-2,8-6-2,Ingram,Ingram
+24,"Sat, Nov 18",Away,Winnipeg,401559491,L,5-2,8-7-2,Vejmelka,Boyd
+24,"Mon, Nov 20",Home,Los Angeles,401559505,L,4-1,8-8-2,Ingram,Crouse
+24,"Wed, Nov 22",Home,St. Louis,401559517,L,6-5,8-9-2,Ingram,Maccelli
+24,"Sat, Nov 25",Away,Vegas,401559543,W,2-0,9-9-2,Ingram,Ingram
+24,"Tue, Nov 28",Home,Tampa Bay,401559565,W,3-1,10-9-2,Ingram,Ingram
+24,"Thu, Nov 30",Home,Colorado,401559580,W,4-3 OT,11-9-2,Ingram,Kerfoot
+24,"Sat, Dec 2",Home,St. Louis,401559594,W,4-1,12-9-2,Ingram,Ingram
+24,"Mon, Dec 4",Home,Washington,401559607,W,6-0,13-9-2,Ingram,Ingram
+24,"Thu, Dec 7",Home,Philadelphia,401559631,L,4-1,13-10-2,Ingram,Crouse
+24,"Sat, Dec 9",Away,Boston,401559637,L,5-3,13-11-2,Ingram,Keller
+24,"Mon, Dec 11",Away,Buffalo,401559657,L,5-2,13-12-2,Vejmelka,Moser
+24,"Tue, Dec 12",Away,Pittsburgh,401559663,L,4-2,13-13-2,Ingram,Ingram
+24,"Fri, Dec 15",Home,San Jose,401559688,W,1-0,14-13-2,Ingram,Ingram
+24,"Sat, Dec 16",Home,Buffalo,401559699,W,2-0,15-13-2,Vejmelka,Vejmelka
+24,"Tue, Dec 19",Home,Ottawa,401559722,W,4-3,16-13-2,Vejmelka,Vejmelka
+24,"Thu, Dec 21",Away,San Jose,401559738,W,5-2,17-13-2,Vejmelka,Kerfoot
+24,"Sat, Dec 23",Away,Colorado,401559754,L,4-1,17-14-2,Ingram,Carcone
+24,"Wed, Dec 27",Home,Colorado,401559767,W,5-4 OT,18-14-2,Vejmelka,Durzi
+24,"Fri, Dec 29",Away,Anaheim,401559782,W,2-0,19-14-2,Ingram,Ingram
+24,"Tue, Jan 2",Home,Florida,401559811,L,4-1,19-15-2,Vejmelka,Vejmelka
+24,"Thu, Jan 4",Home,New York,401559825,L,5-1,19-16-2,Ingram,Schmaltz
+24,"Sun, Jan 7",Home,Winnipeg,401559847,L,6-2,19-17-2,Vejmelka,Guenther
+24,"Tue, Jan 9",Home,Boston,401559862,W,4-3 OT,20-17-2,Ingram,Guenther
+24,"Thu, Jan 11",Home,Calgary,401559877,L,6-2,20-18-2,Vejmelka,Bjugstad
+24,"Sat, Jan 13",Away,Minnesota,401559895,W,6-0,21-18-2,Ingram,Ingram
+24,"Tue, Jan 16",Away,Calgary,401559915,L,3-2 OT,21-18-3,Ingram,Durzi
+24,"Thu, Jan 18",Away,Vancouver,401559929,L,2-1,21-19-3,Ingram,Zucker
+24,"Sat, Jan 20",Home,Nashville,401559938,W,3-2,22-19-3,Ingram,Keller
+24,"Mon, Jan 22",Home,Pittsburgh,401559956,W,5-2,23-19-3,Ingram,Zucker
+24,"Wed, Jan 24",Away,Florida,401559969,L,6-2,23-20-3,Vejmelka,Guenther
+24,"Thu, Jan 25",Away,Tampa Bay,401559978,L,6-3,23-21-3,Ingram,Keller
+1,"Wed, Oct 11",Home,Chicago,401559241,W,3-1,1-0-0,Ullmark,Pastrnak
+1,"Sat, Oct 14",Home,Nashville,401559257,W,3-2,2-0-0,Swayman,Swayman
+1,"Thu, Oct 19",Away,San Jose,401559297,W,3-1,3-0-0,Ullmark,Ullmark
+1,"Sat, Oct 21",Away,Los Angeles,401559314,W,4-2,4-0-0,Swayman,Marchand
+1,"Sun, Oct 22",Away,Anaheim,401559316,W,3-1,5-0-0,Ullmark,Ullmark
+1,"Tue, Oct 24",Away,Chicago,401559327,W,3-0,6-0-0,Swayman,Swayman
+1,"Thu, Oct 26",Home,Anaheim,401559335,L,4-3 OT,6-0-1,Ullmark,Pastrnak
+1,"Sat, Oct 28",Home,Detroit,401559354,W,4-1,7-0-1,Swayman,Pastrnak
+1,"Mon, Oct 30",Home,Florida,401559365,W,3-2 OT,8-0-1,Ullmark,Ullmark
+1,"Thu, Nov 2",Home,Toronto,401559379,W,3-2 SO,9-0-1,Swayman,Swayman
+1,"Sat, Nov 4",Away,Detroit,401559397,L,5-4,9-1-1,Ullmark,Pastrnak
+1,"Mon, Nov 6",Away,Dallas,401559412,W,3-2,10-1-1,Swayman,Swayman
+1,"Thu, Nov 9",Home,New York,401559426,W,5-2,11-1-1,Ullmark,Coyle
+1,"Sat, Nov 11",Away,Montreal,401559446,L,3-2 OT,11-1-2,Swayman,Marchand
+1,"Tue, Nov 14",Away,Buffalo,401559462,W,5-2,12-1-2,Ullmark,Ullmark
+1,"Sat, Nov 18",Home,Montreal,401559487,W,5-2,13-1-2,Swayman,Pastrnak
+1,"Mon, Nov 20",Away,Tampa Bay,401559501,L,5-4 OT,13-1-3,Swayman,Pastrnak
+1,"Wed, Nov 22",Away,Florida,401559510,W,3-1,14-1-3,Ullmark,Ullmark
+1,"Fri, Nov 24",Home,Detroit,401559522,L,5-2,14-2-3,Swayman,Pastrnak
+1,"Sat, Nov 25",Away,New York,401559537,L,7-4,14-3-3,Ullmark,Coyle
+1,"Mon, Nov 27",Away,Columbus,401559552,L,5-2,14-4-3,Ullmark,Heinen
+1,"Thu, Nov 30",Home,San Jose,401559569,W,3-0,15-4-3,Swayman,Swayman
+1,"Sat, Dec 2",Away,Toronto,401559589,W,4-3 OT,16-4-3,Ullmark,Pastrnak
+1,"Sun, Dec 3",Home,Columbus,401559600,W,3-1,17-4-3,Swayman,Marchand
+1,"Thu, Dec 7",Home,Buffalo,401559621,L,3-1,17-5-3,Ullmark,Marchand
+1,"Sat, Dec 9",Home,Arizona,401559637,W,5-3,18-5-3,Ullmark,Pastrnak
+1,"Wed, Dec 13",Away,New Jersey,401559672,L,2-1 OT,18-5-4,Swayman,Swayman
+1,"Fri, Dec 15",Away,New York,401559686,W,5-4 SO,19-5-4,Ullmark,Pastrnak
+1,"Sat, Dec 16",Home,New York,401559691,L,2-1 OT,19-5-5,Swayman,Swayman
+1,"Tue, Dec 19",Home,Minnesota,401559713,L,4-3 OT,19-5-6,Ullmark,Pastrnak
+1,"Fri, Dec 22",Away,Winnipeg,401559741,L,5-1,19-6-6,Swayman,Carlo
+1,"Sat, Dec 23",Away,Minnesota,401559750,L,3-2,19-7-6,Ullmark,Geekie
+1,"Wed, Dec 27",Away,Buffalo,401559761,W,4-1,20-7-6,Swayman,Swayman
+1,"Sat, Dec 30",Home,New Jersey,401559786,W,5-2,21-7-6,Ullmark,Pastrnak
+1,"Sun, Dec 31",Away,Detroit,401559794,W,5-3,22-7-6,Swayman,Frederic
+1,"Tue, Jan 2",Away,Columbus,401559804,W,4-1,23-7-6,Ullmark,van Riemsdyk
+1,"Thu, Jan 4",Home,Pittsburgh,401559817,L,6-5,23-8-6,Swayman,Pastrnak
+1,"Sat, Jan 6",Home,Tampa Bay,401559835,W,7-3,24-8-6,Ullmark,Frederic
+1,"Mon, Jan 8",Away,Colorado,401559852,L,4-3 SO,24-8-7,Swayman,Marchand
+1,"Tue, Jan 9",Away,Arizona,401559862,L,4-3 OT,24-8-8,Swayman,DeBrusk
+1,"Thu, Jan 11",Away,Vegas,401559878,L,2-1 OT,24-8-9,Swayman,Grzelcyk
+1,"Sat, Jan 13",Away,St. Louis,401559893,W,4-3 OT,25-8-9,Swayman,McAvoy
+1,"Mon, Jan 15",Home,New Jersey,401559899,W,3-0,26-8-9,Swayman,Swayman
+1,"Thu, Jan 18",Home,Colorado,401559920,W,5-2,27-8-9,Swayman,Pastrnak
+1,"Sat, Jan 20",Home,Montreal,401559939,W,9-4,28-8-9,Ullmark,Pastrnak
+1,"Mon, Jan 22",Home,Winnipeg,401559953,W,4-1,29-8-9,Swayman,Swayman
+1,"Wed, Jan 24",Home,Carolina,401559970,L,3-2,29-9-9,Ullmark,Marchand
+1,"Thu, Jan 25",Away,Ottawa,401559976,W,3-2 OT,30-9-9,Swayman,Swayman
+2,"Thu, Oct 12",Home,New York,401559245,L,5-1,0-1-0,Levi,Peterka
+2,"Sat, Oct 14",Away,New York,401559263,L,3-2,0-2-0,Levi,Mittelstadt
+2,"Tue, Oct 17",Home,Tampa Bay,401559275,W,3-2 OT,1-2-0,Levi,Skinner
+2,"Thu, Oct 19",Home,Calgary,401559286,L,4-3,1-3-0,Levi,Cozens
+2,"Sat, Oct 21",Home,New York,401559302,W,3-1,2-3-0,Comrie,Comrie
+2,"Mon, Oct 23",Home,Montreal,401559317,L,3-1,2-4-0,Comrie,Cozens
+2,"Tue, Oct 24",Away,Ottawa,401559320,W,6-4,3-4-0,Luukkonen,Thompson
+2,"Fri, Oct 27",Away,New Jersey,401559347,L,5-4,3-5-0,Luukkonen,Greenway
+2,"Sun, Oct 29",Home,Colorado,401559355,W,4-0,4-5-0,Luukkonen,Luukkonen
+2,"Wed, Nov 1",Away,Philadelphia,401559375,W,5-2,5-5-0,Luukkonen,Luukkonen
+2,"Fri, Nov 3",Home,Philadelphia,401559391,L,5-1,5-6-0,Luukkonen,Peterka
+2,"Sat, Nov 4",Away,Toronto,401559395,W,6-4,6-6-0,Levi,Peterka
+2,"Tue, Nov 7",Away,Carolina,401559925,L,3-2 OT,6-6-1,Luukkonen,Dahlin
+2,"Fri, Nov 10",Home,Minnesota,401559437,W,3-2,7-6-1,Levi,Levi
+2,"Sat, Nov 11",Away,Pittsburgh,401559449,L,4-0,7-7-1,Luukkonen,Luukkonen
+2,"Tue, Nov 14",Home,Boston,401559462,L,5-2,7-8-1,Levi,Olofsson
+2,"Fri, Nov 17",Away,Winnipeg,401559483,L,3-2,7-9-1,Comrie,Tuch
+2,"Sun, Nov 19",Away,Chicago,401559499,W,3-2,8-9-1,Luukkonen,Dahlin
+2,"Wed, Nov 22",Away,Washington,401559512,L,4-3 OT,8-9-2,Levi,Olofsson
+2,"Fri, Nov 24",Home,Pittsburgh,401559530,W,3-2,9-9-2,Luukkonen,Skinner
+2,"Sat, Nov 25",Away,New Jersey,401559539,L,7-2,9-10-2,Comrie,Okposo
+2,"Mon, Nov 27",Away,New York,401559551,W,5-1,10-10-2,Luukkonen,Tuch
+2,"Thu, Nov 30",Away,St. Louis,401559576,L,6-4,10-11-2,Luukkonen,Benson
+2,"Sat, Dec 2",Away,Carolina,401559593,L,6-2,10-12-2,Comrie,Mittelstadt
+2,"Sun, Dec 3",Home,Nashville,401559601,L,2-1,10-13-2,Luukkonen,Luukkonen
+2,"Tue, Dec 5",Home,Detroit,401559609,L,5-3,10-14-2,Comrie,Skinner
+2,"Thu, Dec 7",Away,Boston,401559621,W,3-1,11-14-2,Levi,Levi
+2,"Sat, Dec 9",Home,Montreal,401559640,L,3-2 SO,11-14-3,Levi,Skinner
+2,"Mon, Dec 11",Home,Arizona,401559657,W,5-2,12-14-3,Levi,Robinson
+2,"Wed, Dec 13",Away,Colorado,401559674,L,5-1,12-15-3,Luukkonen,Benson
+2,"Fri, Dec 15",Away,Vegas,401559689,W,5-2,13-15-3,Levi,Mittelstadt
+2,"Sat, Dec 16",Away,Arizona,401559699,L,2-0,13-16-3,Luukkonen,Luukkonen
+2,"Tue, Dec 19",Home,Columbus,401559714,L,9-4,13-17-3,Luukkonen,Cozens
+2,"Thu, Dec 21",Home,Toronto,401559727,W,9-3,14-17-3,Levi,Tuch
+2,"Sat, Dec 23",Away,New York,401559751,L,4-3 OT,14-17-4,Luukkonen,Greenway
+2,"Wed, Dec 27",Home,Boston,401559761,L,4-1,14-18-4,Levi,Johnson
+2,"Sat, Dec 30",Home,Columbus,401559785,W,3-2 OT,15-18-4,Luukkonen,Power
+2,"Sun, Dec 31",Away,Ottawa,401559795,L,5-1,15-19-4,Levi,Skinner
+2,"Thu, Jan 4",Away,Montreal,401559818,W,6-1,16-19-4,Levi,Skinner
+2,"Sat, Jan 6",Away,Pittsburgh,401559838,W,3-1,17-19-4,Luukkonen,Luukkonen
+2,"Tue, Jan 9",Home,Seattle,401559853,L,5-2,17-20-4,Levi,Tuch
+2,"Thu, Jan 11",Home,Ottawa,401559866,W,5-3,18-20-4,Luukkonen,Thompson
+2,"Sat, Jan 13",Home,Vancouver,401559882,L,1-0,18-21-4,Luukkonen,Luukkonen
+2,"Mon, Jan 15",Home,San Jose,401559900,W,3-0,19-21-4,Luukkonen,Luukkonen
+2,"Thu, Jan 18",Home,Chicago,401632079,W,3-0,20-21-4,Luukkonen,Luukkonen
+2,"Sat, Jan 20",Home,Tampa Bay,401559935,L,3-1,20-22-4,Luukkonen,Dahlin
+2,"Tue, Jan 23",Away,Anaheim,401559966,L,4-2,20-23-4,Luukkonen,Greenway
+2,"Wed, Jan 24",Away,Los Angeles,401559974,W,5-3,21-23-4,Levi,Quinn
+3,"Wed, Oct 11",Home,Winnipeg,401559242,W,5-3,1-0-0,Markstrom,Mangiapane
+3,"Sat, Oct 14",Away,Pittsburgh,401559261,L,5-2,1-1-0,Markstrom,Andersson
+3,"Mon, Oct 16",Away,Washington,401559273,L,3-2 SO,1-1-1,Markstrom,Hanifin
+3,"Thu, Oct 19",Away,Buffalo,401559286,W,4-3,2-1-1,Vladar,Andersson
+3,"Fri, Oct 20",Away,Columbus,401559298,L,3-1,2-2-1,Markstrom,Markstrom
+3,"Sun, Oct 22",Away,Detroit,401559315,L,6-2,2-3-1,Vladar,Backlund
+3,"Tue, Oct 24",Home,New York,401559331,L,3-1,2-4-1,Markstrom,Coleman
+3,"Thu, Oct 26",Home,St. Louis,401559344,L,3-0,2-5-1,Markstrom,Markstrom
+3,"Sun, Oct 29",Home,Edmonton *,401555903,L,5-2,2-6-1,Markstrom,Weegar
+3,"Wed, Nov 1",Home,Dallas,401559376,L,4-3,2-7-1,Markstrom,Weegar
+3,"Sat, Nov 4",Away,Seattle,401559407,W,6-3,3-7-1,Vladar,Backlund
+3,"Tue, Nov 7",Home,Nashville,401559418,W,4-2,4-7-1,Markstrom,Kadri
+3,"Fri, Nov 10",Away,Toronto,401559438,L,5-4 SO,4-7-2,Vladar,Zadorov
+3,"Sat, Nov 11",Away,Ottawa,401559447,L,4-1,4-8-2,Wolf,Coleman
+3,"Tue, Nov 14",Away,Montreal,401559463,W,2-1,5-8-2,Markstrom,Markstrom
+3,"Thu, Nov 16",Home,Vancouver,401559479,W,5-2,6-8-2,Markstrom,Lindholm
+3,"Sat, Nov 18",Home,New York,401559492,L,5-4 SO,6-8-3,Markstrom,Kadri
+3,"Mon, Nov 20",Away,Seattle,401559507,W,4-3 OT,7-8-3,Vladar,Andersson
+3,"Wed, Nov 22",Away,Nashville,401559516,L,4-2,7-9-3,Markstrom,Hanifin
+3,"Fri, Nov 24",Away,Dallas,401559534,W,7-4,8-9-3,Markstrom,Sharangovich
+3,"Sat, Nov 25",Away,Colorado,401559542,L,3-1,8-10-3,Vladar,Backlund
+3,"Mon, Nov 27",Home,Vegas,401559554,W,2-1 OT,9-10-3,Vladar,Vladar
+3,"Thu, Nov 30",Home,Dallas,401559579,W,4-3 OT,10-10-3,Markstrom,Huberdeau
+3,"Sat, Dec 2",Home,Vancouver,401559595,L,4-3,10-11-3,Markstrom,Lindholm
+3,"Tue, Dec 5",Home,Minnesota,401559615,L,5-2,10-12-3,Vladar,Weegar
+3,"Thu, Dec 7",Home,Carolina,401559630,W,3-2,11-12-3,Wolf,Coleman
+3,"Sat, Dec 9",Home,New Jersey,401559639,L,4-2,11-13-3,Wolf,Sharangovich
+3,"Mon, Dec 11",Away,Colorado,401559660,L,6-5,11-14-3,Vladar,Coleman
+3,"Tue, Dec 12",Away,Vegas,401559668,L,5-4 OT,11-14-4,Wolf,Kadri
+3,"Thu, Dec 14",Away,Minnesota,401559680,L,3-2 SO,11-14-5,Vladar,Sharangovich
+3,"Sat, Dec 16",Home,Tampa Bay,401559700,W,4-2,12-14-5,Vladar,Vladar
+3,"Mon, Dec 18",Home,Florida,401559712,W,3-1,13-14-5,Markstrom,Markstrom
+3,"Thu, Dec 21",Away,Anaheim,401559737,W,3-0,14-14-5,Markstrom,Markstrom
+3,"Sat, Dec 23",Away,Los Angeles,401559756,L,5-3,14-15-5,Markstrom,Coleman
+3,"Wed, Dec 27",Home,Seattle,401559768,L,2-1,14-16-5,Markstrom,Kadri
+3,"Sun, Dec 31",Home,Philadelphia,401559800,W,4-3,15-16-5,Markstrom,Coleman
+3,"Tue, Jan 2",Away,Minnesota,401559807,W,3-1,16-16-5,Markstrom,Markstrom
+3,"Thu, Jan 4",Away,Nashville,401559822,W,6-3,17-16-5,Vladar,Coleman
+3,"Sat, Jan 6",Away,Philadelphia,401559833,L,3-2,17-17-5,Markstrom,Markstrom
+3,"Sun, Jan 7",Away,Chicago,401559846,L,4-3,17-18-5,Vladar,Kadri
+3,"Tue, Jan 9",Home,Ottawa,401559861,W,6-3,18-18-5,Markstrom,Hanifin
+3,"Thu, Jan 11",Away,Arizona,401559877,W,6-2,19-18-5,Markstrom,Sharangovich
+3,"Sat, Jan 13",Away,Vegas,401559896,W,3-1,20-18-5,Markstrom,Markstrom
+3,"Tue, Jan 16",Home,Arizona,401559915,W,3-2 OT,21-18-5,Vladar,Kadri
+3,"Thu, Jan 18",Home,Toronto,401559926,L,4-3,21-19-5,Vladar,Mangiapane
+3,"Sat, Jan 20",Home,Edmonton,401559943,L,3-1,21-20-5,Vladar,Vladar
+3,"Tue, Jan 23",Home,St. Louis,401559964,L,4-3,21-21-5,Markstrom,Sharangovich
+3,"Thu, Jan 25",Home,Columbus,401559982,L,5-2,21-22-5,Markstrom,Weegar
+7,"Wed, Oct 11",Home,Ottawa,401559240,W,5-3,1-0-0,Andersen,Skjei
+7,"Sat, Oct 14",Away,Los Angeles,401559268,W,6-5 SO,2-0-0,Andersen,Aho
+7,"Sun, Oct 15",Away,Anaheim,401559269,L,6-3,2-1-0,Raanta,Teravainen
+7,"Tue, Oct 17",Away,San Jose,401559283,W,6-3,3-1-0,Raanta,Jarvis
+7,"Thu, Oct 19",Away,Seattle,401559295,L,7-4,3-2-0,Kochetkov,Jarvis
+7,"Sat, Oct 21",Away,Colorado,401559311,L,6-4,3-3-0,Kochetkov,Noesen
+7,"Tue, Oct 24",Away,Tampa Bay,401559321,L,3-0,3-4-0,Kochetkov,Chatfield
+7,"Thu, Oct 26",Home,Seattle,401559341,W,3-2 OT,4-4-0,Andersen,Necas
+7,"Fri, Oct 27",Home,San Jose,401559349,W,3-0,5-4-0,Raanta,Teravainen
+7,"Mon, Oct 30",Away,Philadelphia,401559363,W,3-2,6-4-0,Andersen,Andersen
+7,"Thu, Nov 2",Away,New York,401559382,L,2-1,6-5-0,Andersen,Andersen
+7,"Sat, Nov 4",Away,New York,401559401,W,4-3 OT,7-5-0,Raanta,Aho
+7,"Tue, Nov 7",Home,Buffalo,401559925,W,3-2 OT,8-5-0,Raanta,Skjei
+7,"Fri, Nov 10",Away,Florida,401559439,L,5-2,8-6-0,Raanta,Martinook
+7,"Sat, Nov 11",Away,Tampa Bay,401559448,W,4-0,9-6-0,Kochetkov,Kochetkov
+7,"Wed, Nov 15",Home,Philadelphia,401559471,L,3-1,9-7-0,Kochetkov,Noesen
+7,"Sat, Nov 18",Home,Pittsburgh,401559490,W,4-2,10-7-0,Raanta,Jarvis
+7,"Wed, Nov 22",Home,Edmonton,401559513,W,6-3,11-7-0,Raanta,Jarvis
+7,"Fri, Nov 24",Home,Tampa Bay,401559526,L,8-2,11-8-0,Raanta,Bunting
+7,"Sun, Nov 26",Home,Columbus,401559547,W,3-2,12-8-0,Kochetkov,Svechnikov
+7,"Tue, Nov 28",Away,Philadelphia,401559559,W,4-1,13-8-0,Kochetkov,Kochetkov
+7,"Thu, Nov 30",Home,New York,401559575,L,5-4 OT,13-8-1,Kochetkov,Staal
+7,"Sat, Dec 2",Home,Buffalo,401559593,W,6-2,14-8-1,Kochetkov,Aho
+7,"Mon, Dec 4",Away,Winnipeg,401559606,L,2-1,14-9-1,Raanta,Necas
+7,"Wed, Dec 6",Away,Edmonton,401559620,L,6-1,14-10-1,Kochetkov,Staal
+7,"Thu, Dec 7",Away,Calgary,401559630,L,3-2,14-11-1,Kochetkov,Bunting
+7,"Sat, Dec 9",Away,Vancouver,401559647,L,4-3,14-12-1,Raanta,Noesen
+7,"Tue, Dec 12",Away,Ottawa,401559661,W,4-1,15-12-1,Kochetkov,Kochetkov
+7,"Thu, Dec 14",Away,Detroit,401559677,W,2-1,16-12-1,Kochetkov,Kochetkov
+7,"Fri, Dec 15",Home,Nashville,401559685,L,6-5 OT,16-12-2,Raanta,Bunting
+7,"Sun, Dec 17",Home,Washington,401559704,L,2-1 SO,16-12-3,Kochetkov,Kochetkov
+7,"Tue, Dec 19",Home,Vegas,401559718,W,6-3,17-12-3,Kochetkov,Aho
+7,"Thu, Dec 21",Away,Pittsburgh,401559732,L,2-1 SO,17-12-4,Kochetkov,Kochetkov
+7,"Sat, Dec 23",Home,New York,401559748,L,5-4,17-13-4,Kochetkov,Necas
+7,"Wed, Dec 27",Away,Nashville,401559764,W,5-2,18-13-4,Kochetkov,Kochetkov
+7,"Thu, Dec 28",Home,Montreal,401559771,W,5-3,19-13-4,Raanta,Svechnikov
+7,"Sat, Dec 30",Away,Toronto,401559787,W,3-2,20-13-4,Kochetkov,Aho
+7,"Tue, Jan 2",Away,New York,401559802,W,6-1,21-13-4,Kochetkov,Kochetkov
+7,"Fri, Jan 5",Away,Washington,401559831,W,6-2,22-13-4,Kochetkov,Burns
+7,"Sat, Jan 6",Home,St. Louis,401559839,L,2-1 SO,22-13-5,Raanta,Raanta
+7,"Thu, Jan 11",Home,Anaheim,401559873,W,6-3,23-13-5,Raanta,Jarvis
+7,"Sat, Jan 13",Home,Pittsburgh,401559889,W,3-2 OT,24-13-5,Raanta,Raanta
+7,"Mon, Jan 15",Home,Los Angeles,401559904,L,5-2,24-14-5,Raanta,Burns
+7,"Fri, Jan 19",Home,Detroit,401559932,W,4-2,25-14-5,Raanta,Necas
+7,"Sun, Jan 21",Home,Minnesota,401559949,L,5-2,25-15-5,Raanta,Noesen
+7,"Wed, Jan 24",Away,Boston,401559970,W,3-2,26-15-5,Martin,Martin
+7,"Thu, Jan 25",Home,New Jersey,401559979,W,3-2,27-15-5,Raanta,Teravainen
+4,"Tue, Oct 10",Away,Pittsburgh,401559237,W,4-2,1-0-0,Mrazek,Mrazek
+4,"Wed, Oct 11",Away,Boston,401559241,L,3-1,1-1-0,Soderblom,Soderblom
+4,"Sat, Oct 14",Away,Montreal,401559259,L,3-2,1-2-0,Mrazek,Johnson
+4,"Mon, Oct 16",Away,Toronto,401559270,W,4-1,2-2-0,Soderblom,Soderblom
+4,"Thu, Oct 19",Away,Colorado,401559296,L,4-0,2-3-0,Mrazek,Mrazek
+4,"Sat, Oct 21",Home,Vegas,401559306,L,5-3,2-4-0,Soderblom,Donato
+4,"Tue, Oct 24",Home,Boston,401559327,L,3-0,2-5-0,Mrazek,Mrazek
+4,"Fri, Oct 27",Away,Vegas,401559346,W,4-3 OT,3-5-0,Mrazek,Donato
+4,"Mon, Oct 30",Away,Arizona,401559371,L,8-1,3-6-0,Soderblom,Bedard
+4,"Sat, Nov 4",Home,Florida,401559402,W,5-2,4-6-0,Mrazek,Mrazek
+4,"Sun, Nov 5",Home,New Jersey,401559408,L,4-2,4-7-0,Soderblom,Soderblom
+4,"Thu, Nov 9",Away,Tampa Bay,401559429,W,5-3,5-7-0,Mrazek,Bedard
+4,"Sun, Nov 12",Away,Florida,401559455,L,4-3,5-8-0,Soderblom,Bedard
+4,"Thu, Nov 16",Home,Tampa Bay,401559478,L,4-2,5-9-0,Mrazek,Dickinson
+4,"Sat, Nov 18",Away,Nashville,401559493,L,4-2,5-10-0,Soderblom,Kurashev
+4,"Sun, Nov 19",Home,Buffalo,401559499,L,3-2,5-11-0,Mrazek,Kurashev
+4,"Wed, Nov 22",Away,Columbus,401559514,L,7-3,5-12-0,Mrazek,Kurashev
+4,"Fri, Nov 24",Home,Toronto,401559524,W,4-3 OT,6-12-0,Soderblom,Dickinson
+4,"Sun, Nov 26",Home,St. Louis,401559546,L,4-2,6-13-0,Soderblom,Donato
+4,"Tue, Nov 28",Home,Seattle,401559563,W,4-3,7-13-0,Mrazek,Mrazek
+4,"Thu, Nov 30",Away,Detroit,401559572,L,5-1,7-14-0,Mrazek,Bedard
+4,"Sat, Dec 2",Away,Winnipeg,401559586,L,3-1,7-15-0,Soderblom,Bedard
+4,"Sun, Dec 3",Away,Minnesota,401559598,L,4-1,7-16-0,Mrazek,Bedard
+4,"Tue, Dec 5",Home,Nashville,401559613,L,4-3 SO,7-16-1,Soderblom,Foligno
+4,"Thu, Dec 7",Home,Anaheim,401559628,W,1-0,8-16-1,Mrazek,Mrazek
+4,"Sat, Dec 9",Home,St. Louis,401559645,W,3-1,9-16-1,Mrazek,Mrazek
+4,"Sun, Dec 10",Home,Washington,401559653,L,4-2,9-17-1,Soderblom,Bedard
+4,"Tue, Dec 12",Away,Edmonton,401559666,L,4-1,9-18-1,Mrazek,Bedard
+4,"Thu, Dec 14",Away,Seattle,401559683,L,7-1,9-19-1,Soderblom,Beauvillier
+4,"Sun, Dec 17",Home,Vancouver,401559703,L,4-3,9-20-1,Mrazek,Foligno
+4,"Tue, Dec 19",Home,Colorado,401559721,W,3-2,10-20-1,Mrazek,Mrazek
+4,"Fri, Dec 22",Home,Montreal,401559742,L,5-2,10-21-1,Mrazek,Donato
+4,"Sat, Dec 23",Away,St. Louis,401559752,L,7-5,10-22-1,Soderblom,Raddysh
+4,"Wed, Dec 27",Home,Winnipeg,401559766,W,2-1 OT,11-22-1,Mrazek,Mrazek
+4,"Fri, Dec 29",Away,Dallas,401559781,L,5-4 OT,11-22-2,Mrazek,Guttman
+4,"Sun, Dec 31",Away,Dallas,401559798,L,8-1,11-23-2,Mrazek,Beauvillier
+4,"Tue, Jan 2",Away,Nashville,401559805,L,3-0,11-24-2,Soderblom,Soderblom
+4,"Thu, Jan 4",Away,New York,401559819,L,4-1,11-25-2,Mrazek,Blackwell
+4,"Fri, Jan 5",Away,New Jersey,401559830,L,4-2,11-26-2,Soderblom,Katchouk
+4,"Sun, Jan 7",Home,Calgary,401559846,W,4-3,12-26-2,Mrazek,Blackwell
+4,"Tue, Jan 9",Home,Edmonton,401559860,L,2-1,12-27-2,Mrazek,Dickinson
+4,"Thu, Jan 11",Away,Winnipeg,401559876,L,2-1,12-28-2,Mrazek,Mrazek
+4,"Sat, Jan 13",Home,Dallas,401559892,L,3-1,12-29-2,Mrazek,Mrazek
+4,"Tue, Jan 16",Home,San Jose,401559914,W,2-1 SO,13-29-2,Mrazek,Mrazek
+4,"Thu, Jan 18",Away,Buffalo,401632079,L,3-0,13-30-2,Soderblom,Soderblom
+4,"Fri, Jan 19",Home,New York,401559934,W,4-3 OT,14-30-2,Mrazek,Dickinson
+4,"Mon, Jan 22",Away,Vancouver,401559957,L,2-0,14-31-2,Mrazek,Mrazek
+4,"Wed, Jan 24",Away,Seattle,401559973,L,6-2,14-32-2,Soderblom,Jones
+4,"Thu, Jan 25",Away,Edmonton,401559983,L,3-0,14-33-2,Mrazek,Mrazek
+17,"Wed, Oct 11",Away,Los Angeles,401559244,W,5-2,1-0-0,Georgiev,Rantanen
+17,"Sat, Oct 14",Away,San Jose,401559267,W,2-1 SO,2-0-0,Georgiev,Georgiev
+17,"Tue, Oct 17",Away,Seattle,401559281,W,4-1,3-0-0,Georgiev,Georgiev
+17,"Thu, Oct 19",Home,Chicago,401559296,W,4-0,4-0-0,Georgiev,Georgiev
+17,"Sat, Oct 21",Home,Carolina,401559311,W,6-4,5-0-0,Georgiev,Lehkonen
+17,"Tue, Oct 24",Away,New York,401559325,W,7-4,6-0-0,Georgiev,Rantanen
+17,"Thu, Oct 26",Away,Pittsburgh,401559340,L,4-0,6-1-0,Georgiev,Prosvetov
+17,"Sun, Oct 29",Away,Buffalo,401559355,L,4-0,6-2-0,Georgiev,Johansen
+17,"Wed, Nov 1",Home,St. Louis,401559377,W,4-1,7-2-0,Prosvetov,Prosvetov
+17,"Sat, Nov 4",Away,Vegas,401559405,L,7-0,7-3-0,Georgiev,Wood
+17,"Tue, Nov 7",Home,New Jersey,401559420,W,6-3,8-3-0,Georgiev,Rantanen
+17,"Thu, Nov 9",Home,Seattle,401559434,L,4-3,8-4-0,Prosvetov,MacKinnon
+17,"Sat, Nov 11",Home,St. Louis,401559452,L,8-2,8-5-0,Georgiev,Johnson
+17,"Mon, Nov 13",Away,Seattle,401559461,W,5-1,9-5-0,Georgiev,MacKinnon
+17,"Wed, Nov 15",Home,Anaheim,401559473,W,8-2,10-5-0,Georgiev,Makar
+17,"Sat, Nov 18",Away,Dallas,401559494,W,6-3,11-5-0,Georgiev,Rantanen
+17,"Mon, Nov 20",Away,Nashville,401559503,L,4-3,11-6-0,Georgiev,MacKinnon
+17,"Wed, Nov 22",Home,Vancouver,401559519,W,5-2,12-6-0,Georgiev,Makar
+17,"Fri, Nov 24",Away,Minnesota,401559535,W,3-2,13-6-0,Georgiev,MacDermid
+17,"Sat, Nov 25",Home,Calgary,401559542,W,3-1,14-6-0,Prosvetov,Prosvetov
+17,"Mon, Nov 27",Home,Tampa Bay,401559553,W,4-1,15-6-0,Georgiev,Georgiev
+17,"Thu, Nov 30",Away,Arizona,401559580,L,4-3 OT,15-6-1,Georgiev,MacKinnon
+17,"Sat, Dec 2",Away,Anaheim,401559597,L,4-3 SO,15-6-2,Prosvetov,Byram
+17,"Sun, Dec 3",Away,Los Angeles,401559602,L,4-1,15-7-2,Georgiev,Georgiev
+17,"Tue, Dec 5",Home,Anaheim,401559614,W,3-2,16-7-2,Georgiev,MacKinnon
+17,"Thu, Dec 7",Home,Winnipeg,401559629,L,4-2,16-8-2,Georgiev,MacKinnon
+17,"Sat, Dec 9",Home,Philadelphia,401559646,L,5-2,16-9-2,Prosvetov,Manson
+17,"Mon, Dec 11",Home,Calgary,401559660,W,6-5,17-9-2,Prosvetov,Rantanen
+17,"Wed, Dec 13",Home,Buffalo,401559674,W,5-1,18-9-2,Prosvetov,Prosvetov
+17,"Sat, Dec 16",Away,Winnipeg,401559696,L,6-2,18-10-2,Prosvetov,MacKinnon
+17,"Sun, Dec 17",Home,San Jose,401559706,W,6-2,19-10-2,Georgiev,MacKinnon
+17,"Tue, Dec 19",Away,Chicago,401559721,L,3-2,19-11-2,Georgiev,Nichushkin
+17,"Thu, Dec 21",Home,Ottawa,401559736,W,6-4,20-11-2,Georgiev,MacKinnon
+17,"Sat, Dec 23",Home,Arizona,401559754,W,4-1,21-11-2,Georgiev,Georgiev
+17,"Wed, Dec 27",Away,Arizona,401559767,L,5-4 OT,21-11-3,Georgiev,MacKinnon
+17,"Fri, Dec 29",Away,St. Louis,401559780,W,2-1,22-11-3,Georgiev,Georgiev
+17,"Sun, Dec 31",Home,San Jose,401559799,W,3-1,23-11-3,Georgiev,Nichushkin
+17,"Tue, Jan 2",Home,New York,401559809,W,5-4 OT,24-11-3,Georgiev,MacKinnon
+17,"Thu, Jan 4",Away,Dallas,401559823,W,5-4 OT,25-11-3,Georgiev,MacKinnon
+17,"Sat, Jan 6",Home,Florida,401559834,L,8-4,25-12-3,Georgiev,Nichushkin
+17,"Mon, Jan 8",Home,Boston,401559852,W,4-3 SO,26-12-3,Georgiev,Johansen
+17,"Wed, Jan 10",Home,Vegas,401559865,W,3-0,27-12-3,Georgiev,Georgiev
+17,"Sat, Jan 13",Away,Toronto,401559885,W,5-3,28-12-3,Georgiev,MacKinnon
+17,"Mon, Jan 15",Away,Montreal,401559905,L,4-3,28-13-3,Georgiev,Makar
+17,"Tue, Jan 16",Away,Ottawa,401559909,W,7-4,29-13-3,Annunen,Girard
+17,"Thu, Jan 18",Away,Boston,401559920,L,5-2,29-14-3,Georgiev,Manson
+17,"Sat, Jan 20",Away,Philadelphia,401559936,W,7-4,30-14-3,Georgiev,MacKinnon
+17,"Wed, Jan 24",Home,Washington,401559971,W,6-2,31-14-3,Georgiev,MacKinnon
+17,"Fri, Jan 26",Home,Los Angeles,401559986,W,5-1,32-14-3,Georgiev,Georgiev
+29,"Thu, Oct 12",Home,Philadelphia,401559248,L,4-2,0-1-0,Merzlikins,Merzlikins
+29,"Sat, Oct 14",Home,New York,401559262,W,5-3,1-1-0,Merzlikins,Jenner
+29,"Mon, Oct 16",Home,Detroit,401559274,L,4-0,1-2-0,Martin,Marchenko
+29,"Fri, Oct 20",Home,Calgary,401559298,W,3-1,2-2-0,Martin,Martin
+29,"Sat, Oct 21",Away,Minnesota,401559310,W,5-4 OT,2-2-0,Merzlikins,Severson
+29,"Tue, Oct 24",Home,Anaheim,401559319,L,3-2 OT,3-2-1,Merzlikins,Fantilli
+29,"Thu, Oct 26",Away,Montreal,401559336,L,4-3 OT,3-2-2,Merzlikins,Roslovic
+29,"Sat, Oct 28",Home,New York,401559358,L,2-0,3-3-2,Martin,Martin
+29,"Mon, Oct 30",Away,Dallas,401559370,L,5-3,3-4-2,Merzlikins,Kuraly
+29,"Thu, Nov 2",Home,Tampa Bay,401559384,W,4-2,4-4-2,Merzlikins,Jenner
+29,"Sat, Nov 4",Away,Washington,401559399,L,2-1,4-5-2,Merzlikins,Marchenko
+29,"Mon, Nov 6",Away,Florida,401559411,L,5-4 OT,4-6-2,Martin,Martin
+29,"Thu, Nov 9",Home,Dallas,401559431,L,5-2,4-6-3,Martin,Marchenko
+29,"Sat, Nov 11",Away,Detroit,401559443,L,5-4,4-7-3,Martin,Fantilli
+29,"Sun, Nov 12",Away,New York,401559458,L,4-3 SO,4-7-4,Merzlikins,Merzlikins
+29,"Tue, Nov 14",Home,Pittsburgh,401559465,L,5-3,4-8-4,Merzlikins,Marchenko
+29,"Thu, Nov 16",Home,Arizona,401559477,L,3-2,4-9-4,Merzlikins,Severson
+29,"Sat, Nov 18",Away,Washington,401559489,L,4-3,4-10-4,Merzlikins,Gaudreau
+29,"Sun, Nov 19",Away,Philadelphia,401559497,L,5-2,4-11-4,Martin,Kuraly
+29,"Wed, Nov 22",Home,Chicago,401559514,W,7-3,5-11-4,Merzlikins,Werenski
+29,"Fri, Nov 24",Away,New Jersey,401559532,W,2-1,6-11-4,Merzlikins,Merzlikins
+29,"Sun, Nov 26",Away,Carolina,401559547,L,3-2,6-12-4,Merzlikins,Merzlikins
+29,"Mon, Nov 27",Home,Boston,401559552,W,5-2,7-12-4,Martin,Martin
+29,"Wed, Nov 29",Home,Montreal,401559566,L,4-2,7-13-4,Merzlikins,Chinakhov
+29,"Fri, Dec 1",Home,Ottawa,401559584,W,4-2,8-13-4,Merzlikins,Merzlikins
+29,"Sun, Dec 3",Away,Boston,401559600,L,3-1,8-14-4,Martin,Jenner
+29,"Tue, Dec 5",Home,Los Angeles,401559611,L,4-3 OT,8-14-5,Merzlikins,Gaudreau
+29,"Thu, Dec 7",Away,New York,401559626,L,7-3,8-15-5,Martin,Fantilli
+29,"Fri, Dec 8",Home,St. Louis,401559635,W,5-2,9-15-5,Greaves,Greaves
+29,"Sun, Dec 10",Home,Florida,401559649,L,5-2,9-16-5,Greaves,Chinakhov
+29,"Thu, Dec 14",Away,Toronto,401559676,W,6-5 OT,10-16-5,Merzlikins,Johnson
+29,"Sat, Dec 16",Home,New Jersey,401559695,L,6-3,10-17-5,Tarasov,Marchenko
+29,"Tue, Dec 19",Away,Buffalo,401559714,W,9-4,11-17-5,Tarasov,Marchenko
+29,"Thu, Dec 21",Home,Washington,401559733,L,3-2 OT,11-17-6,Merzlikins,Chinakhov
+29,"Sat, Dec 23",Home,Toronto,401559749,L,4-1,11-18-6,Tarasov,Gaudreau
+29,"Wed, Dec 27",Away,New Jersey,401559759,L,4-3 OT,11-18-7,Merzlikins,Bean
+29,"Fri, Dec 29",Home,Toronto,401559778,W,6-5 OT,12-18-7,Martin,Gaudreau
+29,"Sat, Dec 30",Away,Buffalo,401559785,L,3-2 OT,12-18-8,Tarasov,Tarasov
+29,"Tue, Jan 2",Home,Boston,401559804,L,4-1,12-19-8,Martin,Johnson
+29,"Thu, Jan 4",Away,Philadelphia,401559820,W,3-2 SO,13-19-8,Tarasov,Tarasov
+29,"Sat, Jan 6",Home,Minnesota,401559840,L,4-3 OT,13-19-9,Tarasov,Sillinger
+29,"Tue, Jan 9",Away,Winnipeg,401559859,L,5-0,13-20-9,Tarasov,Bemstrom
+29,"Sat, Jan 13",Home,Seattle,401559890,L,7-4,13-21-9,Tarasov,Provorov
+29,"Mon, Jan 15",Home,Vancouver,401559902,W,4-3 SO,14-21-9,Merzlikins,Voronkov
+29,"Fri, Jan 19",Home,New Jersey,401559933,L,4-1,14-22-9,Merzlikins,Sillinger
+29,"Tue, Jan 23",Away,Edmonton,401559965,L,4-1,14-23-9,Merzlikins,Voronkov
+29,"Thu, Jan 25",Away,Calgary,401559982,W,5-2,15-23-9,Tarasov,Tarasov
+29,"Sat, Jan 27",Away,Vancouver,401560001,L,5-4 OT,15-23-10,Merzlikins,Texier
+29,"Sun, Jan 28",Away,Seattle,401560003,L,4-2,15-24-10,Tarasov,Chinakhov
+9,"Thu, Oct 12",Home,St. Louis,401559250,W,2-1 SO,1-0-0,Oettinger,Oettinger
+9,"Tue, Oct 17",Away,Vegas,401559282,L,3-2 SO,1-0-1,Oettinger,Oettinger
+9,"Thu, Oct 19",Away,Anaheim,401559294,W,3-2,2-0-1,Oettinger,Heiskanen
+9,"Sat, Oct 21",Home,Philadelphia,401559309,W,5-4 OT,3-0-1,Wedgewood,Johnston
+9,"Tue, Oct 24",Away,Pittsburgh,401559323,W,4-1,4-0-1,Oettinger,Oettinger
+9,"Thu, Oct 26",Home,Toronto,401559343,L,4-1,4-1-1,Wedgewood,Marchment
+9,"Mon, Oct 30",Home,Columbus,401559370,W,5-3,5-1-1,Oettinger,Dadonov
+9,"Wed, Nov 1",Away,Calgary,401559376,W,4-3,6-1-1,Oettinger,Oettinger
+9,"Thu, Nov 2",Away,Edmonton,401559386,W,4-3,7-1-1,Wedgewood,Wedgewood
+9,"Sat, Nov 4",Away,Vancouver,401559404,L,2-0,7-2-1,Oettinger,Oettinger
+9,"Mon, Nov 6",Home,Boston,401559412,L,3-2,7-3-1,Oettinger,Heiskanen
+9,"Thu, Nov 9",Away,Columbus,401559431,W,5-2,8-3-1,Oettinger,Duchene
+9,"Sat, Nov 11",Away,Winnipeg,401559444,W,3-2,9-3-1,Wedgewood,Wedgewood
+9,"Sun, Nov 12",Away,Minnesota,401559456,W,8-3,10-3-1,Oettinger,Johnston
+9,"Tue, Nov 14",Home,Arizona,401559468,W,4-3 OT,11-3-1,Oettinger,Duchene
+9,"Sat, Nov 18",Home,Colorado,401559494,L,6-3,11-4-1,Oettinger,Seguin
+9,"Mon, Nov 20",Home,New York,401559504,W,6-3,12-4-1,Wedgewood,Hintz
+9,"Wed, Nov 22",Home,Vegas,401559518,L,2-1 OT,12-4-2,Oettinger,Robertson
+9,"Fri, Nov 24",Home,Calgary,401559534,L,7-4,12-5-2,Oettinger,Johnston
+9,"Tue, Nov 28",Away,Winnipeg,401559562,W,2-0,13-5-2,Oettinger,Oettinger
+9,"Thu, Nov 30",Away,Calgary,401559579,L,4-3 OT,13-5-3,Wedgewood,Marchment
+9,"Sat, Dec 2",Home,Tampa Bay,401559585,W,8-1,14-5-3,Oettinger,Oettinger
+9,"Mon, Dec 4",Away,Tampa Bay,401559604,L,4-0,14-6-3,Oettinger,Seguin
+9,"Wed, Dec 6",Away,Florida,401559618,L,5-4,14-7-3,Oettinger,Harley
+9,"Thu, Dec 7",Away,Washington,401559625,W,5-4 SO,15-7-3,Wedgewood,Hintz
+9,"Sat, Dec 9",Home,Vegas,401559638,L,6-1,15-8-3,Oettinger,Benn
+9,"Mon, Dec 11",Home,Detroit,401559659,W,6-3,16-8-3,Oettinger,Heiskanen
+9,"Fri, Dec 15",Home,Ottawa,401559687,W,5-4,17-8-3,Wedgewood,Duchene
+9,"Sat, Dec 16",Away,St. Louis,401559697,L,4-3 OT,17-8-4,Wedgewood,Marchment
+9,"Mon, Dec 18",Home,Seattle,401559711,W,4-3 OT,18-8-4,Wedgewood,Duchene
+9,"Thu, Dec 21",Home,Vancouver,401559734,W,4-3 OT,19-8-4,Wedgewood,Duchene
+9,"Sat, Dec 23",Away,Nashville,401559744,W,3-2,20-8-4,Wedgewood,Hakanpaa
+9,"Wed, Dec 27",Away,St. Louis,401559763,L,2-1,20-9-4,Wedgewood,Wedgewood
+9,"Fri, Dec 29",Home,Chicago,401559781,W,5-4 OT,21-9-4,Wedgewood,Hintz
+9,"Sun, Dec 31",Home,Chicago,401559798,W,8-1,22-9-4,Wedgewood,Marchment
+9,"Tue, Jan 2",Home,Montreal,401559806,L,4-3,22-10-4,Wedgewood,Johnston
+9,"Thu, Jan 4",Home,Colorado,401559823,L,5-4 OT,22-10-5,Wedgewood,Seguin
+9,"Sat, Jan 6",Home,Nashville,401559842,L,4-3,22-11-5,Wedgewood,Robertson
+9,"Mon, Jan 8",Away,Minnesota,401559851,W,4-0,23-11-5,Murray,Murray
+9,"Wed, Jan 10",Home,Minnesota,401559864,W,7-2,24-11-5,Wedgewood,Lindell
+9,"Fri, Jan 12",Home,Nashville,401559879,L,6-3,24-12-5,Oettinger,Duchene
+9,"Sat, Jan 13",Away,Chicago,401559892,W,3-1,25-12-5,Oettinger,Oettinger
+9,"Tue, Jan 16",Home,Los Angeles,401559912,W,5-1,26-12-5,Oettinger,Oettinger
+9,"Thu, Jan 18",Away,Philadelphia,401559923,L,5-1,26-13-5,Oettinger,Seguin
+9,"Sat, Jan 20",Away,New Jersey,401559940,W,6-2,27-13-5,Wedgewood,Hintz
+9,"Sun, Jan 21",Away,New York,401559950,L,3-2 OT,27-13-6,Wedgewood,Pavelski
+9,"Tue, Jan 23",Away,Detroit,401559960,W,5-4,28-13-6,Oettinger,Hintz
+9,"Thu, Jan 25",Home,Anaheim,401559980,W,4-3 OT,29-13-6,Oettinger,Harley
+5,"Thu, Oct 12",Away,New Jersey,401559247,L,4-3,0-1-0,Husso,Larkin
+5,"Sat, Oct 14",Home,Tampa Bay,401559260,W,6-4,1-1-0,Husso,DeBrincat
+5,"Mon, Oct 16",Away,Columbus,401559274,W,4-0,2-1-0,Reimer,Reimer
+5,"Wed, Oct 18",Home,Pittsburgh,401559285,W,6-3,3-1-0,Husso,DeBrincat
+5,"Sat, Oct 21",Away,Ottawa,401559300,W,5-2,4-1-0,Husso,Husso
+5,"Sun, Oct 22",Home,Calgary,401559315,W,6-2,5-1-0,Reimer,DeBrincat
+5,"Tue, Oct 24",Home,Seattle,401559326,L,5-4 OT,5-1-1,Husso,Gostisbehere
+5,"Thu, Oct 26",Home,Winnipeg,401559337,L,4-1,5-2-1,Reimer,Raymond
+5,"Sat, Oct 28",Away,Boston,401559354,L,4-1,5-3-1,Husso,Sprong
+5,"Mon, Oct 30",Away,New York,401559368,W,4-3 OT,6-3-1,Husso,Walman
+5,"Thu, Nov 2",Home,Florida,401559381,L,2-0,6-4-1,Reimer,Reimer
+5,"Sat, Nov 4",Home,Boston,401559397,W,5-4,7-4-1,Husso,Perron
+5,"Tue, Nov 7",Away,New York,401559416,L,5-3,7-5-1,Husso,Chiarot
+5,"Thu, Nov 9",Home,Montreal,401559428,L,3-2 OT,7-5-2,Reimer,Fischer
+5,"Sat, Nov 11",Home,Columbus,401559443,W,5-4,8-5-2,Husso,Fischer
+5,"Thu, Nov 16",Home,Ottawa *,401555904,L,5-4 OT,8-5-3,Reimer,Gostisbehere
+5,"Fri, Nov 17",Home,Toronto *,401555905,L,3-2,8-6-3,Lyon,Sprong
+5,"Wed, Nov 22",Home,New Jersey,401559508,W,4-0,9-6-3,Lyon,Lyon
+5,"Fri, Nov 24",Away,Boston,401559522,W,5-2,10-6-3,Husso,DeBrincat
+5,"Sun, Nov 26",Home,Minnesota,401559545,W,4-1,11-6-3,Lyon,Lyon
+5,"Wed, Nov 29",Away,New York,401559567,L,3-2,11-7-3,Husso,Husso
+5,"Thu, Nov 30",Home,Chicago,401559572,W,5-1,12-7-3,Lyon,Lyon
+5,"Sat, Dec 2",Away,Montreal,401559590,W,5-4 OT,13-7-3,Husso,Walman
+5,"Tue, Dec 5",Away,Buffalo,401559609,W,5-3,14-7-3,Lyon,Rasmussen
+5,"Thu, Dec 7",Home,San Jose,401559624,L,6-5 OT,14-7-4,Husso,Chiarot
+5,"Sat, Dec 9",Home,Ottawa,401559642,L,5-1,14-8-4,Lyon,Reimer
+5,"Mon, Dec 11",Away,Dallas,401559659,L,6-3,14-9-4,Reimer,Gostisbehere
+5,"Tue, Dec 12",Away,St. Louis,401559664,W,6-4,15-9-4,Husso,Rasmussen
+5,"Thu, Dec 14",Home,Carolina,401559677,L,2-1,15-10-4,Husso,Husso
+5,"Sat, Dec 16",Away,Philadelphia,401559694,L,1-0,15-11-4,Lyon,Husso
+5,"Mon, Dec 18",Home,Anaheim,401559708,L,4-3,15-12-4,Reimer,Kane
+5,"Wed, Dec 20",Away,Winnipeg,401559725,L,5-2,15-13-4,Reimer,Kane
+5,"Fri, Dec 22",Home,Philadelphia,401559739,W,7-6 SO,16-13-4,Reimer,Kane
+5,"Sat, Dec 23",Away,New Jersey,401559746,L,3-2,16-14-4,Hutchinson,Kane
+5,"Wed, Dec 27",Away,Minnesota,401559765,L,6-3,16-15-4,Reimer,DeBrincat
+5,"Fri, Dec 29",Home,Nashville,401559776,W,5-4 OT,17-15-4,Lyon,Walman
+5,"Sun, Dec 31",Home,Boston,401559794,L,5-3,17-16-4,Lyon,Walman
+5,"Tue, Jan 2",Away,San Jose,401559814,W,5-3,18-16-4,Lyon,Perron
+5,"Thu, Jan 4",Away,Los Angeles,401559828,W,4-3 SO,19-16-4,Lyon,Lyon
+5,"Sun, Jan 7",Away,Anaheim,401559848,W,3-2,20-16-4,Lyon,Lyon
+5,"Thu, Jan 11",Home,Edmonton,401559868,L,3-2 OT,20-16-5,Lyon,Lyon
+5,"Sat, Jan 13",Home,Los Angeles,401559887,W,5-3,21-16-5,Lyon,Kane
+5,"Sun, Jan 14",Away,Toronto,401559898,W,4-2,22-16-5,Reimer,Reimer
+5,"Wed, Jan 17",Away,Florida,401559917,W,3-2 OT,23-16-5,Lyon,Lyon
+5,"Fri, Jan 19",Away,Carolina,401559932,L,4-2,23-17-5,Lyon,Sprong
+5,"Sun, Jan 21",Home,Tampa Bay,401559948,W,2-1,24-17-5,Lyon,Lyon
+5,"Tue, Jan 23",Home,Dallas,401559960,L,5-4,24-18-5,Lyon,Raymond
+5,"Thu, Jan 25",Home,Philadelphia,401559977,W,3-0,25-18-5,Lyon,Lyon
+5,"Sat, Jan 27",Home,Vegas,401559993,W,5-2,26-18-5,Lyon,Lyon
+6,"Wed, Oct 11",Away,Vancouver,401559243,L,8-1,0-1-0,Campbell,Draisaitl
+6,"Sat, Oct 14",Home,Vancouver,401559265,L,4-3,0-2-0,Skinner,Nugent-Hopkins
+6,"Tue, Oct 17",Away,Nashville,401559279,W,6-1,1-2-0,Campbell,Campbell
+6,"Thu, Oct 19",Away,Philadelphia,401559290,L,4-1,1-3-0,Campbell,Ceci
+6,"Sat, Oct 21",Home,Winnipeg,401559312,L,3-2 OT,1-3-1,Skinner,McDavid
+6,"Tue, Oct 24",Away,Minnesota,401559329,L,7-4,1-4-1,Campbell,Draisaitl
+6,"Thu, Oct 26",Home,New York,401559345,L,3-0,1-5-1,Skinner,Skinner
+6,"Sun, Oct 29",Home,Calgary *,401555903,W,5-2,2-5-1,Skinner,Kane
+6,"Thu, Nov 2",Home,Dallas,401559386,L,4-3,2-6-1,Skinner,Gagner
+6,"Sat, Nov 4",Home,Nashville,401559393,L,5-2,2-7-1,Campbell,Bouchard
+6,"Mon, Nov 6",Away,Vancouver,401559413,L,6-2,2-8-1,Skinner,Gagner
+6,"Thu, Nov 9",Away,San Jose,401559436,L,3-2,2-9-1,Skinner,Bouchard
+6,"Sat, Nov 11",Away,Seattle,401559453,W,4-1,3-9-1,Skinner,Hyman
+6,"Mon, Nov 13",Home,New York,401559460,W,4-1,4-9-1,Skinner,Skinner
+6,"Wed, Nov 15",Home,Seattle,401559472,W,4-3 OT,5-9-1,Skinner,Kane
+6,"Sat, Nov 18",Away,Tampa Bay,401559486,L,6-4,5-10-1,Skinner,Ryan
+6,"Mon, Nov 20",Away,Florida,401559502,L,5-3,5-11-1,Pickard,McDavid
+6,"Wed, Nov 22",Away,Carolina,401559513,L,6-3,5-12-1,Skinner,Hyman
+6,"Fri, Nov 24",Away,Washington,401559525,W,5-0,6-12-1,Skinner,Skinner
+6,"Sun, Nov 26",Home,Anaheim,401559549,W,8-2,7-12-1,Skinner,McDavid
+6,"Tue, Nov 28",Home,Vegas,401559564,W,5-4 SO,8-12-1,Skinner,McDavid
+6,"Thu, Nov 30",Away,Winnipeg,401559578,W,3-1,9-12-1,Skinner,Skinner
+6,"Wed, Dec 6",Home,Carolina,401559620,W,6-1,10-12-1,Skinner,Skinner
+6,"Fri, Dec 8",Home,Minnesota,401559636,W,4-3,11-12-1,Skinner,Nugent-Hopkins
+6,"Sun, Dec 10",Home,New Jersey,401559650,W,4-1,12-12-1,Pickard,Pickard
+6,"Tue, Dec 12",Home,Chicago,401559666,W,4-1,13-12-1,Skinner,Gagner
+6,"Thu, Dec 14",Home,Tampa Bay,401559681,L,7-4,13-13-1,Skinner,Nugent-Hopkins
+6,"Sat, Dec 16",Home,Florida,401559701,L,5-1,13-14-1,Pickard,Hyman
+6,"Tue, Dec 19",Away,New York,401559719,L,3-1,13-15-1,Skinner,Ekholm
+6,"Thu, Dec 21",Away,New Jersey,401559730,W,6-3,14-15-1,Pickard,McLeod
+6,"Fri, Dec 22",Away,New York,401559740,W,4-3,15-15-1,Skinner,Foegele
+6,"Thu, Dec 28",Away,San Jose,401559774,W,5-0,16-15-1,Skinner,Skinner
+6,"Sat, Dec 30",Away,Los Angeles,401559792,W,3-2 SO,17-15-1,Skinner,McDavid
+6,"Sun, Dec 31",Away,Anaheim,401559801,W,7-2,18-15-1,Pickard,Foegele
+6,"Tue, Jan 2",Home,Philadelphia,401559810,W,5-2,19-15-1,Skinner,McDavid
+6,"Sat, Jan 6",Home,Ottawa,401559843,W,3-1,20-15-1,Skinner,Hyman
+6,"Tue, Jan 9",Away,Chicago,401559860,W,2-1,21-15-1,Skinner,Skinner
+6,"Thu, Jan 11",Away,Detroit,401559868,W,3-2 OT,22-15-1,Pickard,Hyman
+6,"Sat, Jan 13",Away,Montreal,401559886,W,2-1 OT,23-15-1,Skinner,Skinner
+6,"Tue, Jan 16",Home,Toronto,401559916,W,4-2,24-15-1,Skinner,McLeod
+6,"Thu, Jan 18",Home,Seattle,401559927,W,4-2,25-15-1,Skinner,Draisaitl
+6,"Sat, Jan 20",Away,Calgary,401559943,W,3-1,26-15-1,Skinner,Skinner
+6,"Tue, Jan 23",Home,Columbus,401559965,W,4-1,27-15-1,Skinner,Skinner
+6,"Thu, Jan 25",Home,Chicago,401559983,W,3-0,28-15-1,Pickard,Pickard
+26,"Thu, Oct 12",Away,Minnesota,401559251,L,2-0,0-1-0,Bobrovsky,Tkachuk
+26,"Sat, Oct 14",Away,Winnipeg,401559256,L,6-4,0-2-0,Bobrovsky,Rodrigues
+26,"Mon, Oct 16",Away,New Jersey,401559271,W,4-3,1-2-0,Bobrovsky,Reinhart
+26,"Thu, Oct 19",Home,Toronto,401559288,W,3-1,2-2-0,Bobrovsky,Bobrovsky
+26,"Sat, Oct 21",Home,Vancouver,401559305,L,5-3,2-3-0,Bobrovsky,Reinhart
+26,"Tue, Oct 24",Home,San Jose,401559324,W,3-1,3-3-0,Stolarz,Stolarz
+26,"Sat, Oct 28",Home,Seattle,401559353,W,3-2,4-3-0,Bobrovsky,Bobrovsky
+26,"Mon, Oct 30",Away,Boston,401559365,L,3-2 OT,4-3-1,Bobrovsky,Reinhart
+26,"Thu, Nov 2",Away,Detroit,401559381,W,2-0,5-3-1,Bobrovsky,Bobrovsky
+26,"Sat, Nov 4",Away,Chicago,401559402,L,5-2,5-4-1,Stolarz,Verhaeghe
+26,"Mon, Nov 6",Home,Columbus,401559411,W,5-4 OT,6-4-1,Bobrovsky,Reinhart
+26,"Wed, Nov 8",Away,Washington,401559424,W,4-3 OT,7-4-1,Bobrovsky,Reinhart
+26,"Fri, Nov 10",Home,Carolina,401559439,W,5-2,8-4-1,Bobrovsky,Barkov
+26,"Sun, Nov 12",Home,Chicago,401559455,W,4-3,9-4-1,Bobrovsky,Reinhart
+26,"Tue, Nov 14",Away,San Jose,401559470,W,5-3,10-4-1,Stolarz,Barkov
+26,"Thu, Nov 16",Away,Los Angeles,401559481,L,2-1,10-5-1,Bobrovsky,Bobrovsky
+26,"Fri, Nov 17",Away,Anaheim,401559484,W,2-1,11-5-1,Stolarz,Stolarz
+26,"Mon, Nov 20",Home,Edmonton,401559502,W,5-3,12-5-1,Bobrovsky,Stenlund
+26,"Wed, Nov 22",Home,Boston,401559510,L,3-1,12-6-1,Bobrovsky,Lundell
+26,"Fri, Nov 24",Home,Winnipeg,401559533,L,3-0,12-7-1,Bobrovsky,Bobrovsky
+26,"Mon, Nov 27",Away,Ottawa,401559550,W,5-0,13-7-1,Bobrovsky,Bobrovsky
+26,"Tue, Nov 28",Away,Toronto,401559557,L,2-1 SO,13-7-2,Stolarz,Stolarz
+26,"Thu, Nov 30",Away,Montreal,401559571,W,5-1,14-7-2,Bobrovsky,Bobrovsky
+26,"Sat, Dec 2",Home,New York,401559588,L,4-3,14-8-2,Stolarz,Verhaeghe
+26,"Wed, Dec 6",Home,Dallas,401559618,W,5-4,15-8-2,Bobrovsky,Rodrigues
+26,"Fri, Dec 8",Home,Pittsburgh,401559634,W,3-1,16-8-2,Bobrovsky,Bobrovsky
+26,"Sun, Dec 10",Away,Columbus,401559649,W,5-2,17-8-2,Stolarz,Barkov
+26,"Tue, Dec 12",Away,Seattle,401559669,L,4-0,17-9-2,Bobrovsky,Forsling
+26,"Thu, Dec 14",Away,Vancouver,401559682,L,4-0,17-10-2,Bobrovsky,Barkov
+26,"Sat, Dec 16",Away,Edmonton,401559701,W,5-1,18-10-2,Bobrovsky,Bobrovsky
+26,"Mon, Dec 18",Away,Calgary,401559712,L,3-1,18-11-2,Stolarz,Stolarz
+26,"Thu, Dec 21",Home,St. Louis,401559729,L,4-1,18-12-2,Bobrovsky,Luostarinen
+26,"Sat, Dec 23",Home,Vegas,401559743,W,4-2,19-12-2,Bobrovsky,Verhaeghe
+26,"Wed, Dec 27",Away,Tampa Bay,401559758,W,3-2,20-12-2,Bobrovsky,Reinhart
+26,"Fri, Dec 29",Home,New York,401559777,W,4-3,21-12-2,Bobrovsky,Barkov
+26,"Sat, Dec 30",Home,Montreal,401559789,W,4-1,22-12-2,Stolarz,Luostarinen
+26,"Tue, Jan 2",Away,Arizona,401559811,W,4-1,23-12-2,Bobrovsky,Verhaeghe
+26,"Thu, Jan 4",Away,Vegas,401559826,W,4-1,24-12-2,Bobrovsky,Tkachuk
+26,"Sat, Jan 6",Away,Colorado,401559834,W,8-4,25-12-2,Bobrovsky,Reinhart
+26,"Tue, Jan 9",Away,St. Louis,401559857,W,5-1,26-12-2,Stolarz,Tkachuk
+26,"Thu, Jan 11",Home,Los Angeles,401559870,W,3-2 OT,27-12-2,Bobrovsky,Bobrovsky
+26,"Sat, Jan 13",Home,New Jersey,401559884,L,4-1,27-13-2,Bobrovsky,Forsling
+26,"Mon, Jan 15",Home,Anaheim,401559901,L,5-4 OT,27-13-3,Stolarz,Verhaeghe
+26,"Wed, Jan 17",Home,Detroit,401559917,L,3-2 OT,27-13-4,Bobrovsky,Reinhart
+26,"Fri, Jan 19",Home,Minnesota,401559931,L,6-4,27-14-4,Stolarz,Ekblad
+26,"Mon, Jan 22",Away,Nashville,401559955,W,4-1,28-14-4,Stolarz,Tkachuk
+26,"Wed, Jan 24",Home,Arizona,401559969,W,6-2,29-14-4,Bobrovsky,Tkachuk
+26,"Fri, Jan 26",Away,Pittsburgh,401559985,W,3-2 SO,30-14-4,Bobrovsky,Bobrovsky
+8,"Wed, Oct 11",Home,Colorado,401559244,L,5-2,0-1-0,Talbot,Byfield
+8,"Sat, Oct 14",Home,Carolina,401559268,L,6-5 SO,0-1-1,Copley,Fiala
+8,"Tue, Oct 17",Away,Winnipeg,401559280,W,5-1,1-1-1,Talbot,Moore
+8,"Thu, Oct 19",Away,Minnesota,401559292,W,7-3,2-1-1,Talbot,Dubois
+8,"Sat, Oct 21",Home,Boston,401559314,L,4-2,2-2-1,Talbot,Roy
+8,"Tue, Oct 24",Home,Arizona,401559332,W,6-3,3-2-1,Copley,Lizotte
+8,"Fri, Oct 27",Away,Arizona,401559351,W,5-4,4-2-1,Talbot,Doughty
+8,"Sat, Oct 28",Home,Vegas,401559361,L,4-3 SO,4-2-2,Talbot,Doughty
+8,"Tue, Oct 31",Away,Toronto,401559374,W,4-1,5-2-2,Talbot,Talbot
+8,"Thu, Nov 2",Away,Ottawa,401559380,W,3-2,6-2-2,Talbot,Kempe
+8,"Sat, Nov 4",Away,Philadelphia,401559398,W,5-0,7-2-2,Talbot,Talbot
+8,"Wed, Nov 8",Away,Vegas,401559425,W,4-1,8-2-2,Talbot,Talbot
+8,"Thu, Nov 9",Home,Pittsburgh,401559435,L,4-3 OT,8-2-3,Copley,Kempe
+8,"Sat, Nov 11",Home,Philadelphia,401559454,L,4-2,8-3-3,Talbot,Lewis
+8,"Thu, Nov 16",Home,Florida,401559481,W,2-1,9-3-3,Talbot,Talbot
+8,"Sat, Nov 18",Home,St. Louis,401559496,W,5-1,10-3-3,Talbot,Talbot
+8,"Mon, Nov 20",Away,Arizona,401559505,W,4-1,11-3-3,Copley,Copley
+8,"Fri, Nov 24",Away,Anaheim,401559528,W,5-2,12-3-3,Talbot,Talbot
+8,"Sat, Nov 25",Home,Montreal,401559538,W,4-0,13-3-3,Copley,Copley
+8,"Wed, Nov 29",Home,Washington,401559568,L,2-1,13-4-3,Talbot,Kaliyev
+8,"Sun, Dec 3",Home,Colorado,401559602,W,4-1,14-4-3,Talbot,Byfield
+8,"Tue, Dec 5",Away,Columbus,401559611,W,4-3 OT,15-4-3,Copley,Danault
+8,"Thu, Dec 7",Away,Montreal,401559622,W,4-0,16-4-3,Talbot,Talbot
+8,"Sat, Dec 9",Away,New York,401559644,L,3-2 OT,16-4-4,Talbot,Fiala
+8,"Sun, Dec 10",Away,New York,401559652,L,4-1,16-5-4,Copley,Danault
+8,"Wed, Dec 13",Home,Winnipeg,401559675,L,5-2,16-6-4,Talbot,Kopitar
+8,"Sat, Dec 16",Away,Seattle,401559702,W,3-2 SO,17-6-4,Talbot,Moore
+8,"Tue, Dec 19",Away,San Jose,401559723,W,4-1,18-6-4,Rittich,Fiala
+8,"Wed, Dec 20",Home,Seattle,401559726,L,2-1,18-7-4,Talbot,Talbot
+8,"Sat, Dec 23",Home,Calgary,401559756,W,5-3,19-7-4,Talbot,Byfield
+8,"Wed, Dec 27",Home,San Jose,401559770,W,5-1,20-7-4,Rittich,Rittich
+8,"Thu, Dec 28",Away,Vegas,401559773,L,3-2,20-8-4,Talbot,Kopitar
+8,"Sat, Dec 30",Home,Edmonton,401559792,L,3-2 SO,20-8-5,Talbot,Kempe
+8,"Tue, Jan 2",Home,Toronto,401559813,L,3-0,20-9-5,Talbot,Talbot
+8,"Thu, Jan 4",Home,Detroit,401559828,L,4-3 SO,20-9-6,Rittich,Kempe
+8,"Sun, Jan 7",Away,Washington,401559845,L,4-3,20-10-6,Talbot,Fiala
+8,"Tue, Jan 9",Away,Tampa Bay,401559855,L,3-2 OT,20-10-7,Talbot,Moore
+8,"Thu, Jan 11",Away,Florida,401559870,L,3-2 OT,20-10-8,Talbot,Talbot
+8,"Sat, Jan 13",Away,Detroit,401559887,L,5-3,20-11-8,Talbot,Byfield
+8,"Mon, Jan 15",Away,Carolina,401559904,W,5-2,21-11-8,Rittich,Danault
+8,"Tue, Jan 16",Away,Dallas,401559912,L,5-1,21-12-8,Talbot,Danault
+8,"Thu, Jan 18",Home,Nashville,401559928,L,2-1,21-13-8,Rittich,Rittich
+8,"Sat, Jan 20",Home,New York,401559946,W,2-1,22-13-8,Rittich,Rittich
+8,"Mon, Jan 22",Home,San Jose,401559958,L,4-3 SO,22-13-9,Rittich,Fiala
+8,"Wed, Jan 24",Home,Buffalo,401559974,L,5-3,22-14-9,Talbot,Kempe
+8,"Fri, Jan 26",Away,Colorado,401559986,L,5-1,22-15-9,Talbot,Laferriere
+8,"Sun, Jan 28",Away,St. Louis,401560002,L,4-3 OT,22-15-10,Rittich,Anderson-Dolan
+30,"Thu, Oct 12",Home,Florida,401559251,W,2-0,1-0-0,Gustavsson,Gustavsson
+30,"Sat, Oct 14",Away,Toronto,401559258,L,7-4,1-1-0,Gustavsson,Faber
+30,"Tue, Oct 17",Away,Montreal,401559276,W,5-2,2-1-0,Fleury,Eriksson Ek
+30,"Thu, Oct 19",Home,Los Angeles,401559292,L,7-3,2-2-0,Fleury,Brodin
+30,"Sat, Oct 21",Home,Columbus,401559310,L,5-4 OT,2-2-0,Gustavsson,Maroon
+30,"Tue, Oct 24",Home,Edmonton,401559329,W,7-4,3-2-1,Gustavsson,Hartman
+30,"Thu, Oct 26",Away,Philadelphia,401559339,L,6-2,3-3-1,Gustavsson,Foligno
+30,"Fri, Oct 27",Away,Washington,401559348,L,3-2 SO,3-3-2,Fleury,Fleury
+30,"Sun, Oct 29",Away,New Jersey,401559362,L,4-3,3-4-2,Fleury,Maroon
+30,"Thu, Nov 2",Home,New Jersey,401559385,L,5-3,3-5-2,Gustavsson,Rossi
+30,"Sat, Nov 4",Home,New York,401559403,W,5-4 SO,4-5-2,Fleury,Zuccarello
+30,"Tue, Nov 7",Away,New York,401559415,W,4-2,5-5-2,Fleury,Eriksson Ek
+30,"Thu, Nov 9",Away,New York,401559430,L,4-1,5-6-2,Fleury,Hartman
+30,"Fri, Nov 10",Away,Buffalo,401559437,L,3-2,5-7-2,Gustavsson,Zuccarello
+30,"Sun, Nov 12",Home,Dallas,401559456,L,8-3,5-8-2,Fleury,Duhaime
+30,"Sat, Nov 18",Home,Ottawa *,401555906,L,2-1 SO,5-8-3,Gustavsson,Gustavsson
+30,"Sun, Nov 19",Home,Toronto *,401555907,L,4-3 OT,5-8-4,Fleury,Zuccarello
+30,"Fri, Nov 24",Home,Colorado,401559535,L,3-2,5-9-4,Gustavsson,Eriksson Ek
+30,"Sun, Nov 26",Away,Detroit,401559545,L,4-1,5-10-4,Gustavsson,Eriksson Ek
+30,"Tue, Nov 28",Home,St. Louis,401559561,W,3-1,6-10-4,Gustavsson,Gustavsson
+30,"Thu, Nov 30",Away,Nashville,401559577,W,6-1,7-10-4,Gustavsson,Dewar
+30,"Sun, Dec 3",Home,Chicago,401559598,W,4-1,8-10-4,Fleury,Fleury
+30,"Tue, Dec 5",Away,Calgary,401559615,W,5-2,9-10-4,Gustavsson,Boldy
+30,"Thu, Dec 7",Away,Vancouver,401559632,L,2-0,9-11-4,Gustavsson,Eriksson Ek
+30,"Fri, Dec 8",Away,Edmonton,401559636,L,4-3,9-12-4,Fleury,Boldy
+30,"Sun, Dec 10",Away,Seattle,401559655,W,3-0,10-12-4,Gustavsson,Gustavsson
+30,"Thu, Dec 14",Home,Calgary,401559680,W,3-2 SO,11-12-4,Gustavsson,Gustavsson
+30,"Sat, Dec 16",Home,Vancouver,401559690,W,2-1 SO,12-12-4,Gustavsson,Gustavsson
+30,"Mon, Dec 18",Away,Pittsburgh,401559709,L,4-3,12-13-4,Gustavsson,Faber
+30,"Tue, Dec 19",Away,Boston,401559713,W,4-3 OT,13-13-4,Fleury,Kaprizov
+30,"Thu, Dec 21",Home,Montreal,401559735,W,4-3 OT,14-13-4,Gustavsson,Kaprizov
+30,"Sat, Dec 23",Home,Boston,401559750,W,3-2,15-13-4,Fleury,Eriksson Ek
+30,"Wed, Dec 27",Home,Detroit,401559765,W,6-3,16-13-4,Gustavsson,Johansson
+30,"Sat, Dec 30",Away,Winnipeg,401559784,L,4-2,16-14-4,Gustavsson,Boldy
+30,"Sun, Dec 31",Home,Winnipeg,401559793,L,3-2,16-15-4,Fleury,Gaudreau
+30,"Tue, Jan 2",Home,Calgary,401559807,L,3-1,16-16-4,Fleury,Fleury
+30,"Thu, Jan 4",Home,Tampa Bay,401559824,L,4-1,16-17-4,Fleury,Bogosian
+30,"Sat, Jan 6",Away,Columbus,401559840,W,4-3 OT,17-17-4,Fleury,Boldy
+30,"Mon, Jan 8",Home,Dallas,401559851,L,4-0,17-18-4,Fleury,Bogosian
+30,"Wed, Jan 10",Away,Dallas,401559864,L,7-2,17-19-4,Wallstedt,Boldy
+30,"Fri, Jan 12",Home,Philadelphia,401559880,L,4-3 OT,17-19-5,Fleury,Hartman
+30,"Sat, Jan 13",Home,Arizona,401559895,L,6-0,17-20-5,Gustavsson,Fleury
+30,"Mon, Jan 15",Home,New York,401559903,W,5-0,18-20-5,Fleury,Fleury
+30,"Thu, Jan 18",Away,Tampa Bay,401559922,L,7-3,18-21-5,Gustavsson,Middleton
+30,"Fri, Jan 19",Away,Florida,401559931,W,6-4,19-21-5,Gustavsson,Eriksson Ek
+30,"Sun, Jan 21",Away,Carolina,401559949,W,5-2,20-21-5,Gustavsson,Gustavsson
+30,"Tue, Jan 23",Home,Washington,401559963,W,5-3,21-21-5,Gustavsson,Eriksson Ek
+30,"Thu, Jan 25",Home,Nashville,401559981,L,3-2,21-22-5,Gustavsson,Kaprizov
+10,"Wed, Oct 11",Away,Toronto,401559239,L,6-5 SO,0-0-1,Allen,Dach
+10,"Sat, Oct 14",Home,Chicago,401559259,W,3-2,1-0-1,Montembeault,Monahan
+10,"Tue, Oct 17",Home,Minnesota,401559276,L,5-2,1-1-1,Montembeault,Caufield
+10,"Sat, Oct 21",Home,Washington,401559303,W,3-2 OT,2-1-1,Allen,Allen
+10,"Mon, Oct 23",Away,Buffalo,401559317,W,3-1,3-1-1,Allen,Allen
+10,"Tue, Oct 24",Home,New Jersey,401559322,L,5-2,3-2-1,Primeau,Matheson
+10,"Thu, Oct 26",Home,Columbus,401559336,W,4-3 OT,4-2-1,Montembeault,Caufield
+10,"Sat, Oct 28",Home,Winnipeg,401559356,W,4-3 SO,5-2-1,Allen,Allen
+10,"Mon, Oct 30",Away,Vegas,401559372,L,3-2 SO,5-2-2,Montembeault,Monahan
+10,"Thu, Nov 2",Away,Arizona,401559387,L,3-2,5-3-2,Allen,Gallagher
+10,"Sat, Nov 4",Away,St. Louis,401559400,L,6-3,5-4-2,Montembeault,Caufield
+10,"Tue, Nov 7",Home,Tampa Bay,401559414,L,5-3,5-5-2,Allen,Montembeault
+10,"Thu, Nov 9",Away,Detroit,401559428,W,3-2 OT,6-5-2,Primeau,Matheson
+10,"Sat, Nov 11",Home,Boston,401559446,W,3-2 OT,7-5-2,Montembeault,Guhle
+10,"Sun, Nov 12",Home,Vancouver,401559457,L,5-2,7-6-2,Allen,Xhekaj
+10,"Tue, Nov 14",Home,Calgary,401559463,L,2-1,7-7-2,Montembeault,Montembeault
+10,"Thu, Nov 16",Home,Vegas,401559475,L,6-5,7-8-2,Primeau,Ylonen
+10,"Sat, Nov 18",Away,Boston,401559487,L,5-2,7-9-2,Allen,Slafkovsky
+10,"Wed, Nov 22",Away,Anaheim,401559520,W,4-3,8-9-2,Montembeault,Newhook
+10,"Fri, Nov 24",Away,San Jose,401559529,W,3-2 SO,9-9-2,Primeau,Caufield
+10,"Sat, Nov 25",Away,Los Angeles,401559538,L,4-0,9-10-2,Allen,Monahan
+10,"Wed, Nov 29",Away,Columbus,401559566,W,4-2,10-10-2,Montembeault,Armia
+10,"Thu, Nov 30",Home,Florida,401559571,L,5-1,10-11-2,Primeau,Caufield
+10,"Sat, Dec 2",Home,Detroit,401559590,L,5-4 OT,10-11-3,Allen,Armia
+10,"Mon, Dec 4",Home,Seattle,401559603,W,4-2,11-11-3,Montembeault,Monahan
+10,"Thu, Dec 7",Home,Los Angeles,401559622,L,4-0,11-12-3,Montembeault,Montembeault
+10,"Sat, Dec 9",Away,Buffalo,401559640,W,3-2 SO,12-12-3,Primeau,Primeau
+10,"Sun, Dec 10",Home,Nashville,401559651,L,2-1,12-13-3,Allen,Allen
+10,"Wed, Dec 13",Home,Pittsburgh,401559671,L,4-3 SO,12-13-4,Montembeault,Matheson
+10,"Sat, Dec 16",Home,New York,401559693,W,5-3,13-13-4,Montembeault,Barron
+10,"Mon, Dec 18",Away,Winnipeg,401559710,W,3-2 OT,14-13-4,Allen,Allen
+10,"Thu, Dec 21",Away,Minnesota,401559735,L,4-3 OT,14-13-5,Montembeault,Suzuki
+10,"Fri, Dec 22",Away,Chicago,401559742,W,5-2,15-13-5,Primeau,Savard
+10,"Thu, Dec 28",Away,Carolina,401559771,L,5-3,15-14-5,Primeau,Anderson
+10,"Sat, Dec 30",Away,Florida,401559789,L,4-1,15-15-5,Allen,Caufield
+10,"Sun, Dec 31",Away,Tampa Bay,401559797,L,4-3,15-16-5,Montembeault,Caufield
+10,"Tue, Jan 2",Away,Dallas,401559806,W,4-3,16-16-5,Montembeault,Caufield
+10,"Thu, Jan 4",Home,Buffalo,401559818,L,6-1,16-17-5,Allen,Armia
+10,"Sat, Jan 6",Home,New York,401559836,W,4-3 SO,17-17-5,Montembeault,Montembeault
+10,"Wed, Jan 10",Away,Philadelphia,401559863,L,3-2 SO,17-17-6,Primeau,Primeau
+10,"Thu, Jan 11",Home,San Jose,401559867,L,3-2,17-18-6,Montembeault,Matheson
+10,"Sat, Jan 13",Home,Edmonton,401559886,L,2-1 OT,17-18-7,Montembeault,Montembeault
+10,"Mon, Jan 15",Home,Colorado,401559905,W,4-3,18-18-7,Allen,Allen
+10,"Wed, Jan 17",Away,New Jersey,401559918,W,3-2,19-18-7,Montembeault,Caufield
+10,"Thu, Jan 18",Away,Ottawa,401559921,L,6-2,19-19-7,Primeau,Caufield
+10,"Sat, Jan 20",Away,Boston,401559939,L,9-4,19-20-7,Montembeault,Monahan
+10,"Tue, Jan 23",Home,Ottawa,401559959,L,4-1,19-21-7,Allen,Kovacevic
+10,"Thu, Jan 25",Home,New York,401559975,W,4-3,20-21-7,Montembeault,Monahan
+27,"Tue, Oct 10",Away,Tampa Bay,401559236,L,5-3,0-1-0,Saros,Forsberg
+27,"Thu, Oct 12",Home,Seattle,401559249,W,3-0,1-1-0,Saros,Saros
+27,"Sat, Oct 14",Away,Boston,401559257,L,3-2,1-2-0,Saros,Sissons
+27,"Tue, Oct 17",Home,Edmonton,401559279,L,6-1,1-3-0,Saros,Novak
+27,"Thu, Oct 19",Away,New York,401559289,W,4-1,2-3-0,Saros,Saros
+27,"Sat, Oct 21",Home,San Jose,401559308,W,5-1,3-3-0,Saros,Saros
+27,"Tue, Oct 24",Home,Vancouver,401559330,L,3-2,3-4-0,Saros,Sissons
+27,"Sat, Oct 28",Home,Toronto,401559359,W,3-2 OT,4-4-0,Saros,Saros
+27,"Tue, Oct 31",Away,Vancouver,401559373,L,5-2,4-5-0,Lankinen,Sissons
+27,"Thu, Nov 2",Away,Seattle,401559389,L,4-2,4-6-0,Saros,Novak
+27,"Sat, Nov 4",Away,Edmonton,401559393,W,5-2,5-6-0,Lankinen,O'Reilly
+27,"Tue, Nov 7",Away,Calgary,401559418,L,4-2,5-7-0,Saros,Saros
+27,"Thu, Nov 9",Away,Winnipeg,401559433,L,6-3,5-8-0,Saros,Forsberg
+27,"Sat, Nov 11",Home,Arizona,401559451,L,7-5,5-9-0,Saros,Forsberg
+27,"Tue, Nov 14",Home,Anaheim,401559467,L,3-2,5-10-0,Saros,Josi
+27,"Sat, Nov 18",Home,Chicago,401559493,W,4-2,6-10-0,Lankinen,Smith
+27,"Mon, Nov 20",Home,Colorado,401559503,W,4-3,7-10-0,Saros,Forsberg
+27,"Wed, Nov 22",Home,Calgary,401559516,W,4-2,8-10-0,Saros,Josi
+27,"Fri, Nov 24",Away,St. Louis,401559527,W,8-3,9-10-0,Lankinen,Forsberg
+27,"Sun, Nov 26",Home,Winnipeg,401559548,W,3-2,10-10-0,Saros,Josi
+27,"Tue, Nov 28",Home,Pittsburgh,401559560,W,3-2 OT,11-10-0,Saros,Forsberg
+27,"Thu, Nov 30",Home,Minnesota,401559577,L,6-1,11-11-0,Saros,Evangelista
+27,"Sat, Dec 2",Home,New York,401559587,L,4-3,11-12-0,Lankinen,O'Reilly
+27,"Sun, Dec 3",Away,Buffalo,401559601,W,2-1,12-12-0,Saros,Saros
+27,"Tue, Dec 5",Away,Chicago,401559613,W,4-3 SO,13-12-0,Saros,Sissons
+27,"Thu, Dec 7",Home,Tampa Bay,401559627,W,5-1,14-12-0,Saros,Saros
+27,"Sat, Dec 9",Away,Toronto,401559641,L,4-0,14-13-0,Lankinen,Lankinen
+27,"Sun, Dec 10",Away,Montreal,401559651,W,2-1,15-13-0,Saros,Saros
+27,"Tue, Dec 12",Home,Philadelphia,401559665,W,3-2 OT,16-13-0,Saros,Saros
+27,"Fri, Dec 15",Away,Carolina,401559685,W,6-5 OT,17-13-0,Lankinen,Josi
+27,"Sat, Dec 16",Home,Washington,401559698,W,3-1,18-13-0,Saros,Saros
+27,"Tue, Dec 19",Home,Vancouver,401559720,L,5-2,18-14-0,Saros,Lankinen
+27,"Thu, Dec 21",Away,Philadelphia,401559731,W,4-2,19-14-0,Saros,Tomasino
+27,"Sat, Dec 23",Home,Dallas,401559744,L,3-2,19-15-0,Saros,Saros
+27,"Wed, Dec 27",Home,Carolina,401559764,L,5-2,19-16-0,Saros,O'Reilly
+27,"Fri, Dec 29",Away,Detroit,401559776,L,5-4 OT,19-16-1,Saros,Forsberg
+27,"Sat, Dec 30",Away,Washington,401559791,W,3-2 SO,20-16-1,Askarov,Askarov
+27,"Tue, Jan 2",Home,Chicago,401559805,W,3-0,21-16-1,Saros,Saros
+27,"Thu, Jan 4",Home,Calgary,401559822,L,6-3,21-17-1,Saros,McCarron
+27,"Sat, Jan 6",Away,Dallas,401559842,W,4-3,22-17-1,Lankinen,Forsberg
+27,"Tue, Jan 9",Home,Anaheim,401559858,L,5-3,22-18-1,Saros,Gurianov
+27,"Fri, Jan 12",Away,Dallas,401559879,W,6-3,23-18-1,Lankinen,O'Reilly
+27,"Sat, Jan 13",Home,New York,401559894,W,3-1,24-18-1,Saros,Saros
+27,"Mon, Jan 15",Away,Vegas,401559908,L,4-1,24-19-1,Saros,Evangelista
+27,"Thu, Jan 18",Away,Los Angeles,401559928,W,2-1,25-19-1,Saros,Saros
+27,"Sat, Jan 20",Away,Arizona,401559938,L,3-2,25-20-1,Saros,Josi
+27,"Mon, Jan 22",Home,Florida,401559955,L,4-1,25-21-1,Saros,Saros
+27,"Thu, Jan 25",Away,Minnesota,401559981,W,3-2,26-21-1,Saros,Josi
+27,"Sat, Jan 27",Away,Edmonton,401559990,L,4-1,26-22-1,Lankinen,Forsberg
+27,"Mon, Jan 29",Away,Ottawa,401560004,L,4-3 OT,26-22-2,Saros,Josi
+11,"Thu, Oct 12",Home,Detroit,401559247,W,4-3,1-0-0,Vanecek,Siegenthaler
+11,"Fri, Oct 13",Home,Arizona,401559253,L,4-3 SO,1-0-1,Schmid,Hughes
+11,"Mon, Oct 16",Home,Florida,401559271,L,4-3,1-1-1,Vanecek,Haula
+11,"Fri, Oct 20",Away,New York,401559299,W,5-4 OT,2-1-1,Schmid,Hughes
+11,"Tue, Oct 24",Away,Montreal,401559322,W,5-2,3-1-1,Vanecek,Toffoli
+11,"Wed, Oct 25",Home,Washington,401559334,L,6-4,3-2-1,Vanecek,Toffoli
+11,"Fri, Oct 27",Home,Buffalo,401559347,W,5-4,4-2-1,Vanecek,Haula
+11,"Sun, Oct 29",Home,Minnesota,401559362,W,4-3,5-2-1,Vanecek,Bratt
+11,"Thu, Nov 2",Away,Minnesota,401559385,W,5-3,6-2-1,Vanecek,Bratt
+11,"Fri, Nov 3",Away,St. Louis,401559392,L,4-1,6-3-1,Schmid,Schmid
+11,"Sun, Nov 5",Away,Chicago,401559408,W,4-2,7-3-1,Vanecek,Vanecek
+11,"Tue, Nov 7",Away,Colorado,401559420,L,6-3,7-4-1,Vanecek,Hamilton
+11,"Fri, Nov 10",Home,Washington,401559440,L,4-2,7-5-1,Schmid,Schmid
+11,"Tue, Nov 14",Away,Winnipeg,401559469,L,6-3,7-6-1,Schmid,Lazar
+11,"Thu, Nov 16",Away,Pittsburgh,401559476,W,5-2,8-6-1,Vanecek,Bratt
+11,"Sat, Nov 18",Home,New York,401559488,L,5-3,8-7-1,Vanecek,Hughes
+11,"Wed, Nov 22",Away,Detroit,401559508,L,4-0,8-8-1,Vanecek,Hamilton
+11,"Fri, Nov 24",Home,Columbus,401559532,L,2-1,8-9-1,Schmid,Schmid
+11,"Sat, Nov 25",Home,Buffalo,401559539,W,7-2,9-9-1,Vanecek,Toffoli
+11,"Tue, Nov 28",Home,New York,401559558,W,5-4,10-9-1,Schmid,Hughes
+11,"Thu, Nov 30",Away,Philadelphia,401559574,W,4-3 OT,11-9-1,Schmid,Hughes
+11,"Fri, Dec 1",Home,San Jose,401559583,L,6-3,11-10-1,Schmid,Palat
+11,"Tue, Dec 5",Away,Vancouver,401559616,W,6-5,12-10-1,Vanecek,Hughes
+11,"Thu, Dec 7",Away,Seattle,401559633,W,2-1,13-10-1,Schmid,Schmid
+11,"Sat, Dec 9",Away,Calgary,401559639,W,4-2,14-10-1,Vanecek,Hischier
+11,"Sun, Dec 10",Away,Edmonton,401559650,L,4-1,14-11-1,Schmid,Mercer
+11,"Wed, Dec 13",Home,Boston,401559672,W,2-1 OT,15-11-1,Vanecek,Vanecek
+11,"Sat, Dec 16",Away,Columbus,401559695,W,6-3,16-11-1,Schmid,Hughes
+11,"Sun, Dec 17",Home,Anaheim,401559705,L,5-1,16-12-1,Schmid,Lazar
+11,"Tue, Dec 19",Home,Philadelphia,401559717,L,3-2 OT,16-12-2,Vanecek,McLeod
+11,"Thu, Dec 21",Home,Edmonton,401559730,L,6-3,16-13-2,Vanecek,McLeod
+11,"Sat, Dec 23",Home,Detroit,401559746,W,3-2,17-13-2,Vanecek,Meier
+11,"Wed, Dec 27",Home,Columbus,401559759,W,4-3 OT,18-13-2,Vanecek,Mercer
+11,"Fri, Dec 29",Away,Ottawa,401559775,W,6-2,19-13-2,Daws,Bratt
+11,"Sat, Dec 30",Away,Boston,401559786,L,5-2,19-14-2,Vanecek,Toffoli
+11,"Wed, Jan 3",Away,Washington,401559815,W,6-3,20-14-2,Daws,Hischier
+11,"Fri, Jan 5",Home,Chicago,401559830,W,4-2,21-14-2,Vanecek,Nemec
+11,"Sat, Jan 6",Home,Vancouver,401559837,L,6-4,21-15-2,Daws,Miller
+11,"Thu, Jan 11",Away,Tampa Bay,401559869,L,4-3 OT,21-15-3,Vanecek,Bastian
+11,"Sat, Jan 13",Away,Florida,401559884,W,4-1,22-15-3,Daws,Daws
+11,"Mon, Jan 15",Away,Boston,401559899,L,3-0,22-16-3,Daws,Daws
+11,"Wed, Jan 17",Home,Montreal,401559918,L,3-2,22-17-3,Daws,Holtz
+11,"Fri, Jan 19",Away,Columbus,401559933,W,4-1,23-17-3,Vanecek,Vanecek
+11,"Sat, Jan 20",Home,Dallas,401559940,L,6-2,23-18-3,Daws,Toffoli
+11,"Mon, Jan 22",Home,Vegas,401559954,W,6-5 OT,24-18-3,Vanecek,Toffoli
+11,"Thu, Jan 25",Away,Carolina,401559979,L,3-2,24-19-3,Daws,Dowling
+12,"Sat, Oct 14",Home,Buffalo,401559263,W,3-2,1-0-0,Sorokin,Nelson
+12,"Tue, Oct 17",Home,Arizona,401559278,W,1-0,2-0-0,Sorokin,Sorokin
+12,"Fri, Oct 20",Home,New Jersey,401559299,L,5-4 OT,2-0-1,Sorokin,Nelson
+12,"Sat, Oct 21",Away,Buffalo,401559302,L,3-1,2-1-1,Varlamov,Varlamov
+12,"Tue, Oct 24",Home,Colorado,401559325,L,7-4,2-2-1,Sorokin,Clutterbuck
+12,"Thu, Oct 26",Home,Ottawa,401559342,W,3-2,3-2-1,Sorokin,Sorokin
+12,"Sat, Oct 28",Away,Columbus,401559358,W,2-0,4-2-1,Varlamov,Varlamov
+12,"Mon, Oct 30",Home,Detroit,401559368,L,4-3 OT,4-2-2,Sorokin,Horvat
+12,"Thu, Nov 2",Away,Washington,401559383,W,3-0,5-2-2,Varlamov,Varlamov
+12,"Sat, Nov 4",Home,Carolina,401559401,L,4-3 OT,5-2-3,Sorokin,Barzal
+12,"Tue, Nov 7",Home,Minnesota,401559415,L,4-2,5-3-3,Varlamov,Dobson
+12,"Thu, Nov 9",Away,Boston,401559426,L,5-2,5-4-3,Sorokin,Holmstrom
+12,"Sat, Nov 11",Home,Washington,401559450,L,4-1,5-5-3,Varlamov,Romanov
+12,"Mon, Nov 13",Away,Edmonton,401559460,L,4-1,5-6-3,Sorokin,Barzal
+12,"Wed, Nov 15",Away,Vancouver,401559474,L,4-3 OT,5-6-4,Sorokin,Barzal
+12,"Thu, Nov 16",Away,Seattle,401559480,L,4-3 SO,5-6-5,Varlamov,Barzal
+12,"Sat, Nov 18",Away,Calgary,401559492,W,5-4 SO,6-6-5,Sorokin,Nelson
+12,"Wed, Nov 22",Home,Philadelphia,401559515,W,3-2,7-6-5,Sorokin,Sorokin
+12,"Fri, Nov 24",Away,Ottawa,401559531,W,5-3,8-6-5,Varlamov,Lee
+12,"Sat, Nov 25",Home,Philadelphia,401559541,L,1-0 SO,8-6-6,Sorokin,Sorokin
+12,"Tue, Nov 28",Away,New Jersey,401559558,L,5-4,8-7-6,Sorokin,Barzal
+12,"Thu, Nov 30",Away,Carolina,401559575,W,5-4 OT,9-7-6,Varlamov,Barzal
+12,"Sat, Dec 2",Away,Florida,401559588,W,4-3,10-7-6,Sorokin,Sorokin
+12,"Tue, Dec 5",Home,San Jose,401559612,L,5-4 OT,10-7-7,Sorokin,Reilly
+12,"Thu, Dec 7",Home,Columbus,401559626,W,7-3,11-7-7,Varlamov,Barzal
+12,"Sat, Dec 9",Home,Los Angeles,401559644,W,3-2 OT,12-7-7,Sorokin,Sorokin
+12,"Mon, Dec 11",Home,Toronto,401559658,W,4-3 OT,13-7-7,Sorokin,Dobson
+12,"Wed, Dec 13",Home,Anaheim,401559673,W,4-3,14-7-7,Varlamov,Dobson
+12,"Fri, Dec 15",Home,Boston,401559686,L,5-4 SO,14-7-8,Sorokin,Horvat
+12,"Sat, Dec 16",Away,Montreal,401559693,L,5-3,14-8-8,Varlamov,Dobson
+12,"Tue, Dec 19",Home,Edmonton,401559719,W,3-1,15-8-8,Sorokin,Sorokin
+12,"Wed, Dec 20",Away,Washington,401559724,L,3-2 OT,15-8-9,Varlamov,Varlamov
+12,"Sat, Dec 23",Away,Carolina,401559748,W,5-4,16-8-9,Sorokin,Lee
+12,"Wed, Dec 27",Home,Pittsburgh,401559762,L,7-0,16-9-9,Sorokin,Clutterbuck
+12,"Fri, Dec 29",Home,Washington,401559779,W,5-1,17-9-9,Sorokin,Pageau
+12,"Sun, Dec 31",Away,Pittsburgh,401559796,L,3-1,17-10-9,Sorokin,Sorokin
+12,"Tue, Jan 2",Away,Colorado,401559809,L,5-4 OT,17-10-10,Sorokin,Nelson
+12,"Thu, Jan 4",Away,Arizona,401559825,W,5-1,18-10-10,Sorokin,Horvat
+12,"Sat, Jan 6",Away,Vegas,401559844,L,5-2,18-11-10,Sorokin,Martin
+12,"Tue, Jan 9",Home,Vancouver,401559856,L,5-2,18-12-10,Sorokin,Nelson
+12,"Thu, Jan 11",Home,Toronto,401559874,W,4-3 OT,19-12-10,Sorokin,Barzal
+12,"Sat, Jan 13",Away,Nashville,401559894,L,3-1,19-13-10,Sorokin,Sorokin
+12,"Mon, Jan 15",Away,Minnesota,401559903,L,5-0,19-14-10,Sorokin,Sorokin
+12,"Tue, Jan 16",Away,Winnipeg,401559913,L,4-2,19-15-10,Sorokin,Lee
+12,"Fri, Jan 19",Away,Chicago,401559934,L,4-3 OT,19-15-11,Sorokin,Palmieri
+12,"Sun, Jan 21",Home,Dallas,401559950,W,3-2 OT,20-15-11,Sorokin,Sorokin
+12,"Tue, Jan 23",Home,Vegas,401559962,L,3-2,20-16-11,Sorokin,Dobson
+12,"Thu, Jan 25",Away,Montreal,401559975,L,4-3,20-17-11,Varlamov,Barzal
+13,"Thu, Oct 12",Away,Buffalo,401559245,W,5-1,1-0-0,Shesterkin,Kreider
+13,"Sat, Oct 14",Away,Columbus,401559262,L,5-3,1-1-0,Shesterkin,Gustafsson
+13,"Mon, Oct 16",Home,Arizona,401559272,W,2-1,2-1-0,Shesterkin,Shesterkin
+13,"Thu, Oct 19",Home,Nashville,401559289,L,4-1,2-2-0,Shesterkin,Quick
+13,"Sat, Oct 21",Away,Seattle,401559313,W,4-1,3-2-0,Quick,Chytil
+13,"Tue, Oct 24",Away,Calgary,401559331,W,3-1,4-2-0,Shesterkin,Shesterkin
+13,"Thu, Oct 26",Away,Edmonton,401559345,W,3-0,5-2-0,Quick,Quick
+13,"Sat, Oct 28",Away,Vancouver,401559360,W,4-3 OT,6-2-0,Shesterkin,Zibanejad
+13,"Mon, Oct 30",Away,Winnipeg,401559369,W,3-2 OT,7-2-0,Shesterkin,Panarin
+13,"Thu, Nov 2",Home,Carolina,401559382,W,2-1,8-2-0,Shesterkin,Shesterkin
+13,"Sat, Nov 4",Away,Minnesota,401559403,L,5-4 SO,8-2-1,Quick,Gustafsson
+13,"Tue, Nov 7",Home,Detroit,401559416,W,5-3,9-2-1,Quick,Panarin
+13,"Thu, Nov 9",Home,Minnesota,401559430,W,4-1,10-2-1,Domingue,Lafreniere
+13,"Sun, Nov 12",Home,Columbus,401559458,W,4-3 SO,11-2-1,Quick,Panarin
+13,"Sat, Nov 18",Away,New Jersey,401559488,W,5-3,12-2-1,Shesterkin,Vesey
+13,"Mon, Nov 20",Away,Dallas,401559504,L,6-3,12-3-1,Shesterkin,Trouba
+13,"Wed, Nov 22",Away,Pittsburgh,401559511,W,1-0,13-3-1,Quick,Quick
+13,"Fri, Nov 24",Away,Philadelphia,401559523,W,3-1,14-3-1,Shesterkin,Shesterkin
+13,"Sat, Nov 25",Home,Boston,401559537,W,7-4,15-3-1,Quick,Kreider
+13,"Mon, Nov 27",Home,Buffalo,401559551,L,5-1,15-4-1,Shesterkin,Gustafsson
+13,"Wed, Nov 29",Home,Detroit,401559567,W,3-2,16-4-1,Shesterkin,Miller
+13,"Sat, Dec 2",Away,Nashville,401559587,W,4-3,17-4-1,Shesterkin,Trocheck
+13,"Sun, Dec 3",Home,San Jose,401559599,W,6-5,18-4-1,Quick,Panarin
+13,"Tue, Dec 5",Away,Ottawa,401559610,L,6-2,18-5-1,Shesterkin,Panarin
+13,"Sat, Dec 9",Away,Washington,401559643,L,4-0,18-6-1,Shesterkin,Vesey
+13,"Sun, Dec 10",Home,Los Angeles,401559652,W,4-1,19-6-1,Quick,Quick
+13,"Tue, Dec 12",Home,Toronto,401559662,L,7-3,19-7-1,Shesterkin,Wheeler
+13,"Fri, Dec 15",Home,Anaheim,401559684,W,5-1,20-7-1,Quick,Quick
+13,"Sat, Dec 16",Away,Boston,401559691,W,2-1 OT,21-7-1,Shesterkin,Trocheck
+13,"Tue, Dec 19",Away,Toronto,401559715,W,5-2,22-7-1,Shesterkin,Shesterkin
+13,"Fri, Dec 22",Home,Edmonton,401559740,L,4-3,22-8-1,Quick,Wheeler
+13,"Sat, Dec 23",Home,Buffalo,401559751,W,4-3 OT,23-8-1,Shesterkin,Zibanejad
+13,"Wed, Dec 27",Home,Washington,401559760,W,5-1,24-8-1,Shesterkin,Miller
+13,"Fri, Dec 29",Away,Florida,401559777,L,4-3,24-9-1,Quick,Panarin
+13,"Sat, Dec 30",Away,Tampa Bay,401559788,W,5-1,25-9-1,Shesterkin,Trocheck
+13,"Tue, Jan 2",Home,Carolina,401559802,L,6-1,25-10-1,Shesterkin,Trouba
+13,"Thu, Jan 4",Home,Chicago,401559819,W,4-1,26-10-1,Shesterkin,Trocheck
+13,"Sat, Jan 6",Away,Montreal,401559836,L,4-3 SO,26-10-2,Quick,Panarin
+13,"Mon, Jan 8",Home,Vancouver,401559849,L,6-3,26-11-2,Shesterkin,Trocheck
+13,"Thu, Jan 11",Away,St. Louis,401559875,L,5-2,26-12-2,Shesterkin,Goodrow
+13,"Sat, Jan 13",Away,Washington,401559881,L,3-2,26-13-2,Quick,Fox
+13,"Sun, Jan 14",Home,Washington,401559897,W,2-1,27-13-2,Shesterkin,Shesterkin
+13,"Tue, Jan 16",Home,Seattle,401559910,W,5-2,28-13-2,Shesterkin,Wheeler
+13,"Thu, Jan 18",Away,Vegas,401559930,L,5-1,28-14-2,Shesterkin,Zibanejad
+13,"Sat, Jan 20",Away,Los Angeles,401559946,L,2-1,28-15-2,Quick,Kreider
+13,"Sun, Jan 21",Away,Anaheim,401559951,W,5-2,29-15-2,Shesterkin,Kreider
+13,"Tue, Jan 23",Away,San Jose,401559967,L,3-2 OT,29-15-3,Shesterkin,Fox
+13,"Fri, Jan 26",Home,Vegas,401559984,L,5-2,29-16-3,Shesterkin,Wheeler
+13,"Sat, Jan 27",Away,Ottawa,401559992,W,7-2,30-16-3,Quick,Jones
+14,"Wed, Oct 11",Away,Carolina,401559240,L,5-3,0-1-0,Korpisalo,Joseph
+14,"Sat, Oct 14",Home,Philadelphia,401559255,W,5-2,1-1-0,Forsberg,Chychrun
+14,"Sun, Oct 15",Home,Tampa Bay,401559246,W,5-2,2-1-0,Korpisalo,Tkachuk
+14,"Wed, Oct 18",Home,Washington,401559284,W,6-1,3-1-0,Forsberg,Forsberg
+14,"Sat, Oct 21",Home,Detroit,401559300,L,5-2,3-2-0,Korpisalo,Greig
+14,"Tue, Oct 24",Home,Buffalo,401559320,L,6-4,3-3-0,Forsberg,Joseph
+14,"Thu, Oct 26",Away,New York,401559342,L,3-2,3-4-0,Korpisalo,Chychrun
+14,"Sat, Oct 28",Away,Pittsburgh,401559357,W,5-2,4-4-0,Korpisalo,Korpisalo
+14,"Thu, Nov 2",Home,Los Angeles,401559380,L,3-2,4-5-0,Korpisalo,Korpisalo
+14,"Sat, Nov 4",Home,Tampa Bay,401559396,L,6-4,4-6-0,Forsberg,Tkachuk
+14,"Wed, Nov 8",Away,Toronto,401559423,W,6-3,5-6-0,Korpisalo,Stutzle
+14,"Thu, Nov 9",Home,Vancouver,401559427,L,5-2,5-7-0,Forsberg,Batherson
+14,"Sat, Nov 11",Home,Calgary,401559447,W,4-1,6-7-0,Korpisalo,Korpisalo
+14,"Thu, Nov 16",Home,Detroit *,401555904,W,5-4 OT,7-7-0,Korpisalo,Stutzle
+14,"Sat, Nov 18",Home,Minnesota *,401555906,W,2-1 SO,8-7-0,Forsberg,Forsberg
+14,"Fri, Nov 24",Home,New York,401559531,L,5-3,8-8-0,Forsberg,Stutzle
+14,"Mon, Nov 27",Home,Florida,401559550,L,5-0,8-9-0,Korpisalo,Tkachuk
+14,"Fri, Dec 1",Away,Columbus,401559584,L,4-2,8-10-0,Korpisalo,Tkachuk
+14,"Sat, Dec 2",Home,Seattle,401559591,W,2-0,9-10-0,Forsberg,Forsberg
+14,"Tue, Dec 5",Home,New York,401559610,W,6-2,10-10-0,Forsberg,Tarasenko
+14,"Thu, Dec 7",Home,Toronto,401559623,L,4-3,10-11-0,Forsberg,Sanderson
+14,"Sat, Dec 9",Away,Detroit,401559642,W,5-1,11-11-0,Korpisalo,Korpisalo
+14,"Tue, Dec 12",Home,Carolina,401559661,L,4-1,11-12-0,Korpisalo,Norris
+14,"Thu, Dec 14",Away,St. Louis,401559679,L,4-2,11-13-0,Korpisalo,Greig
+14,"Fri, Dec 15",Away,Dallas,401559687,L,5-4,11-14-0,Forsberg,Batherson
+14,"Sun, Dec 17",Away,Vegas,401559707,L,6-3,11-15-0,Korpisalo,Norris
+14,"Tue, Dec 19",Away,Arizona,401559722,L,4-3,11-16-0,Korpisalo,Sanderson
+14,"Thu, Dec 21",Away,Colorado,401559736,L,6-4,11-17-0,Korpisalo,Batherson
+14,"Sat, Dec 23",Home,Pittsburgh,401559745,W,5-4 OT,12-17-0,Forsberg,Tkachuk
+14,"Wed, Dec 27",Away,Toronto,401559757,W,4-2,13-17-0,Korpisalo,Korpisalo
+14,"Fri, Dec 29",Home,New Jersey,401559775,L,6-2,13-18-0,Korpisalo,Tkachuk
+14,"Sun, Dec 31",Home,Buffalo,401559795,W,5-1,14-18-0,Forsberg,Forsberg
+14,"Tue, Jan 2",Away,Vancouver,401559812,L,6-3,14-19-0,Forsberg,Tarasenko
+14,"Thu, Jan 4",Away,Seattle,401559827,L,4-1,14-20-0,Korpisalo,Kelly
+14,"Sat, Jan 6",Away,Edmonton,401559843,L,3-1,14-21-0,Forsberg,Forsberg
+14,"Tue, Jan 9",Away,Calgary,401559861,L,6-3,14-22-0,Korpisalo,Kubalik
+14,"Thu, Jan 11",Away,Buffalo,401559866,L,5-3,14-23-0,Korpisalo,Giroux
+14,"Sat, Jan 13",Home,San Jose,401559883,W,5-4,15-23-0,Korpisalo,Zub
+14,"Tue, Jan 16",Home,Colorado,401559909,L,7-4,15-24-0,Sogaard,Giroux
+14,"Thu, Jan 18",Home,Montreal,401559921,W,6-2,16-24-0,Korpisalo,Stutzle
+14,"Sat, Jan 20",Home,Winnipeg,401559937,L,2-1 OT,16-24-1,Korpisalo,Korpisalo
+14,"Sun, Jan 21",Away,Philadelphia,401559947,W,5-3,17-24-1,Sogaard,Stutzle
+14,"Tue, Jan 23",Away,Montreal,401559959,W,4-1,18-24-1,Korpisalo,Korpisalo
+14,"Thu, Jan 25",Home,Boston,401559976,L,3-2 OT,18-24-2,Korpisalo,Chabot
+14,"Sat, Jan 27",Home,New York,401559992,L,7-2,18-25-2,Korpisalo,Tkachuk
+14,"Mon, Jan 29",Home,Nashville,401560004,W,4-3 OT,19-25-2,Korpisalo,Tkachuk
+15,"Thu, Oct 12",Away,Columbus,401559248,W,4-2,1-0-0,Hart,Konecny
+15,"Sat, Oct 14",Away,Ottawa,401559255,L,5-2,1-1-0,Hart,Konecny
+15,"Tue, Oct 17",Home,Vancouver,401559277,W,2-0,2-1-0,Hart,Hart
+15,"Thu, Oct 19",Home,Edmonton,401559290,W,4-1,3-1-0,Hart,Atkinson
+15,"Sat, Oct 21",Away,Dallas,401559309,L,5-4 OT,3-1-1,Ersson,Cates
+15,"Tue, Oct 24",Away,Vegas,401559333,L,3-2,3-2-1,Hart,Cates
+15,"Thu, Oct 26",Home,Minnesota,401559339,W,6-2,4-2-1,Hart,Sanheim
+15,"Sat, Oct 28",Home,Anaheim,401559352,L,7-4,4-3-1,Ersson,Konecny
+15,"Mon, Oct 30",Home,Carolina,401559363,L,3-2,4-4-1,Hart,Tippett
+15,"Wed, Nov 1",Home,Buffalo,401559375,L,5-2,4-5-1,Ersson,Farabee
+15,"Fri, Nov 3",Away,Buffalo,401559391,W,5-1,5-5-1,Ersson,Ersson
+15,"Sat, Nov 4",Home,Los Angeles,401559398,L,5-0,5-6-1,Petersen,Konecny
+15,"Tue, Nov 7",Away,San Jose,401559422,L,2-1,5-7-1,Ersson,Farabee
+15,"Fri, Nov 10",Away,Anaheim,401559442,W,6-3,6-7-1,Ersson,Sanheim
+15,"Sat, Nov 11",Away,Los Angeles,401559454,W,4-2,7-7-1,Petersen,Petersen
+15,"Wed, Nov 15",Away,Carolina,401559471,W,3-1,8-7-1,Hart,Hart
+15,"Sat, Nov 18",Home,Vegas,401559485,W,4-3 OT,9-7-1,Hart,Couturier
+15,"Sun, Nov 19",Home,Columbus,401559497,W,5-2,10-7-1,Ersson,Poehling
+15,"Wed, Nov 22",Away,New York,401559515,L,3-2,10-8-1,Hart,York
+15,"Fri, Nov 24",Home,New York,401559523,L,3-1,10-9-1,Hart,Couturier
+15,"Sat, Nov 25",Away,New York,401559541,W,1-0 SO,11-9-1,Ersson,Ersson
+15,"Tue, Nov 28",Home,Carolina,401559559,L,4-1,11-10-1,Hart,Hart
+15,"Thu, Nov 30",Home,New Jersey,401559574,L,4-3 OT,11-10-2,Hart,Foerster
+15,"Sat, Dec 2",Away,Pittsburgh,401559592,W,4-3 SO,12-10-2,Ersson,Foerster
+15,"Mon, Dec 4",Home,Pittsburgh,401559605,W,2-1 OT,13-10-2,Hart,Hart
+15,"Thu, Dec 7",Away,Arizona,401559631,W,4-1,14-10-2,Hart,Hart
+15,"Sat, Dec 9",Away,Colorado,401559646,W,5-2,15-10-2,Hart,Hart
+15,"Tue, Dec 12",Away,Nashville,401559665,L,3-2 OT,15-10-3,Ersson,Couturier
+15,"Thu, Dec 14",Home,Washington,401559678,W,4-3 SO,16-10-3,Ersson,Frost
+15,"Sat, Dec 16",Home,Detroit,401559694,W,1-0,17-10-3,Ersson,Ersson
+15,"Tue, Dec 19",Away,New Jersey,401559717,W,3-2 OT,18-10-3,Ersson,Poehling
+15,"Thu, Dec 21",Home,Nashville,401559731,L,4-2,18-11-3,Ersson,Tippett
+15,"Fri, Dec 22",Away,Detroit,401559739,L,7-6 SO,18-11-4,Hart,Laughton
+15,"Thu, Dec 28",Away,Vancouver,401559772,W,4-1,19-11-4,Ersson,Ersson
+15,"Fri, Dec 29",Away,Seattle,401559783,L,2-1 OT,19-11-5,Hart,Hart
+15,"Sun, Dec 31",Away,Calgary,401559800,L,4-3,19-12-5,Ersson,Konecny
+15,"Tue, Jan 2",Away,Edmonton,401559810,L,5-2,19-13-5,Hart,Konecny
+15,"Thu, Jan 4",Home,Columbus,401559820,L,3-2 SO,19-13-6,Ersson,Konecny
+15,"Sat, Jan 6",Home,Calgary,401559833,W,3-2,20-13-6,Hart,Frost
+15,"Mon, Jan 8",Home,Pittsburgh,401559850,L,4-1,20-14-6,Hart,Farabee
+15,"Wed, Jan 10",Home,Montreal,401559863,W,3-2 SO,21-14-6,Ersson,Couturier
+15,"Fri, Jan 12",Away,Minnesota,401559880,W,4-3 OT,22-14-6,Hart,Farabee
+15,"Sat, Jan 13",Away,Winnipeg,401559891,W,2-0,23-14-6,Ersson,Ersson
+15,"Mon, Jan 15",Away,St. Louis,401559907,W,4-2,24-14-6,Hart,Tippett
+15,"Thu, Jan 18",Home,Dallas,401559923,W,5-1,25-14-6,Ersson,Tippett
+15,"Sat, Jan 20",Home,Colorado,401559936,L,7-4,25-15-6,Hart,Atkinson
+15,"Sun, Jan 21",Home,Ottawa,401559947,L,5-3,25-16-6,Ersson,Farabee
+15,"Tue, Jan 23",Home,Tampa Bay,401559961,L,6-3,25-17-6,Ersson,Atkinson
+15,"Thu, Jan 25",Away,Detroit,401559977,L,3-0,25-18-6,Ersson,Hathaway
+16,"Tue, Oct 10",Home,Chicago,401559237,L,4-2,0-1-0,Jarry,Jarry
+16,"Fri, Oct 13",Away,Washington,401559254,W,4-0,1-1-0,Jarry,Malkin
+16,"Sat, Oct 14",Home,Calgary,401559261,W,5-2,2-1-0,Nedeljkovic,Guentzel
+16,"Wed, Oct 18",Away,Detroit,401559285,L,6-3,2-2-0,Jarry,Karlsson
+16,"Sat, Oct 21",Away,St. Louis,401559307,L,4-2,2-3-0,Jarry,Eller
+16,"Tue, Oct 24",Home,Dallas,401559323,L,4-1,2-4-0,Nedeljkovic,Guentzel
+16,"Thu, Oct 26",Home,Colorado,401559340,W,4-0,3-4-0,Jarry,Jarry
+16,"Sat, Oct 28",Home,Ottawa,401559357,L,5-2,3-5-0,Jarry,Guentzel
+16,"Mon, Oct 30",Home,Anaheim,401559367,L,4-3,3-6-0,Jarry,Karlsson
+16,"Sat, Nov 4",Away,San Jose,401559406,W,10-2,4-6-0,Jarry,Guentzel
+16,"Tue, Nov 7",Away,Anaheim,401559421,W,2-0,5-6-0,Jarry,Jarry
+16,"Thu, Nov 9",Away,Los Angeles,401559435,W,4-3 OT,6-6-0,Hellberg,Crosby
+16,"Sat, Nov 11",Home,Buffalo,401559449,W,4-0,7-6-0,Jarry,Jarry
+16,"Tue, Nov 14",Away,Columbus,401559465,W,5-3,8-6-0,Jarry,Crosby
+16,"Thu, Nov 16",Home,New Jersey,401559476,L,5-2,8-7-0,Jarry,Rust
+16,"Sat, Nov 18",Away,Carolina,401559490,L,4-2,8-8-0,Jarry,Crosby
+16,"Sun, Nov 19",Home,Vegas,401559498,W,3-0,9-8-0,Nedeljkovic,Nedeljkovic
+16,"Wed, Nov 22",Home,New York,401559511,L,1-0,9-9-0,Jarry,Jarry
+16,"Fri, Nov 24",Away,Buffalo,401559530,L,3-2,9-10-0,Nedeljkovic,Crosby
+16,"Sat, Nov 25",Home,Toronto,401559540,W,3-2,10-10-0,Jarry,Jarry
+16,"Tue, Nov 28",Away,Nashville,401559560,L,3-2 OT,10-10-1,Jarry,Rust
+16,"Thu, Nov 30",Away,Tampa Bay,401559573,W,4-2,11-10-1,Jarry,Jarry
+16,"Sat, Dec 2",Home,Philadelphia,401559592,L,4-3 SO,11-10-2,Jarry,Rust
+16,"Mon, Dec 4",Away,Philadelphia,401559605,L,2-1 OT,11-10-3,Nedeljkovic,Nedeljkovic
+16,"Wed, Dec 6",Away,Tampa Bay,401559617,L,3-1,11-11-3,Jarry,Guentzel
+16,"Fri, Dec 8",Away,Florida,401559634,L,3-1,11-12-3,Jarry,Jarry
+16,"Tue, Dec 12",Home,Arizona,401559663,W,4-2,12-12-3,Jarry,Guentzel
+16,"Wed, Dec 13",Away,Montreal,401559671,W,4-3 SO,13-12-3,Nedeljkovic,Nedeljkovic
+16,"Sat, Dec 16",Away,Toronto,401559692,L,7-0,13-13-3,Jarry,Pettersson
+16,"Mon, Dec 18",Home,Minnesota,401559709,W,4-3,14-13-3,Nedeljkovic,Malkin
+16,"Thu, Dec 21",Home,Carolina,401559732,W,2-1 SO,15-13-3,Nedeljkovic,Nedeljkovic
+16,"Sat, Dec 23",Away,Ottawa,401559745,L,5-4 OT,15-13-4,Nedeljkovic,Letang
+16,"Wed, Dec 27",Away,New York,401559762,W,7-0,16-13-4,Jarry,Letang
+16,"Sat, Dec 30",Home,St. Louis,401559790,W,4-2,17-13-4,Jarry,Guentzel
+16,"Sun, Dec 31",Home,New York,401559796,W,3-1,18-13-4,Nedeljkovic,Nedeljkovic
+16,"Tue, Jan 2",Home,Washington,401559803,L,4-3,18-14-4,Nedeljkovic,Guentzel
+16,"Thu, Jan 4",Away,Boston,401559817,W,6-5,19-14-4,Nedeljkovic,Crosby
+16,"Sat, Jan 6",Home,Buffalo,401559838,L,3-1,19-15-4,Jarry,Malkin
+16,"Mon, Jan 8",Away,Philadelphia,401559850,W,4-1,20-15-4,Nedeljkovic,Nedeljkovic
+16,"Thu, Jan 11",Home,Vancouver,401559871,L,4-3 OT,20-15-5,Jarry,Crosby
+16,"Sat, Jan 13",Away,Carolina,401559889,L,3-2 OT,20-15-6,Jarry,Rust
+16,"Mon, Jan 15",Home,Seattle,401559906,W,3-0,21-15-6,Jarry,Jarry
+16,"Sat, Jan 20",Away,Vegas,401559944,L,3-2,21-16-6,Jarry,Graves
+16,"Mon, Jan 22",Away,Arizona,401559956,L,5-2,21-17-6,Jarry,Crosby
+16,"Fri, Jan 26",Home,Florida,401559985,L,3-2 SO,21-17-7,Nedeljkovic,Rust
+18,"Thu, Oct 12",Home,Vegas,401559252,L,4-1,0-1-0,Kahkonen,Zadina
+18,"Sat, Oct 14",Home,Colorado,401559267,L,2-1 SO,0-1-1,Blackwood,Blackwood
+18,"Tue, Oct 17",Home,Carolina,401559283,L,6-3,0-2-1,Blackwood,Zetterlund
+18,"Thu, Oct 19",Home,Boston,401559297,L,3-1,0-3-1,Kahkonen,Kahkonen
+18,"Sat, Oct 21",Away,Nashville,401559308,L,5-1,0-4-1,Blackwood,Hertl
+18,"Tue, Oct 24",Away,Florida,401559324,L,3-1,0-5-1,Blackwood,Blackwood
+18,"Thu, Oct 26",Away,Tampa Bay,401559338,L,6-0,0-6-1,Blackwood,Duclair
+18,"Fri, Oct 27",Away,Carolina,401559349,L,3-0,0-7-1,Kahkonen,Kahkonen
+18,"Sun, Oct 29",Away,Washington,401559364,L,3-1,0-8-1,Blackwood,Blackwood
+18,"Thu, Nov 2",Home,Vancouver,401559390,L,10-1,0-9-1,Kahkonen,Kunin
+18,"Sat, Nov 4",Home,Pittsburgh,401559406,L,10-2,0-10-1,Blackwood,Duclair
+18,"Tue, Nov 7",Home,Philadelphia,401559422,W,2-1,1-10-1,Blackwood,Blackwood
+18,"Thu, Nov 9",Home,Edmonton,401559436,W,3-2,2-10-1,Blackwood,Blackwood
+18,"Fri, Nov 10",Away,Vegas,401559441,L,5-0,2-11-1,Kahkonen,Rutta
+18,"Sun, Nov 12",Away,Anaheim,401559459,L,4-1,2-12-1,Blackwood,Hertl
+18,"Tue, Nov 14",Home,Florida,401559470,L,5-3,2-13-1,Blackwood,Granlund
+18,"Thu, Nov 16",Home,St. Louis,401559482,W,5-1,3-13-1,Kahkonen,Kahkonen
+18,"Mon, Nov 20",Away,Vancouver,401559506,L,3-1,3-14-1,Blackwood,Blackwood
+18,"Wed, Nov 22",Away,Seattle,401559521,L,7-1,3-15-1,Kahkonen,Hoffman
+18,"Fri, Nov 24",Home,Montreal,401559529,L,3-2 SO,3-15-2,Blackwood,Eklund
+18,"Sat, Nov 25",Home,Vancouver,401559544,W,4-3,4-15-2,Kahkonen,Hoffman
+18,"Mon, Nov 27",Home,Washington,401559556,W,2-1,5-15-2,Blackwood,Blackwood
+18,"Thu, Nov 30",Away,Boston,401559569,L,3-0,5-16-2,Blackwood,Blackwood
+18,"Fri, Dec 1",Away,New Jersey,401559583,W,6-3,6-16-2,Kahkonen,Kahkonen
+18,"Sun, Dec 3",Away,New York,401559599,L,6-5,6-17-2,Blackwood,Granlund
+18,"Tue, Dec 5",Away,New York,401559612,W,5-4 OT,7-17-2,Kahkonen,Hertl
+18,"Thu, Dec 7",Away,Detroit,401559624,W,6-5 OT,8-17-2,Kahkonen,Granlund
+18,"Sun, Dec 10",Away,Vegas,401559656,L,5-4 SO,8-17-3,Kahkonen,Hoffman
+18,"Tue, Dec 12",Home,Winnipeg,401559670,W,2-1,9-17-3,Blackwood,Blackwood
+18,"Fri, Dec 15",Away,Arizona,401559688,L,1-0,9-18-3,Kahkonen,Kahkonen
+18,"Sun, Dec 17",Away,Colorado,401559706,L,6-2,9-19-3,Blackwood,Hertl
+18,"Tue, Dec 19",Home,Los Angeles,401559723,L,4-1,9-20-3,Kahkonen,Kahkonen
+18,"Thu, Dec 21",Home,Arizona,401559738,L,5-2,9-21-3,Blackwood,Zadina
+18,"Sat, Dec 23",Away,Vancouver,401559755,L,7-4,9-22-3,Blackwood,Ferraro
+18,"Wed, Dec 27",Away,Los Angeles,401559770,L,5-1,9-23-3,Kahkonen,Zetterlund
+18,"Thu, Dec 28",Home,Edmonton,401559774,L,5-0,9-24-3,Chrona,Kahkonen
+18,"Sun, Dec 31",Away,Colorado,401559799,L,3-1,9-25-3,Kahkonen,Kahkonen
+18,"Tue, Jan 2",Home,Detroit,401559814,L,5-3,9-26-3,Kahkonen,Ferraro
+18,"Thu, Jan 4",Home,Winnipeg,401559829,L,2-1,9-27-3,Blackwood,Blackwood
+18,"Sat, Jan 6",Home,Toronto,401559841,L,4-1,9-28-3,Blackwood,Granlund
+18,"Tue, Jan 9",Away,Toronto,401559854,L,7-1,9-29-3,Kahkonen,Thrun
+18,"Thu, Jan 11",Away,Montreal,401559867,W,3-2,10-29-3,Blackwood,Blackwood
+18,"Sat, Jan 13",Away,Ottawa,401559883,L,5-4,10-30-3,Blackwood,Ferraro
+18,"Mon, Jan 15",Away,Buffalo,401559900,L,3-0,10-31-3,Kahkonen,Kahkonen
+18,"Tue, Jan 16",Away,Chicago,401559914,L,2-1 SO,10-31-4,Blackwood,Blackwood
+18,"Sat, Jan 20",Home,Anaheim,401559945,W,5-3,11-31-4,Blackwood,Zetterlund
+18,"Mon, Jan 22",Away,Los Angeles,401559958,W,4-3 SO,12-31-4,Kahkonen,Kahkonen
+18,"Tue, Jan 23",Home,New York,401559967,W,3-2 OT,13-31-4,Blackwood,Blackwood
+18,"Sat, Jan 27",Home,Buffalo,401559991,L,5-2,13-32-4,Kahkonen,Vlasic
+18,"Tue, Jan 30",Home,Seattle,401560006,W,2-0,14-32-4,Blackwood,Blackwood
+124292,"Tue, Oct 10",Away,Vegas,401559238,L,4-1,0-1-0,Grubauer,McCann
+124292,"Thu, Oct 12",Away,Nashville,401559249,L,3-0,0-2-0,Grubauer,Grubauer
+124292,"Sat, Oct 14",Away,St. Louis,401559264,L,2-1 SO,0-2-1,Daccord,Daccord
+124292,"Tue, Oct 17",Home,Colorado,401559281,L,4-1,0-3-1,Grubauer,Yamamoto
+124292,"Thu, Oct 19",Home,Carolina,401559295,W,7-4,1-3-1,Daccord,Dunn
+124292,"Sat, Oct 21",Home,New York,401559313,L,4-1,1-4-1,Grubauer,Tolvanen
+124292,"Tue, Oct 24",Away,Detroit,401559326,W,5-4 OT,2-4-1,Daccord,Eberle
+124292,"Thu, Oct 26",Away,Carolina,401559341,L,3-2 OT,2-4-2,Daccord,Daccord
+124292,"Sat, Oct 28",Away,Florida,401559353,L,3-2,2-5-2,Daccord,Tolvanen
+124292,"Mon, Oct 30",Away,Tampa Bay,401559366,W,4-3 OT,3-5-2,Grubauer,McCann
+124292,"Thu, Nov 2",Home,Nashville,401559389,W,4-2,4-5-2,Grubauer,Grubauer
+124292,"Sat, Nov 4",Home,Calgary,401559407,L,6-3,4-6-2,Grubauer,Gourde
+124292,"Tue, Nov 7",Away,Arizona,401559419,L,4-3 SO,4-6-3,Daccord,Tolvanen
+124292,"Thu, Nov 9",Away,Colorado,401559434,W,4-3,5-6-3,Grubauer,Bjorkstrand
+124292,"Sat, Nov 11",Home,Edmonton,401559453,L,4-1,5-7-3,Grubauer,Daccord
+124292,"Mon, Nov 13",Home,Colorado,401559461,L,5-1,5-8-3,Daccord,Wennberg
+124292,"Wed, Nov 15",Away,Edmonton,401559472,L,4-3 OT,5-8-4,Daccord,Tolvanen
+124292,"Thu, Nov 16",Home,New York,401559480,W,4-3 SO,6-8-4,Grubauer,Yamamoto
+124292,"Sat, Nov 18",Away,Vancouver,401559495,W,4-3,7-8-4,Grubauer,Eberle
+124292,"Mon, Nov 20",Home,Calgary,401559507,L,4-3 OT,7-8-5,Daccord,Dunn
+124292,"Wed, Nov 22",Home,San Jose,401559521,W,7-1,8-8-5,Daccord,Bjorkstrand
+124292,"Fri, Nov 24",Home,Vancouver,401559536,L,5-1,8-9-5,Daccord,Kartye
+124292,"Tue, Nov 28",Away,Chicago,401559563,L,4-3,8-10-5,Grubauer,Beniers
+124292,"Thu, Nov 30",Away,Toronto,401559570,L,4-3 SO,8-10-6,Grubauer,McCann
+124292,"Sat, Dec 2",Away,Ottawa,401559591,L,2-0,8-11-6,Daccord,Daccord
+124292,"Mon, Dec 4",Away,Montreal,401559603,L,4-2,8-12-6,Grubauer,Dunn
+124292,"Thu, Dec 7",Home,New Jersey,401559633,L,2-1,8-13-6,Grubauer,Kartye
+124292,"Sat, Dec 9",Home,Tampa Bay,401559648,L,4-3 OT,8-13-7,Daccord,Oleksiak
+124292,"Sun, Dec 10",Home,Minnesota,401559655,L,3-0,8-14-7,Daccord,Daccord
+124292,"Tue, Dec 12",Home,Florida,401559669,W,4-0,9-14-7,Daccord,Daccord
+124292,"Thu, Dec 14",Home,Chicago,401559683,W,7-1,10-14-7,Daccord,Bjorkstrand
+124292,"Sat, Dec 16",Home,Los Angeles,401559702,L,3-2 SO,10-14-8,Daccord,Daccord
+124292,"Mon, Dec 18",Away,Dallas,401559711,L,4-3 OT,10-14-9,Daccord,Beniers
+124292,"Wed, Dec 20",Away,Los Angeles,401559726,W,2-1,11-14-9,Daccord,Daccord
+124292,"Sat, Dec 23",Away,Anaheim,401559753,W,3-2,12-14-9,Daccord,Daccord
+124292,"Wed, Dec 27",Away,Calgary,401559768,W,2-1,13-14-9,Driedger,Driedger
+124292,"Fri, Dec 29",Home,Philadelphia,401559783,W,2-1 OT,14-14-9,Daccord,Daccord
+124292,"Mon, Jan 1",Home,Vegas *,401555902,W,3-0,15-14-9,Daccord,Daccord
+124292,"Thu, Jan 4",Home,Ottawa,401559827,W,4-1,16-14-9,Daccord,Daccord
+124292,"Tue, Jan 9",Away,Buffalo,401559853,W,5-2,17-14-9,Daccord,Daccord
+124292,"Thu, Jan 11",Away,Washington,401559872,W,4-1,18-14-9,Daccord,Daccord
+124292,"Sat, Jan 13",Away,Columbus,401559890,W,7-4,19-14-9,Daccord,McCann
+124292,"Mon, Jan 15",Away,Pittsburgh,401559906,L,3-0,19-15-9,Daccord,Daccord
+124292,"Tue, Jan 16",Away,New York,401559910,L,5-2,19-16-9,Driedger,McCann
+124292,"Thu, Jan 18",Away,Edmonton,401559927,L,4-2,19-17-9,Daccord,McCann
+124292,"Sun, Jan 21",Home,Toronto,401559952,L,3-1,19-18-9,Daccord,Tatar
+124292,"Wed, Jan 24",Home,Chicago,401559973,W,6-2,20-18-9,Daccord,Tatar
+124292,"Fri, Jan 26",Home,St. Louis,401559987,L,4-3 OT,20-18-10,Daccord,Bjorkstrand
+124292,"Sun, Jan 28",Home,Columbus,401560003,W,4-2,21-18-10,Daccord,Eberle
+19,"Thu, Oct 12",Away,Dallas,401559250,L,2-1 SO,0-0-1,Binnington,Binnington
+19,"Sat, Oct 14",Home,Seattle,401559264,W,2-1 SO,1-0-1,Binnington,Binnington
+19,"Thu, Oct 19",Home,Arizona,401559291,L,6-2,1-1-1,Hofer,Vrana
+19,"Sat, Oct 21",Home,Pittsburgh,401559307,W,4-2,2-1-1,Binnington,Saad
+19,"Tue, Oct 24",Away,Winnipeg,401559328,L,4-2,2-2-1,Binnington,Buchnevich
+19,"Thu, Oct 26",Away,Calgary,401559344,W,3-0,3-2-1,Hofer,Hofer
+19,"Fri, Oct 27",Away,Vancouver,401559350,L,5-0,3-3-1,Binnington,Faulk
+19,"Wed, Nov 1",Away,Colorado,401559377,L,4-1,3-4-1,Binnington,Thomas
+19,"Fri, Nov 3",Home,New Jersey,401559392,W,4-1,4-4-1,Binnington,Binnington
+19,"Sat, Nov 4",Home,Montreal,401559400,W,6-3,5-4-1,Hofer,Kyrou
+19,"Tue, Nov 7",Home,Winnipeg,401559417,L,5-2,5-5-1,Binnington,Tucker
+19,"Thu, Nov 9",Home,Arizona,401559432,W,2-1,6-5-1,Hofer,Hofer
+19,"Sat, Nov 11",Away,Colorado,401559452,W,8-2,7-5-1,Binnington,Schenn
+19,"Tue, Nov 14",Home,Tampa Bay,401559466,W,5-0,8-5-1,Binnington,Binnington
+19,"Thu, Nov 16",Away,San Jose,401559482,L,5-1,8-6-1,Hofer,Buchnevich
+19,"Sat, Nov 18",Away,Los Angeles,401559496,L,5-1,8-7-1,Binnington,Leddy
+19,"Sun, Nov 19",Away,Anaheim,401559500,W,3-1,9-7-1,Hofer,Hofer
+19,"Wed, Nov 22",Away,Arizona,401559517,W,6-5,10-7-1,Hofer,Hofer
+19,"Fri, Nov 24",Home,Nashville,401559527,L,8-3,10-8-1,Hofer,Thomas
+19,"Sun, Nov 26",Away,Chicago,401559546,W,4-2,11-8-1,Binnington,Buchnevich
+19,"Tue, Nov 28",Away,Minnesota,401559561,L,3-1,11-9-1,Binnington,Binnington
+19,"Thu, Nov 30",Home,Buffalo,401559576,W,6-4,12-9-1,Binnington,Schenn
+19,"Sat, Dec 2",Away,Arizona,401559594,L,4-1,12-10-1,Hofer,Saad
+19,"Mon, Dec 4",Away,Vegas,401559608,W,2-1 OT,13-10-1,Binnington,Binnington
+19,"Wed, Dec 6",Home,Vegas,401559619,L,6-3,13-11-1,Binnington,Kyrou
+19,"Fri, Dec 8",Away,Columbus,401559635,L,5-2,13-12-1,Hofer,Thomas
+19,"Sat, Dec 9",Away,Chicago,401559645,L,3-1,13-13-1,Binnington,Sundqvist
+19,"Tue, Dec 12",Home,Detroit,401559664,L,6-4,13-14-1,Binnington,Hayes
+19,"Thu, Dec 14",Home,Ottawa,401559679,W,4-2,14-14-1,Binnington,Thomas
+19,"Sat, Dec 16",Home,Dallas,401559697,W,4-3 OT,15-14-1,Binnington,Kyrou
+19,"Tue, Dec 19",Away,Tampa Bay,401559716,L,6-1,15-15-1,Binnington,Faulk
+19,"Thu, Dec 21",Away,Florida,401559729,W,4-1,16-15-1,Hofer,Hofer
+19,"Sat, Dec 23",Home,Chicago,401559752,W,7-5,17-15-1,Binnington,Kyrou
+19,"Wed, Dec 27",Home,Dallas,401559763,W,2-1,18-15-1,Hofer,Hofer
+19,"Fri, Dec 29",Home,Colorado,401559780,L,2-1,18-16-1,Binnington,Thomas
+19,"Sat, Dec 30",Away,Pittsburgh,401559790,L,4-2,18-17-1,Hofer,Kapanen
+19,"Thu, Jan 4",Home,Vancouver,401559821,W,2-1,19-17-1,Binnington,Binnington
+19,"Sat, Jan 6",Away,Carolina,401559839,W,2-1 SO,20-17-1,Binnington,Binnington
+19,"Tue, Jan 9",Home,Florida,401559857,L,5-1,20-18-1,Hofer,Schenn
+19,"Thu, Jan 11",Home,New York,401559875,W,5-2,21-18-1,Binnington,Binnington
+19,"Sat, Jan 13",Home,Boston,401559893,L,4-3 OT,21-18-2,Binnington,Hayes
+19,"Mon, Jan 15",Home,Philadelphia,401559907,L,4-2,21-19-2,Hofer,Hofer
+19,"Thu, Jan 18",Away,Washington,401559924,L,5-2,21-20-2,Binnington,Walker
+19,"Sat, Jan 20",Home,Washington,401559942,W,3-0,22-20-2,Binnington,Binnington
+19,"Tue, Jan 23",Away,Calgary,401559964,W,4-3,23-20-2,Binnington,Leddy
+19,"Wed, Jan 24",Away,Vancouver,401559972,W,4-3 OT,24-20-2,Hofer,Neighbours
+19,"Fri, Jan 26",Away,Seattle,401559987,W,4-3 OT,25-20-2,Binnington,Buchnevich
+19,"Sun, Jan 28",Home,Los Angeles,401560002,W,4-3 OT,26-20-2,Hofer,Buchnevich
+20,"Tue, Oct 10",Home,Nashville,401559236,W,5-3,1-0-0,Johansson,Paul
+20,"Sat, Oct 14",Away,Detroit,401559260,L,6-4,1-1-0,Johansson,Stamkos
+20,"Sun, Oct 15",Away,Ottawa,401559246,L,5-2,1-2-0,Tomkins,Cirelli
+20,"Tue, Oct 17",Away,Buffalo,401559275,L,3-2 OT,1-2-1,Johansson,Hagel
+20,"Thu, Oct 19",Home,Vancouver,401559287,W,4-3,2-2-1,Johansson,Kucherov
+20,"Sat, Oct 21",Home,Toronto,401559304,L,4-3 OT,2-2-2,Johansson,Kucherov
+20,"Tue, Oct 24",Home,Carolina,401559321,W,3-0,3-2-2,Johansson,Johansson
+20,"Thu, Oct 26",Home,San Jose,401559338,W,6-0,4-2-2,Johansson,Johansson
+20,"Mon, Oct 30",Home,Seattle,401559366,L,4-3 OT,4-2-3,Johansson,Jeannot
+20,"Thu, Nov 2",Away,Columbus,401559384,L,4-2,4-3-3,Tomkins,Stamkos
+20,"Sat, Nov 4",Away,Ottawa,401559396,W,6-4,5-3-3,Johansson,Kucherov
+20,"Mon, Nov 6",Away,Toronto,401559410,L,6-5 OT,5-4-3,Johansson,Kucherov
+20,"Tue, Nov 7",Away,Montreal,401559414,W,5-3,6-3-4,Tomkins,Kucherov
+20,"Thu, Nov 9",Home,Chicago,401559429,L,5-3,6-4-4,Johansson,Cirelli
+20,"Sat, Nov 11",Home,Carolina,401559448,L,4-0,6-5-4,Johansson,Watson
+20,"Tue, Nov 14",Away,St. Louis,401559466,L,5-0,6-6-4,Johansson,Eyssimont
+20,"Thu, Nov 16",Away,Chicago,401559478,W,4-2,7-6-4,Johansson,Point
+20,"Sat, Nov 18",Home,Edmonton,401559486,W,6-4,8-6-4,Johansson,Kucherov
+20,"Mon, Nov 20",Home,Boston,401559501,W,5-4 OT,9-6-4,Johansson,Hagel
+20,"Wed, Nov 22",Home,Winnipeg,401559509,L,3-2 OT,9-6-5,Johansson,Kucherov
+20,"Fri, Nov 24",Away,Carolina,401559526,W,8-2,10-6-5,Vasilevskiy,Kucherov
+20,"Mon, Nov 27",Away,Colorado,401559553,L,4-1,10-7-5,Vasilevskiy,Cirelli
+20,"Tue, Nov 28",Away,Arizona,401559565,L,3-1,10-8-5,Johansson,Hagel
+20,"Thu, Nov 30",Home,Pittsburgh,401559573,L,4-2,10-9-5,Vasilevskiy,Kucherov
+20,"Sat, Dec 2",Away,Dallas,401559585,L,8-1,10-10-5,Vasilevskiy,Kucherov
+20,"Mon, Dec 4",Home,Dallas,401559604,W,4-0,11-10-5,Vasilevskiy,Vasilevskiy
+20,"Wed, Dec 6",Home,Pittsburgh,401559617,W,3-1,12-10-5,Vasilevskiy,Vasilevskiy
+20,"Thu, Dec 7",Away,Nashville,401559627,L,5-1,12-11-5,Johansson,Hagel
+20,"Sat, Dec 9",Away,Seattle,401559648,W,4-3 OT,13-11-5,Vasilevskiy,Kucherov
+20,"Tue, Dec 12",Away,Vancouver,401559667,L,4-1,13-12-5,Vasilevskiy,Point
+20,"Thu, Dec 14",Away,Edmonton,401559681,W,7-4,14-12-5,Vasilevskiy,Stamkos
+20,"Sat, Dec 16",Away,Calgary,401559700,L,4-2,14-13-5,Vasilevskiy,Kucherov
+20,"Tue, Dec 19",Home,St. Louis,401559716,W,6-1,15-13-5,Vasilevskiy,Vasilevskiy
+20,"Thu, Dec 21",Home,Vegas,401559728,W,5-4,16-13-5,Vasilevskiy,Kucherov
+20,"Sat, Dec 23",Away,Washington,401559747,W,2-1 SO,17-13-5,Vasilevskiy,Vasilevskiy
+20,"Wed, Dec 27",Home,Florida,401559758,L,3-2,17-14-5,Vasilevskiy,Kucherov
+20,"Sat, Dec 30",Home,New York,401559788,L,5-1,17-15-5,Vasilevskiy,Stamkos
+20,"Sun, Dec 31",Home,Montreal,401559797,W,4-3,18-15-5,Johansson,Hedman
+20,"Tue, Jan 2",Away,Winnipeg,401559808,L,4-2,18-16-5,Vasilevskiy,Hedman
+20,"Thu, Jan 4",Away,Minnesota,401559824,W,4-1,19-16-5,Vasilevskiy,Raddysh
+20,"Sat, Jan 6",Away,Boston,401559835,L,7-3,19-17-5,Vasilevskiy,Kucherov
+20,"Tue, Jan 9",Home,Los Angeles,401559855,W,3-2 OT,20-17-5,Vasilevskiy,Hagel
+20,"Thu, Jan 11",Home,New Jersey,401559869,W,4-3 OT,21-17-5,Vasilevskiy,Glendening
+20,"Sat, Jan 13",Home,Anaheim,401559888,W,5-1,22-17-5,Vasilevskiy,Stamkos
+20,"Thu, Jan 18",Home,Minnesota,401559922,W,7-3,23-17-5,Vasilevskiy,Hedman
+20,"Sat, Jan 20",Away,Buffalo,401559935,W,3-1,24-17-5,Johansson,Johansson
+20,"Sun, Jan 21",Away,Detroit,401559948,L,2-1,24-18-5,Vasilevskiy,Vasilevskiy
+20,"Tue, Jan 23",Away,Philadelphia,401559961,W,6-3,25-18-5,Vasilevskiy,Kucherov
+20,"Thu, Jan 25",Home,Arizona,401559978,W,6-3,26-18-5,Vasilevskiy,Kucherov
+21,"Wed, Oct 11",Home,Montreal,401559239,W,6-5 SO,1-0-0,Samsonov,Matthews
+21,"Sat, Oct 14",Home,Minnesota,401559258,W,7-4,2-0-0,Samsonov,Matthews
+21,"Mon, Oct 16",Home,Chicago,401559270,L,4-1,2-1-0,Woll,Tavares
+21,"Thu, Oct 19",Away,Florida,401559288,L,3-1,2-2-0,Samsonov,Tavares
+21,"Sat, Oct 21",Away,Tampa Bay,401559304,W,4-3 OT,3-2-0,Woll,Woll
+21,"Tue, Oct 24",Away,Washington,401559318,W,4-1,4-2-0,Woll,Woll
+21,"Thu, Oct 26",Away,Dallas,401559343,W,4-1,5-2-0,Woll,Woll
+21,"Sat, Oct 28",Away,Nashville,401559359,L,3-2 OT,5-2-1,Samsonov,Giordano
+21,"Tue, Oct 31",Home,Los Angeles,401559374,L,4-1,5-3-1,Woll,Tavares
+21,"Thu, Nov 2",Away,Boston,401559379,L,3-2 SO,5-3-2,Samsonov,Samsonov
+21,"Sat, Nov 4",Home,Buffalo,401559395,L,6-4,5-4-2,Woll,Matthews
+21,"Mon, Nov 6",Home,Tampa Bay,401559410,W,6-5 OT,6-4-2,Woll,Marner
+21,"Wed, Nov 8",Home,Ottawa,401559423,L,6-3,6-5-2,Woll,Nylander
+21,"Fri, Nov 10",Home,Calgary,401559438,W,5-4 SO,7-5-2,Woll,Nylander
+21,"Sat, Nov 11",Home,Vancouver,401559445,W,5-2,8-5-2,Samsonov,Samsonov
+21,"Fri, Nov 17",Home,Detroit *,401555905,W,3-2,9-5-2,Samsonov,Nylander
+21,"Sun, Nov 19",Home,Minnesota *,401555907,W,4-3 OT,10-5-2,Woll,Rielly
+21,"Fri, Nov 24",Away,Chicago,401559524,L,4-3 OT,10-5-3,Samsonov,Jarnkrok
+21,"Sat, Nov 25",Away,Pittsburgh,401559540,L,3-2,10-6-3,Woll,Tavares
+21,"Tue, Nov 28",Home,Florida,401559557,W,2-1 SO,11-6-3,Woll,Woll
+21,"Thu, Nov 30",Home,Seattle,401559570,W,4-3 SO,12-6-3,Woll,Marner
+21,"Sat, Dec 2",Home,Boston,401559589,L,4-3 OT,12-6-4,Woll,Matthews
+21,"Thu, Dec 7",Away,Ottawa,401559623,W,4-3,13-6-4,Jones,McCabe
+21,"Sat, Dec 9",Home,Nashville,401559641,W,4-0,14-6-4,Samsonov,Samsonov
+21,"Mon, Dec 11",Away,New York,401559658,L,4-3 OT,14-6-5,Samsonov,Tavares
+21,"Tue, Dec 12",Away,New York,401559662,W,7-3,15-6-5,Jones,Matthews
+21,"Thu, Dec 14",Home,Columbus,401559676,L,6-5 OT,15-6-6,Samsonov,Matthews
+21,"Sat, Dec 16",Home,Pittsburgh,401559692,W,7-0,16-6-6,Jones,Jones
+21,"Tue, Dec 19",Home,New York,401559715,L,5-2,16-7-6,Jones,Matthews
+21,"Thu, Dec 21",Away,Buffalo,401559727,L,9-3,16-8-6,Samsonov,Nylander
+21,"Sat, Dec 23",Away,Columbus,401559749,W,4-1,17-8-6,Jones,Matthews
+21,"Wed, Dec 27",Home,Ottawa,401559757,L,4-2,17-9-6,Jones,Bertuzzi
+21,"Fri, Dec 29",Away,Columbus,401559778,L,6-5 OT,17-9-7,Samsonov,Marner
+21,"Sat, Dec 30",Home,Carolina,401559787,L,3-2,17-10-7,Jones,Liljegren
+21,"Tue, Jan 2",Away,Los Angeles,401559813,W,3-0,18-10-7,Jones,Jones
+21,"Wed, Jan 3",Away,Anaheim,401559816,W,2-1 OT,19-10-7,Jones,Jones
+21,"Sat, Jan 6",Away,San Jose,401559841,W,4-1,20-10-7,Jones,Nylander
+21,"Tue, Jan 9",Home,San Jose,401559854,W,7-1,21-10-7,Jones,Marner
+21,"Thu, Jan 11",Away,New York,401559874,L,4-3 OT,21-10-8,Jones,Matthews
+21,"Sat, Jan 13",Home,Colorado,401559885,L,5-3,21-11-8,Jones,Domi
+21,"Sun, Jan 14",Home,Detroit,401559898,L,4-2,21-12-8,Samsonov,Holmberg
+21,"Tue, Jan 16",Away,Edmonton,401559916,L,4-2,21-13-8,Jones,Holmberg
+21,"Thu, Jan 18",Away,Calgary,401559926,W,4-3,22-13-8,Jones,Matthews
+21,"Sat, Jan 20",Away,Vancouver,401559941,L,6-4,22-14-8,Jones,Rielly
+21,"Sun, Jan 21",Away,Seattle,401559952,W,3-1,23-14-8,Samsonov,Matthews
+21,"Wed, Jan 24",Home,Winnipeg,401559968,W,1-0 OT,24-14-8,Samsonov,Samsonov
+21,"Sat, Jan 27",Away,Winnipeg,401559997,W,4-2,25-14-8,Samsonov,Matthews
+22,"Wed, Oct 11",Home,Edmonton,401559243,W,8-1,1-0-0,Demko,Boeser
+22,"Sat, Oct 14",Away,Edmonton,401559265,W,4-3,2-0-0,DeSmith,DeSmith
+22,"Tue, Oct 17",Away,Philadelphia,401559277,L,2-0,2-1-0,Demko,Demko
+22,"Thu, Oct 19",Away,Tampa Bay,401559287,L,4-3,2-2-0,Demko,Miller
+22,"Sat, Oct 21",Away,Florida,401559305,W,5-3,3-2-0,DeSmith,Miller
+22,"Tue, Oct 24",Away,Nashville,401559330,W,3-2,4-2-0,Demko,Hughes
+22,"Fri, Oct 27",Home,St. Louis,401559350,W,5-0,5-2-0,Demko,Demko
+22,"Sat, Oct 28",Home,New York,401559360,L,4-3 OT,5-2-1,DeSmith,Hronek
+22,"Tue, Oct 31",Home,Nashville,401559373,W,5-2,6-2-1,Demko,Pettersson
+22,"Thu, Nov 2",Away,San Jose,401559390,W,10-1,7-2-1,Demko,Hughes
+22,"Sat, Nov 4",Home,Dallas,401559404,W,2-0,8-2-1,Demko,Demko
+22,"Mon, Nov 6",Home,Edmonton,401559413,W,6-2,9-2-1,Demko,Hughes
+22,"Thu, Nov 9",Away,Ottawa,401559427,W,5-2,10-2-1,DeSmith,Miller
+22,"Sat, Nov 11",Away,Toronto,401559445,L,5-2,10-3-1,Demko,Suter
+22,"Sun, Nov 12",Away,Montreal,401559457,W,5-2,11-3-1,DeSmith,Boeser
+22,"Wed, Nov 15",Home,New York,401559474,W,4-3 OT,12-3-1,Demko,Hughes
+22,"Thu, Nov 16",Away,Calgary,401559479,L,5-2,12-4-1,DeSmith,Hoglander
+22,"Sat, Nov 18",Home,Seattle,401559495,L,4-3,12-5-1,Demko,Hoglander
+22,"Mon, Nov 20",Home,San Jose,401559506,W,3-1,13-5-1,Demko,Demko
+22,"Wed, Nov 22",Away,Colorado,401559519,L,5-2,13-6-1,Demko,Hoglander
+22,"Fri, Nov 24",Away,Seattle,401559536,W,5-1,14-6-1,Demko,Demko
+22,"Sat, Nov 25",Away,San Jose,401559544,L,4-3,14-7-1,DeSmith,Boeser
+22,"Tue, Nov 28",Home,Anaheim,401559555,W,3-1,15-7-1,Demko,Demko
+22,"Thu, Nov 30",Home,Vegas,401559581,L,4-1,15-8-1,Demko,Kuzmenko
+22,"Sat, Dec 2",Away,Calgary,401559595,W,4-3,16-8-1,Demko,Pettersson
+22,"Tue, Dec 5",Home,New Jersey,401559616,L,6-5,16-9-1,Demko,Miller
+22,"Thu, Dec 7",Home,Minnesota,401559632,W,2-0,17-9-1,DeSmith,DeSmith
+22,"Sat, Dec 9",Home,Carolina,401559647,W,4-3,18-9-1,Demko,Pettersson
+22,"Tue, Dec 12",Home,Tampa Bay,401559667,W,4-1,19-9-1,Demko,Boeser
+22,"Thu, Dec 14",Home,Florida,401559682,W,4-0,20-9-1,Demko,Demko
+22,"Sat, Dec 16",Away,Minnesota,401559690,L,2-1 SO,20-9-2,DeSmith,DeSmith
+22,"Sun, Dec 17",Away,Chicago,401559703,W,4-3,21-9-2,Demko,Myers
+22,"Tue, Dec 19",Away,Nashville,401559720,W,5-2,22-9-2,DeSmith,Pettersson
+22,"Thu, Dec 21",Away,Dallas,401559734,L,4-3 OT,22-9-3,Demko,Garland
+22,"Sat, Dec 23",Home,San Jose,401559755,W,7-4,23-9-3,Demko,Hughes
+22,"Thu, Dec 28",Home,Philadelphia,401559772,L,4-1,23-10-3,DeSmith,Joshua
+22,"Tue, Jan 2",Home,Ottawa,401559812,W,6-3,24-10-3,Demko,Suter
+22,"Thu, Jan 4",Away,St. Louis,401559821,L,2-1,24-11-3,Demko,Demko
+22,"Sat, Jan 6",Away,New Jersey,401559837,W,6-4,25-11-3,Demko,Pettersson
+22,"Mon, Jan 8",Away,New York,401559849,W,6-3,26-11-3,Demko,Pettersson
+22,"Tue, Jan 9",Away,New York,401559856,W,5-2,27-11-3,DeSmith,Hronek
+22,"Thu, Jan 11",Away,Pittsburgh,401559871,W,4-3 OT,28-11-3,Demko,Pettersson
+22,"Sat, Jan 13",Away,Buffalo,401559882,W,1-0,29-11-3,Demko,Demko
+22,"Mon, Jan 15",Away,Columbus,401559902,L,4-3 SO,29-11-4,DeSmith,DeSmith
+22,"Thu, Jan 18",Home,Arizona,401559929,W,2-1,30-11-4,Demko,Demko
+22,"Sat, Jan 20",Home,Toronto,401559941,W,6-4,31-11-4,Demko,Garland
+22,"Mon, Jan 22",Home,Chicago,401559957,W,2-0,32-11-4,Demko,Demko
+22,"Wed, Jan 24",Home,St. Louis,401559972,L,4-3 OT,32-11-5,DeSmith,Suter
+37,"Tue, Oct 10",Home,Seattle,401559238,W,4-1,1-0-0,Hill,Hill
+37,"Thu, Oct 12",Away,San Jose,401559252,W,4-1,2-0-0,Thompson,Thompson
+37,"Sat, Oct 14",Home,Anaheim,401559266,W,4-1,3-0-0,Hill,Stephenson
+37,"Tue, Oct 17",Home,Dallas,401559282,W,3-2 SO,4-0-0,Hill,Karlsson
+37,"Thu, Oct 19",Away,Winnipeg,401559293,W,5-3,5-0-0,Thompson,Theodore
+37,"Sat, Oct 21",Away,Chicago,401559306,W,5-3,6-0-0,Hill,Cotter
+37,"Tue, Oct 24",Home,Philadelphia,401559333,W,3-2,7-0-0,Thompson,Theodore
+37,"Fri, Oct 27",Home,Chicago,401559346,L,4-3 OT,7-0-1,Hill,Karlsson
+37,"Sat, Oct 28",Away,Los Angeles,401559361,W,4-3 SO,8-0-1,Thompson,Thompson
+37,"Mon, Oct 30",Home,Montreal,401559372,W,3-2 SO,9-0-1,Hill,Hill
+37,"Thu, Nov 2",Home,Winnipeg,401559388,W,5-2,10-0-1,Thompson,Marchessault
+37,"Sat, Nov 4",Home,Colorado,401559405,W,7-0,11-0-1,Hill,Hill
+37,"Sun, Nov 5",Away,Anaheim,401559409,L,4-2,11-1-1,Thompson,Eichel
+37,"Wed, Nov 8",Home,Los Angeles,401559425,L,4-1,11-2-1,Hill,Pietrangelo
+37,"Fri, Nov 10",Home,San Jose,401559441,W,5-0,12-2-1,Hill,Pietrangelo
+37,"Tue, Nov 14",Away,Washington,401559464,L,3-0,12-3-1,Thompson,Thompson
+37,"Thu, Nov 16",Away,Montreal,401559475,W,6-5,13-3-1,Hill,Theodore
+37,"Sat, Nov 18",Away,Philadelphia,401559485,L,4-3 OT,13-3-2,Thompson,Marchessault
+37,"Sun, Nov 19",Away,Pittsburgh,401559498,L,3-0,13-4-2,Hill,Hill
+37,"Wed, Nov 22",Away,Dallas,401559518,W,2-1 OT,14-4-2,Hill,Hill
+37,"Sat, Nov 25",Home,Arizona,401559543,L,2-0,14-5-2,Thompson,Thompson
+37,"Mon, Nov 27",Away,Calgary,401559554,L,2-1 OT,14-5-3,Hill,Hill
+37,"Tue, Nov 28",Away,Edmonton,401559564,L,5-4 SO,14-5-4,Thompson,Amadio
+37,"Thu, Nov 30",Away,Vancouver,401559581,W,4-1,15-5-4,Hill,Eichel
+37,"Sat, Dec 2",Home,Washington,401559596,W,4-1,16-5-4,Thompson,Eichel
+37,"Mon, Dec 4",Home,St. Louis,401559608,L,2-1 OT,16-5-5,Thompson,Eichel
+37,"Wed, Dec 6",Away,St. Louis,401559619,W,6-3,17-5-5,Thompson,Kolesar
+37,"Sat, Dec 9",Away,Dallas,401559638,W,6-1,18-5-5,Thompson,Roy
+37,"Sun, Dec 10",Home,San Jose,401559656,W,5-4 SO,19-5-5,Patera,Marchessault
+37,"Tue, Dec 12",Home,Calgary,401559668,W,5-4 OT,20-5-5,Thompson,Stone
+37,"Fri, Dec 15",Home,Buffalo,401559689,L,5-2,20-6-5,Thompson,Eichel
+37,"Sun, Dec 17",Home,Ottawa,401559707,W,6-3,21-6-5,Thompson,Stone
+37,"Tue, Dec 19",Away,Carolina,401559718,L,6-3,21-7-5,Thompson,Carrier
+37,"Thu, Dec 21",Away,Tampa Bay,401559728,L,5-4,21-8-5,Patera,Marchessault
+37,"Sat, Dec 23",Away,Florida,401559743,L,4-2,21-9-5,Patera,Patera
+37,"Wed, Dec 27",Away,Anaheim,401559769,L,5-2,21-10-5,Thompson,Cotter
+37,"Thu, Dec 28",Home,Los Angeles,401559773,W,3-2,22-10-5,Thompson,Thompson
+37,"Mon, Jan 1",Home,Seattle *,401555902,L,3-0,22-11-5,Thompson,Marchessault
+37,"Thu, Jan 4",Home,Florida,401559826,L,4-1,22-12-5,Thompson,Dorofeyev
+37,"Sat, Jan 6",Home,New York,401559844,W,5-2,23-12-5,Thompson,Roy
+37,"Wed, Jan 10",Away,Colorado,401559865,L,3-0,23-13-5,Patera,Patera
+37,"Thu, Jan 11",Home,Boston,401559878,W,2-1 OT,24-13-5,Thompson,Thompson
+37,"Sat, Jan 13",Home,Calgary,401559896,L,3-1,24-14-5,Thompson,Stephenson
+37,"Mon, Jan 15",Home,Nashville,401559908,W,4-1,25-14-5,Thompson,Stone
+37,"Thu, Jan 18",Home,New York,401559930,W,5-1,26-14-5,Thompson,Thompson
+37,"Sat, Jan 20",Home,Pittsburgh,401559944,W,3-2,27-14-5,Thompson,Barbashev
+37,"Mon, Jan 22",Away,New Jersey,401559954,L,6-5 OT,27-14-6,Thompson,Marchessault
+37,"Tue, Jan 23",Away,New York,401559962,W,3-2,28-14-6,Hill,Hill
+37,"Fri, Jan 26",Away,New York,401559984,W,5-2,29-14-6,Hill,Hill
+23,"Fri, Oct 13",Home,Pittsburgh,401559254,L,4-0,0-1-0,Lindgren,Kuznetsov
+23,"Mon, Oct 16",Home,Calgary,401559273,W,3-2 SO,1-1-0,Kuemper,Kuemper
+23,"Wed, Oct 18",Away,Ottawa,401559284,L,6-1,1-2-0,Kuemper,Carlson
+23,"Sat, Oct 21",Away,Montreal,401559303,L,3-2 OT,1-2-1,Kuemper,Strome
+23,"Tue, Oct 24",Home,Toronto,401559318,L,4-1,1-3-1,Kuemper,Ovechkin
+23,"Wed, Oct 25",Away,New Jersey,401559334,W,6-4,2-3-1,Shepard,Ovechkin
+23,"Fri, Oct 27",Home,Minnesota,401559348,W,3-2 SO,3-3-1,Kuemper,Kuemper
+23,"Sun, Oct 29",Home,San Jose,401559364,W,3-1,4-3-1,Kuemper,Kuemper
+23,"Thu, Nov 2",Home,New York,401559383,L,3-0,4-4-1,Kuemper,Kuznetsov
+23,"Sat, Nov 4",Home,Columbus,401559399,W,2-1,5-4-1,Lindgren,Lindgren
+23,"Wed, Nov 8",Home,Florida,401559424,L,4-3 OT,5-4-2,Kuemper,McMichael
+23,"Fri, Nov 10",Away,New Jersey,401559440,W,4-2,6-4-2,Lindgren,Kuznetsov
+23,"Sat, Nov 11",Away,New York,401559450,W,4-1,7-4-2,Shepard,Shepard
+23,"Tue, Nov 14",Home,Vegas,401559464,W,3-0,8-4-2,Lindgren,Lindgren
+23,"Sat, Nov 18",Home,Columbus,401559489,W,4-3,9-4-2,Lindgren,Lapierre
+23,"Wed, Nov 22",Home,Buffalo,401559512,W,4-3 OT,10-4-2,Kuemper,Carlson
+23,"Fri, Nov 24",Home,Edmonton,401559525,L,5-0,10-5-2,Lindgren,Wilson
+23,"Mon, Nov 27",Away,San Jose,401559556,L,2-1,10-6-2,Kuemper,Kuznetsov
+23,"Wed, Nov 29",Away,Los Angeles,401559568,W,2-1,11-6-2,Lindgren,Lindgren
+23,"Thu, Nov 30",Away,Anaheim,401559582,W,5-4,12-6-2,Kuemper,Wilson
+23,"Sat, Dec 2",Away,Vegas,401559596,L,4-1,12-7-2,Kuemper,Kuemper
+23,"Mon, Dec 4",Away,Arizona,401559607,L,6-0,12-8-2,Kuemper,Wilson
+23,"Thu, Dec 7",Home,Dallas,401559625,L,5-4 SO,12-8-3,Lindgren,Strome
+23,"Sat, Dec 9",Home,New York,401559643,W,4-0,13-8-3,Lindgren,Lindgren
+23,"Sun, Dec 10",Away,Chicago,401559653,W,4-2,14-8-3,Kuemper,Dowd
+23,"Thu, Dec 14",Away,Philadelphia,401559678,L,4-3 SO,14-8-4,Lindgren,Strome
+23,"Sat, Dec 16",Away,Nashville,401559698,L,3-1,14-9-4,Lindgren,Ovechkin
+23,"Sun, Dec 17",Away,Carolina,401559704,W,2-1 SO,15-9-4,Kuemper,Kuemper
+23,"Wed, Dec 20",Home,New York,401559724,W,3-2 OT,16-9-4,Kuemper,Kuemper
+23,"Thu, Dec 21",Away,Columbus,401559733,W,3-2 OT,17-9-4,Lindgren,Lindgren
+23,"Sat, Dec 23",Home,Tampa Bay,401559747,L,2-1 SO,17-9-5,Lindgren,Lindgren
+23,"Wed, Dec 27",Away,New York,401559760,L,5-1,17-10-5,Kuemper,Mantha
+23,"Fri, Dec 29",Away,New York,401559779,L,5-1,17-11-5,Kuemper,Aube-Kubel
+23,"Sat, Dec 30",Home,Nashville,401559791,L,3-2 SO,17-11-6,Shepard,Shepard
+23,"Tue, Jan 2",Away,Pittsburgh,401559803,W,4-3,18-11-6,Kuemper,Kuemper
+23,"Wed, Jan 3",Home,New Jersey,401559815,L,6-3,18-12-6,Shepard,Kuznetsov
+23,"Fri, Jan 5",Home,Carolina,401559831,L,6-2,18-13-6,Kuemper,Dowd
+23,"Sun, Jan 7",Home,Los Angeles,401559845,W,4-3,19-13-6,Kuemper,Carlson
+23,"Thu, Jan 11",Home,Seattle,401559872,L,4-1,19-14-6,Kuemper,Ovechkin
+23,"Sat, Jan 13",Home,New York,401559881,W,3-2,20-14-6,Lindgren,Lindgren
+23,"Sun, Jan 14",Away,New York,401559897,L,2-1,20-15-6,Lindgren,Oshie
+23,"Tue, Jan 16",Home,Anaheim,401559911,W,2-0,21-15-6,Kuemper,Kuemper
+23,"Thu, Jan 18",Home,St. Louis,401559924,W,5-2,22-15-6,Lindgren,Oshie
+23,"Sat, Jan 20",Away,St. Louis,401559942,L,3-0,22-16-6,Lindgren,Lindgren
+23,"Tue, Jan 23",Away,Minnesota,401559963,L,5-3,22-17-6,Kuemper,Mantha
+23,"Wed, Jan 24",Away,Colorado,401559971,L,6-2,22-18-6,Lindgren,Strome
+28,"Wed, Oct 11",Away,Calgary,401559242,L,5-3,0-1-0,Hellebuyck,DeMelo
+28,"Sat, Oct 14",Home,Florida,401559256,W,6-4,1-1-0,Hellebuyck,Connor
+28,"Tue, Oct 17",Home,Los Angeles,401559280,L,5-1,1-2-0,Hellebuyck,Scheifele
+28,"Thu, Oct 19",Home,Vegas,401559293,L,5-3,1-3-0,Brossoit,Iafallo
+28,"Sat, Oct 21",Away,Edmonton,401559312,W,3-2 OT,2-3-0,Hellebuyck,Hellebuyck
+28,"Tue, Oct 24",Home,St. Louis,401559328,W,4-2,3-3-0,Hellebuyck,Pionk
+28,"Thu, Oct 26",Away,Detroit,401559337,W,4-1,4-3-0,Hellebuyck,Hellebuyck
+28,"Sat, Oct 28",Away,Montreal,401559356,L,4-3 SO,4-3-1,Brossoit,Lowry
+28,"Mon, Oct 30",Home,New York,401559369,L,3-2 OT,4-3-2,Hellebuyck,Perfetti
+28,"Thu, Nov 2",Away,Vegas,401559388,L,5-2,4-4-2,Hellebuyck,Connor
+28,"Sat, Nov 4",Away,Arizona,401559394,W,5-3,5-4-2,Hellebuyck,Niederreiter
+28,"Tue, Nov 7",Away,St. Louis,401559417,W,5-2,6-4-2,Hellebuyck,Connor
+28,"Thu, Nov 9",Home,Nashville,401559433,W,6-3,7-4-2,Brossoit,Connor
+28,"Sat, Nov 11",Home,Dallas,401559444,L,3-2,7-5-2,Hellebuyck,Dillon
+28,"Tue, Nov 14",Home,New Jersey,401559469,W,6-3,8-5-2,Hellebuyck,Morrissey
+28,"Fri, Nov 17",Home,Buffalo,401559483,W,3-2,9-5-2,Hellebuyck,Hellebuyck
+28,"Sat, Nov 18",Home,Arizona,401559491,W,5-2,10-5-2,Brossoit,Scheifele
+28,"Wed, Nov 22",Away,Tampa Bay,401559509,W,3-2 OT,11-5-2,Hellebuyck,Hellebuyck
+28,"Fri, Nov 24",Away,Florida,401559533,W,3-0,12-5-2,Hellebuyck,Hellebuyck
+28,"Sun, Nov 26",Away,Nashville,401559548,L,3-2,12-6-2,Brossoit,Morrissey
+28,"Tue, Nov 28",Home,Dallas,401559562,L,2-0,12-7-2,Hellebuyck,Morrissey
+28,"Thu, Nov 30",Home,Edmonton,401559578,L,3-1,12-8-2,Hellebuyck,Hellebuyck
+28,"Sat, Dec 2",Home,Chicago,401559586,W,3-1,13-8-2,Hellebuyck,Hellebuyck
+28,"Mon, Dec 4",Home,Carolina,401559606,W,2-1,14-8-2,Brossoit,Brossoit
+28,"Thu, Dec 7",Away,Colorado,401559629,W,4-2,15-8-2,Hellebuyck,Morrissey
+28,"Sun, Dec 10",Away,Anaheim,401559654,W,4-2,16-8-2,Hellebuyck,Morrissey
+28,"Tue, Dec 12",Away,San Jose,401559670,L,2-1,16-9-2,Brossoit,Brossoit
+28,"Wed, Dec 13",Away,Los Angeles,401559675,W,5-2,17-9-2,Hellebuyck,Ehlers
+28,"Sat, Dec 16",Home,Colorado,401559696,W,6-2,18-9-2,Hellebuyck,Hellebuyck
+28,"Mon, Dec 18",Home,Montreal,401559710,L,3-2 OT,18-9-3,Hellebuyck,Vilardi
+28,"Wed, Dec 20",Home,Detroit,401559725,W,5-2,19-9-3,Brossoit,Vilardi
+28,"Fri, Dec 22",Home,Boston,401559741,W,5-1,20-9-3,Hellebuyck,Niederreiter
+28,"Wed, Dec 27",Away,Chicago,401559766,L,2-1 OT,20-9-4,Hellebuyck,Barron
+28,"Sat, Dec 30",Home,Minnesota,401559784,W,4-2,21-9-4,Hellebuyck,Hellebuyck
+28,"Sun, Dec 31",Away,Minnesota,401559793,W,3-2,22-9-4,Brossoit,Brossoit
+28,"Tue, Jan 2",Home,Tampa Bay,401559808,W,4-2,23-9-4,Hellebuyck,Hellebuyck
+28,"Thu, Jan 4",Away,San Jose,401559829,W,2-1,24-9-4,Hellebuyck,Hellebuyck
+28,"Fri, Jan 5",Away,Anaheim,401559832,W,3-1,25-9-4,Brossoit,Brossoit
+28,"Sun, Jan 7",Away,Arizona,401559847,W,6-2,26-9-4,Hellebuyck,Scheifele
+28,"Tue, Jan 9",Home,Columbus,401559859,W,5-0,27-9-4,Hellebuyck,Hellebuyck
+28,"Thu, Jan 11",Home,Chicago,401559876,W,2-1,28-9-4,Brossoit,Brossoit
+28,"Sat, Jan 13",Home,Philadelphia,401559891,L,2-0,28-10-4,Hellebuyck,Hellebuyck
+28,"Tue, Jan 16",Home,New York,401559913,W,4-2,29-10-4,Hellebuyck,Hellebuyck
+28,"Sat, Jan 20",Away,Ottawa,401559937,W,2-1 OT,30-10-4,Hellebuyck,Hellebuyck
+28,"Mon, Jan 22",Away,Boston,401559953,L,4-1,30-11-4,Hellebuyck,Namestnikov
+28,"Wed, Jan 24",Away,Toronto,401559968,L,1-0 OT,30-11-5,Brossoit,Brossoit

@@ -1,0 +1,50 @@
+Date,Home/Away,Opponent,Result,Record,Goalie,Top Performer
+"Tue, Oct 10",Home,NSH,W 5-3,1-0-0,Johansson,Paul
+"Sat, Oct 14",Away,DET,L 6-4,1-1-0,Johansson,Stamkos
+"Sun, Oct 15",Away,OTT,L 5-2,1-2-0,Tomkins,Cirelli
+"Tue, Oct 17",Away,BUF,L 3-2 OT,1-2-1,Johansson,Hagel
+"Thu, Oct 19",Home,VAN,W 4-3,2-2-1,Johansson,Kucherov
+"Sat, Oct 21",Home,TOR,L 4-3 OT,2-2-2,Johansson,Kucherov
+"Tue, Oct 24",Home,CAR,W 3-0,3-2-2,Johansson,Johansson
+"Thu, Oct 26",Home,SJ,W 6-0,4-2-2,Johansson,Johansson
+"Mon, Oct 30",Home,SEA,L 4-3 OT,4-2-3,Johansson,Jeannot
+"Thu, Nov 2",Away,CBJ,L 4-2,4-3-3,Tomkins,Stamkos
+"Sat, Nov 4",Away,OTT,W 6-4,5-3-3,Johansson,Kucherov
+"Mon, Nov 6",Away,TOR,L 6-5 OT,5-4-3,Johansson,Kucherov
+"Tue, Nov 7",Away,MTL,W 5-3,6-3-4,Tomkins,Kucherov
+"Thu, Nov 9",Home,CHI,L 5-3,6-4-4,Johansson,Cirelli
+"Sat, Nov 11",Home,CAR,L 4-0,6-5-4,Johansson,Watson
+"Tue, Nov 14",Away,STL,L 5-0,6-6-4,Johansson,Eyssimont
+"Thu, Nov 16",Away,CHI,W 4-2,7-6-4,Johansson,Point
+"Sat, Nov 18",Home,EDM,W 6-4,8-6-4,Johansson,Kucherov
+"Mon, Nov 20",Home,BOS,W 5-4 OT,9-6-4,Johansson,Hagel
+"Wed, Nov 22",Home,WPG,L 3-2 OT,9-6-5,Johansson,Kucherov
+"Fri, Nov 24",Away,CAR,W 8-2,10-6-5,Vasilevskiy,Kucherov
+"Mon, Nov 27",Away,COL,L 4-1,10-7-5,Vasilevskiy,Cirelli
+"Tue, Nov 28",Away,ARI,L 3-1,10-8-5,Johansson,Hagel
+"Thu, Nov 30",Home,PIT,L 4-2,10-9-5,Vasilevskiy,Kucherov
+"Sat, Dec 2",Away,DAL,L 8-1,10-10-5,Vasilevskiy,Kucherov
+"Mon, Dec 4",Home,DAL,W 4-0,11-10-5,Vasilevskiy,Vasilevskiy
+"Wed, Dec 6",Home,PIT,W 3-1,12-10-5,Vasilevskiy,Vasilevskiy
+"Thu, Dec 7",Away,NSH,L 5-1,12-11-5,Johansson,Hagel
+"Sat, Dec 9",Away,SEA,W 4-3 OT,13-11-5,Vasilevskiy,Kucherov
+"Tue, Dec 12",Away,VAN,L 4-1,13-12-5,Vasilevskiy,Point
+"Thu, Dec 14",Away,EDM,W 7-4,14-12-5,Vasilevskiy,Stamkos
+"Sat, Dec 16",Away,CGY,L 4-2,14-13-5,Vasilevskiy,Kucherov
+"Tue, Dec 19",Home,STL,W 6-1,15-13-5,Vasilevskiy,Vasilevskiy
+"Thu, Dec 21",Home,VGK,W 5-4,16-13-5,Vasilevskiy,Kucherov
+"Sat, Dec 23",Away,WSH,W 2-1 SO,17-13-5,Vasilevskiy,Vasilevskiy
+"Wed, Dec 27",Home,FLA,L 3-2,17-14-5,Vasilevskiy,Kucherov
+"Sat, Dec 30",Home,NYR,L 5-1,17-15-5,Vasilevskiy,Stamkos
+"Sun, Dec 31",Home,MTL,W 4-3,18-15-5,Johansson,Hedman
+"Tue, Jan 2",Away,WPG,L 4-2,18-16-5,Vasilevskiy,Hedman
+"Thu, Jan 4",Away,MIN,W 4-1,19-16-5,Vasilevskiy,Raddysh
+"Sat, Jan 6",Away,BOS,L 7-3,19-17-5,Vasilevskiy,Kucherov
+"Tue, Jan 9",Home,LA,W 3-2 OT,20-17-5,Vasilevskiy,Hagel
+"Thu, Jan 11",Home,NJ,W 4-3 OT,21-17-5,Vasilevskiy,Glendening
+"Sat, Jan 13",Home,ANA,W 5-1,22-17-5,Vasilevskiy,Stamkos
+"Thu, Jan 18",Home,MIN,W 7-3,23-17-5,Vasilevskiy,Hedman
+"Sat, Jan 20",Away,BUF,W 3-1,24-17-5,Johansson,Johansson
+"Sun, Jan 21",Away,DET,L 2-1,24-18-5,Vasilevskiy,Vasilevskiy
+"Tue, Jan 23",Away,PHI,W 6-3,25-18-5,Vasilevskiy,Kucherov
+"Thu, Jan 25",Home,ARI,W 6-3,26-18-5,Vasilevskiy,Kucherov
