@@ -67,22 +67,22 @@ def fetch_schedule(team_url_segment, team_id):
             top_performer = cols[5].text.strip()
 
             schedule_data.append({
-                'TeamID': team_id,
-                'Date': game_date,
-                'Home/Away': home_away,
-                'Opponent': opponent,
-                'GameID': game_id,
-                'Win/Loss': win_loss,
-                'Result Score': result_score,
-                'Record': record,
-                'Goalie': goalie,
-                'Top Performer': top_performer
+                'team_id': team_id,
+                'date': game_date,
+                'home_away': home_away,
+                'opponent': opponent,
+                'game_id': game_id,
+                'win_loss': win_loss,
+                'result_score': result_score,
+                'record': record,
+                'goalie': goalie,
+                'top_performer': top_performer
             })
 
     return schedule_data
 
 def save_to_csv(data, file_name='nhl_schedules.csv'):
-    headers = ['TeamID', 'Date', 'Home/Away', 'Opponent', 'GameID', 'Win/Loss', 'Result Score', 'Record', 'Goalie', 'Top Performer']
+    headers = ['team_id', 'date', 'home_away', 'opponent', 'game_id', 'win_loss', 'result_score', 'record', 'goalie', 'top_performer']
     with open(file_name, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=headers)
         writer.writeheader()

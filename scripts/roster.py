@@ -64,7 +64,7 @@ def fetch_roster_data(team_url_segment, team_id):
                 player_id = player_link.split('/')[-1] if player_link else 'N/A'
                 player_info = {
                     'team_id': team_id,
-                    'id': player_id,
+                    'player_id': player_id,
                     'name': cols[1].find('a').text.strip() if cols[1].find('a') else 'Unknown',
                     'jersey_number': cols[1].find('span').text.strip() if cols[1].find('span') else 'N/A',
                     'age': cols[2].text.strip(),
@@ -77,19 +77,15 @@ def fetch_roster_data(team_url_segment, team_id):
 
     return players_data
 
-def save_to_csv(data, file_name='nhl_schedules.csv'):
-    directory = 'assets/team_schedules'  # Specify the directory
-    if not os.path.exists(directory):
-        os.makedirs(directory)  # Create the directory if it doesn't exist
-    
-    file_path = os.path.join(directory, file_name)  # Construct the file path
-    
-    headers = ['TeamID', 'Date', 'Home/Away', 'Opponent', 'GameID', 'Win/Loss', 'Result Score', 'Record', 'Goalie', 'Top Performer']
+def save_to_csv(all_players_data, file_path='assets/team_rosters/nhl_roster.csv'):
+    directory = os.path.dirname(file_path)  # Extract directory from file_path
+    os.makedirs(directory, exist_ok=True)  # Ensure the directory exists
+    headers = ['team_id', 'player_id', 'name', 'jersey_number', 'age', 'height', 'weight', 'shot', 'position']
     with open(file_path, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.DictWriter(file, fieldnames=headers)
         writer.writeheader()
-        for entry in data:
-            writer.writerow(entry)
+        for player in all_players_data:
+            writer.writerow(player)
     print(f"Data successfully saved to {file_path}")
 
 all_players_data = []
@@ -101,6 +97,7 @@ for team_url_segment in team_url_segments:
     all_players_data.extend(players_data)
     time.sleep(1)  # Delay to prevent being flagged as a bot
 
-# Adjust the path as necessary to ensure it points to where you want to save the CSV
-save_to_csv(all_players_data, 'assets/team_rosters/nhl_roster.csv')
+# Now, you only need to specify the file path once in the function call
+save_to_csv(all_players_data)
+
 
