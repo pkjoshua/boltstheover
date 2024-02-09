@@ -1,2 +1,0 @@
-# Current day scoreboard, odds, headshots 
-https://site.api.espn.com/apis/site/v2/sports/hockey/nhl/scoreboard
