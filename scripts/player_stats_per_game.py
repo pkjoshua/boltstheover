@@ -1,20 +1,50 @@
 import requests
 from bs4 import BeautifulSoup
-import csv
+import sqlite3
 import os
 
-def read_player_ids(csv_path='assets/team_rosters/nhl_roster.csv'):
-    player_team_ids = []  # This will store both player and team IDs
-    with open(csv_path, mode='r', encoding='utf-8') as file:
-        reader = csv.DictReader(file)
-        for row in reader:
-            player_team_ids.append((row['team_id'], row['player_id']))  # Change here to include TeamID
-    return player_team_ids
+db_path = os.path.join('assets', 'data.db')
 
 def extract_game_id(result_link):
     if '/gameId/' in result_link:
         return result_link.split('/gameId/')[1].split('/')[0]
     return "N/A"
+
+def fetch_player_ids_from_db():
+    """Fetch player and team IDs from the roster table in the database."""
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+    player_team_ids = []
+
+    try:
+        cursor.execute('SELECT team_id, player_id FROM roster')
+        player_team_ids = cursor.fetchall()
+    except sqlite3.Error as e:
+        print(f"An error occurred while fetching player IDs: {e}")
+    finally:
+        conn.close()
+
+    return player_team_ids
+
+def insert_player_stats_into_db(all_player_stats):
+    """Insert player statistics into the player_stats table in the database."""
+    conn = sqlite3.connect(db_path)
+    cursor = conn.cursor()
+
+    for stat in all_player_stats:
+        try:
+            cursor.execute('''
+            INSERT OR REPLACE INTO player_stats (team_id, player_id, game_id, date, opponent, result, score, goals, assists, points, plus_minus, penalty_minutes, shots, shot_percentage, pp_goals, pp_assists, sh_goals, sh_assists, gw_goals, toi, pt)
+            VALUES (:team_id, :player_id, :game_id, :date, :opponent, :result, :score, :goals, :assists, :points, :plus_minus, :penalty_minutes, :shots, :shot_percentage, :pp_goals, :pp_assists, :sh_goals, :sh_assists, :gw_goals, :toi, :pt)
+            ''', stat)
+        except sqlite3.IntegrityError as e:
+            print(f"SQLite Integrity Error: {e}, for player: {stat['player_id']}")
+        except Exception as e:
+            print(f"Unexpected error: {e}, for player: {stat['player_id']}")
+
+    conn.commit()
+    conn.close()
+    print("Player stats data successfully inserted into the database.")
 
 def fetch_player_stats(team_player_id):
     team_id, player_id = team_player_id  # Unpack the tuple
@@ -62,30 +92,15 @@ def fetch_player_stats(team_player_id):
 
     return player_stats
 
-def save_stats_to_csv(all_player_stats, file_name='nhl_player_stats_2324.csv'):
-    directory = 'assets/player_stats'
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-    file_path = os.path.join(directory, file_name)
-    
-    headers = ['team_id', 'player_id', 'game_id', 'date', 'opponent', 'result', 'score', 'goals', 'assists', 'points', 'plus_minus', 'penalty_minutes', 'shots', 'shot_percentage', 'pp_goals', 'pp_assists', 'sh_goals', 'sh_assists', 'gw_goals', 'toi', 'pt']
-    
-    with open(file_path, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.DictWriter(file, fieldnames=headers)
-        writer.writeheader()
-        for stat in all_player_stats:
-            writer.writerow(stat)
-            print(f"Stats successfully saved to {file_path}")
-
 # Main execution
 all_player_stats = []
-player_team_ids = read_player_ids()
+player_team_ids = fetch_player_ids_from_db()
 
 for team_player_id in player_team_ids:
     team_id, player_id = team_player_id  # Unpack the tuple here to access player_id
     player_stats = fetch_player_stats(team_player_id)
     all_player_stats.extend(player_stats)
-    # Move the print statement inside the loop and after stats have been fetched
+    # Print statement to indicate progress
     print(f"Finished fetching stats for player ID {player_id}")
 
-save_stats_to_csv(all_player_stats)
+insert_player_stats_into_db(all_player_stats)

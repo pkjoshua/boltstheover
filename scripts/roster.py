@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import csv
 import time
 import os
+import sqlite3
 
 # Mapping of team URL segments to their IDs
 team_ids = {
@@ -37,6 +38,8 @@ team_url_segments = [
     'tor/toronto-maple-leafs', 'van/vancouver-canucks', 'vgk/vegas-golden-knights',
     'wsh/washington-capitals', 'wpg/winnipeg-jets'
 ]
+
+db_path = os.path.join('assets', 'data.db')
 
 def fetch_roster_data(team_url_segment, team_id):
     base_url = f'https://www.espn.com/nhl/team/roster/_/name/{team_url_segment}'
@@ -77,27 +80,37 @@ def fetch_roster_data(team_url_segment, team_id):
 
     return players_data
 
-def save_to_csv(all_players_data, file_path='assets/team_rosters/nhl_roster.csv'):
-    directory = os.path.dirname(file_path)  # Extract directory from file_path
-    os.makedirs(directory, exist_ok=True)  # Ensure the directory exists
-    headers = ['team_id', 'player_id', 'name', 'jersey_number', 'age', 'height', 'weight', 'shot', 'position']
-    with open(file_path, mode='w', newline='', encoding='utf-8') as file:
-        writer = csv.DictWriter(file, fieldnames=headers)
-        writer.writeheader()
-        for player in all_players_data:
-            writer.writerow(player)
-    print(f"Data successfully saved to {file_path}")
+def insert_roster_data(players_data):
+    """Insert roster data into the SQLite database."""
+    conn = sqlite3.connect(db_path)  # Connect to your SQLite database
+    cursor = conn.cursor()
+
+    for player in players_data:
+        try:
+            # Insert or replace existing record
+            cursor.execute('''
+            INSERT OR REPLACE INTO roster (team_id, player_id, name, jersey_number, age, height, weight, shot, position)
+            VALUES (:team_id, :player_id, :name, :jersey_number, :age, :height, :weight, :shot, :position)
+            ''', player)
+        except sqlite3.IntegrityError as e:
+            print(f"SQLite Integrity Error: {e}, for player: {player['name']}")
+        except Exception as e:
+            print(f"Unexpected error: {e}, for player: {player['name']}")
+
+    conn.commit()  # Commit the transaction
+    conn.close()  # Close the connection
+    print("Roster data successfully inserted into the database.")
 
 all_players_data = []
 for team_url_segment in team_url_segments:
-    team_code = team_url_segment.split('/')[0]  # Extracts the team code, e.g., 'tb' for Tampa Bay Lightning
+    team_code = team_url_segment.split('/')[0]  # Extracts the team code
     team_id = team_ids.get(team_code, "Unknown")  # Fetch the team ID using the team code
     print(f"Fetching data for team ID {team_id}, team code {team_code}")
     players_data = fetch_roster_data(team_url_segment, team_id)
     all_players_data.extend(players_data)
     time.sleep(1)  # Delay to prevent being flagged as a bot
 
-# Now, you only need to specify the file path once in the function call
-save_to_csv(all_players_data)
+# Insert the fetched data into the database
+insert_roster_data(all_players_data)
 
 

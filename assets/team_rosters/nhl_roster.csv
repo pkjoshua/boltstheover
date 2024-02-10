@@ -2,7 +2,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 25,5149153,Leo Carlsson,91,19,"6' 3""",194 lbs,--,C
 25,5474,Sam Carrick,39,32,"6' 0""",200 lbs,R,C
 25,4378685,Bo Groulx,24,24,"6' 2""",198 lbs,L,C
-25,5074,Adam Henrique,14,33,"6' 0""",195 lbs,L,C
+25,5074,Adam Henrique,14,34,"6' 0""",195 lbs,L,C
 25,4352775,Isac Lundestrom,21,24,"6' 0""",193 lbs,L,C
 25,4874718,Mason McTavish,23,21,"6' 0""",213 lbs,L,C
 25,2562636,Ryan Strome,16,31,"6' 1""",191 lbs,R,C
@@ -18,7 +18,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 25,3527554,Frank Vatrano,77,29,"5' 11""",197 lbs,L,RW
 25,5495,Cam Fowler,4,32,"6' 2""",215 lbs,L,D
 25,5502,Radko Gudas,7,33,"6' 0""",208 lbs,R,D
-25,3042013,Robert Hagg,18,28,"6' 2""",210 lbs,L,D
+25,3042013,Robert Hagg,18,29,"6' 2""",210 lbs,L,D
 25,4565262,Jackson LaCombe,60,23,"6' 2""",205 lbs,--,D
 25,4233874,Gustav Lindstrom,28,25,"6' 2""",186 lbs,R,D
 25,5080220,Tristan Luneau,67,20,"6' 1""",195 lbs,R,D
@@ -65,6 +65,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 1,4391789,Jakub Lauko,94,23,"6' 1""",193 lbs,L,C
 1,5103687,Georgii Merkulov,42,23,"5' 11""",179 lbs,--,C
 1,5080221,Matthew Poitras,51,19,"5' 11""",180 lbs,R,C
+1,3942058,Anthony Richard,90,27,"5' 10""",163 lbs,L,C
 1,4392520,Oskar Steen,62,25,"5' 10""",196 lbs,R,C
 1,3899949,Pavel Zacha,18,26,"6' 4""",207 lbs,L,C
 1,3900240,Jake DeBrusk,74,27,"6' 1""",198 lbs,L,LW
@@ -185,6 +186,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 4,4197161,Joey Anderson,15,25,"6' 0""",207 lbs,R,RW
 4,4393072,MacKenzie Entwistle,58,24,"6' 3""",184 lbs,R,RW
 4,4063502,Taylor Raddysh,11,25,"6' 3""",198 lbs,R,RW
+4,4697681,Louis Crevier,46,22,"6' 8""",228 lbs,--,D
 4,3041992,Seth Jones,4,29,"6' 4""",209 lbs,R,D
 4,5080148,Kevin Korchinski,55,19,"6' 2""",185 lbs,L,D
 4,3020228,Jaycob Megna,24,31,"6' 6""",220 lbs,L,D
@@ -217,9 +219,11 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 17,3941970,Caleb Jones,82,26,"6' 1""",194 lbs,L,D
 17,2992930,Kurtis MacDermid,56,29,"6' 5""",233 lbs,L,D
 17,4233563,Cale Makar,8,25,"6' 0""",187 lbs,R,D
+17,5136735,Sam Malinski,70,25,"5' 11""",189 lbs,--,D
 17,2590829,Josh Manson,42,32,"6' 3""",218 lbs,R,D
 17,4196930,Corey Schueneman,44,28,"6' 0""",196 lbs,L,D
 17,3096249,Devon Toews,7,29,"6' 1""",191 lbs,L,D
+17,4393408,Justus Annunen,60,23,"6' 4""",210 lbs,L,G
 17,4294197,Pavel Francouz,39,33,"6' 0""",179 lbs,R,G
 17,4239677,Alexandar Georgiev,40,27,"6' 1""",178 lbs,L,G
 29,5136617,Adam Fantilli,11,19,"6' 2""",195 lbs,L,C
@@ -291,7 +295,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 5,5407,Jeff Petry,46,36,"6' 3""",208 lbs,R,D
 5,4565227,Moritz Seider,53,22,"6' 3""",205 lbs,R,D
 5,3151136,Jake Walman,96,27,"6' 1""",218 lbs,L,D
-5,3151137,Ville Husso,35,28,"6' 3""",205 lbs,L,G
+5,3151137,Ville Husso,35,29,"6' 3""",205 lbs,L,G
 5,3654006,Alex Lyon,34,31,"6' 1""",196 lbs,L,G
 5,3870,James Reimer,47,35,"6' 2""",200 lbs,L,G
 6,3114727,Leon Draisaitl,29,28,"6' 2""",208 lbs,L,C
@@ -332,7 +336,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 26,3942548,Ryan Lomberg,94,29,"5' 9""",184 lbs,L,LW
 26,4024854,Matthew Tkachuk,19,26,"6' 2""",206 lbs,L,LW
 26,4270244,William Lockwood,67,25,"6' 0""",178 lbs,R,RW
-26,3114717,Aaron Ekblad,5,27,"6' 4""",215 lbs,R,D
+26,3114717,Aaron Ekblad,5,28,"6' 4""",215 lbs,R,D
 26,5488,Oliver Ekman-Larsson,91,32,"6' 2""",191 lbs,L,D
 26,3151784,Gustav Forsling,42,27,"6' 0""",195 lbs,L,D
 26,5328,Dmitry Kulikov,7,33,"6' 1""",201 lbs,L,D
@@ -370,6 +374,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 30,4588004,Connor Dewar,26,24,"5' 10""",183 lbs,L,C
 30,3904091,Joel Eriksson Ek,14,27,"6' 3""",207 lbs,L,C
 30,3149649,Frederick Gaudreau,89,30,"6' 0""",184 lbs,R,C
+30,3095892,Vinni Lettieri,10,29,"5' 10""",184 lbs,R,C
 30,4197153,Jacob Lucchini,27,28,"6' 0""",174 lbs,L,C
 30,3042018,Nic Petan,19,28,"5' 9""",175 lbs,L,C
 30,4697391,Marco Rossi,23,22,"5' 9""",182 lbs,L,C
@@ -380,7 +385,6 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 30,3942335,Kirill Kaprizov,97,26,"5' 10""",202 lbs,L,LW
 30,4197009,Brandon Duhaime,21,26,"6' 2""",200 lbs,L,RW
 30,3042063,Ryan Hartman,38,29,"6' 0""",197 lbs,R,RW
-30,4697822,Adam Raska,51,22,"5' 10""",178 lbs,R,RW
 30,5560,Mats Zuccarello,36,36,"5' 8""",181 lbs,L,RW
 30,4002,Zach Bogosian,24,33,"6' 3""",231 lbs,R,D
 30,2562600,Jonas Brodin,25,30,"6' 2""",196 lbs,L,D
@@ -431,7 +435,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 27,4233568,Cody Glass,8,24,"6' 3""",206 lbs,R,C
 27,3942061,Tommy Novak,82,26,"6' 1""",179 lbs,L,C
 27,5823,Gustav Nyquist,14,34,"5' 11""",180 lbs,L,C
-27,5208,Ryan O'Reilly,90,32,"6' 1""",207 lbs,L,C
+27,5208,Ryan O'Reilly,90,33,"6' 1""",207 lbs,L,C
 27,2993474,Colton Sissons,10,30,"6' 1""",200 lbs,R,C
 27,4565245,Philip Tomasino,26,22,"6' 0""",179 lbs,R,C
 27,3904188,Yakov Trenin,13,27,"6' 2""",201 lbs,L,C
@@ -479,13 +483,12 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 11,2590796,Colin Miller,24,31,"6' 1""",200 lbs,R,D
 11,4915344,Simon Nemec,17,19,"6' 1""",190 lbs,R,D
 11,3904190,Jonas Siegenthaler,71,26,"6' 2""",218 lbs,L,D
-11,4973,Brendan Smith,2,34,"6' 2""",200 lbs,L,D
+11,4973,Brendan Smith,2,35,"6' 2""",200 lbs,L,D
 11,4894673,Nico Daws,50,23,"6' 4""",205 lbs,L,G
 11,3114996,Vitek Vanecek,41,28,"6' 2""",184 lbs,L,G
 12,3899946,Mathew Barzal,13,26,"6' 1""",190 lbs,R,C
 12,5262,Casey Cizikas,53,32,"5' 11""",194 lbs,L,C
 12,3042002,Bo Horvat,14,28,"6' 1""",213 lbs,L,C
-12,4393199,Kyle MacLean,32,24,"6' 1""",190 lbs,L,C
 12,5798,Brock Nelson,29,32,"6' 4""",210 lbs,L,C
 12,2593131,Jean-Gabriel Pageau,44,31,"5' 11""",185 lbs,R,C
 12,5517,Kyle Palmieri,21,33,"5' 11""",196 lbs,R,C
@@ -511,6 +514,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 13,4233643,Filip Chytil,72,24,"6' 2""",208 lbs,L,C
 13,4894222,Adam Edstrom,84,23,"6' 7""",220 lbs,L,C
 13,3069411,Barclay Goodrow,21,30,"6' 2""",209 lbs,L,C
+13,4233897,Jake Leschyshyn,15,24,"5' 10""",189 lbs,L,C
 13,5005,Riley Nash,18,34,"6' 2""",185 lbs,R,C
 13,5526,Tyler Pitlick,71,32,"6' 2""",199 lbs,R,C
 13,2563036,Vincent Trocheck,16,30,"5' 11""",187 lbs,R,C
@@ -604,6 +608,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 16,2563076,Matt Nieto,83,31,"5' 11""",185 lbs,L,LW
 16,4712146,Drew O'Connor,10,25,"6' 3""",190 lbs,L,LW
 16,5149600,Marc Johnstone,9,27,"6' 0""",181 lbs,--,RW
+16,4024839,Jesse Puljujarvi,18,25,"6' 4""",201 lbs,R,RW
 16,2562629,Rickard Rakell,67,30,"6' 1""",195 lbs,R,RW
 16,2591155,Bryan Rust,17,31,"5' 11""",192 lbs,R,RW
 16,2500990,Reilly Smith,19,32,"6' 1""",185 lbs,L,RW
@@ -631,7 +636,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 18,4294800,Alexander Barabanov,94,26,"5' 10""",195 lbs,L,LW
 18,3042086,Anthony Duclair,10,28,"5' 11""",197 lbs,L,LW
 18,4874721,William Eklund,72,21,"5' 11""",181 lbs,L,LW
-18,4697708,Danil Gushchin,75,21,"5' 8""",165 lbs,L,LW
+18,4697708,Danil Gushchin,75,22,"5' 8""",165 lbs,L,LW
 18,4587837,Fabian Zetterlund,20,24,"5' 11""",220 lbs,R,LW
 18,3042043,Justin Bailey,90,28,"6' 4""",214 lbs,R,RW
 18,3151792,Kevin Labanc,62,28,"5' 11""",185 lbs,R,RW
@@ -702,6 +707,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 19,5447,Nick Leddy,4,32,"6' 0""",205 lbs,L,D
 19,3069341,Colton Parayko,55,30,"6' 6""",228 lbs,R,D
 19,4320665,Scott Perunovich,48,25,"5' 10""",175 lbs,R,D
+19,4220707,Calle Rosen,43,30,"6' 1""",186 lbs,L,D
 19,5218,Marco Scandella,6,33,"6' 3""",212 lbs,L,D
 19,4587904,Tyler Tucker,75,23,"6' 1""",204 lbs,L,D
 19,2590874,Jordan Binnington,50,30,"6' 2""",172 lbs,L,G
@@ -712,7 +718,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 20,2335062,Luke Glendening,11,34,"5' 10""",190 lbs,R,C
 20,3042138,Tyler Motte,64,28,"5' 10""",194 lbs,L,C
 20,3151187,Brayden Point,21,27,"5' 10""",178 lbs,R,C
-20,5037,Steven Stamkos,91,33,"6' 1""",193 lbs,R,C
+20,5037,Steven Stamkos,91,34,"6' 1""",193 lbs,R,C
 20,4065019,Brandon Hagel,38,25,"6' 2""",183 lbs,L,LW
 20,4064780,Tanner Jeannot,84,26,"6' 2""",220 lbs,L,LW
 20,3042111,Nicholas Paul,20,28,"6' 3""",229 lbs,L,LW
@@ -763,10 +769,9 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 21,3067862,Matt Murray,30,29,"6' 4""",178 lbs,L,G
 21,3900505,Ilya Samsonov,35,26,"6' 3""",217 lbs,L,G
 21,4271575,Joseph Woll,60,25,"6' 3""",202 lbs,L,G
-22,4697579,Nils Aman,88,23,"6' 2""",179 lbs,L,C
+22,4697579,Nils Aman,88,24,"6' 2""",179 lbs,L,C
 22,3024916,Teddy Blueger,53,29,"6' 0""",185 lbs,L,C
 22,4588638,Dakota Joshua,81,27,"6' 3""",206 lbs,L,C
-22,4587713,Linus Karlsson,94,24,"6' 1""",178 lbs,--,C
 22,3151322,Sam Lafferty,18,28,"6' 2""",205 lbs,R,C
 22,3041994,Elias Lindholm,28,29,"6' 1""",202 lbs,R,C
 22,2590852,J.T. Miller,9,30,"6' 1""",218 lbs,L,C
@@ -806,7 +811,6 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 37,3149829,Michael Amadio,22,27,"6' 1""",200 lbs,R,RW
 37,3941546,Keegan Kolesar,55,26,"6' 2""",216 lbs,R,RW
 37,2967072,Jonathan Marchessault,81,33,"5' 9""",185 lbs,R,RW
-37,4320619,Sheldon Rempal,56,28,"5' 10""",165 lbs,R,RW
 37,4425678,Jonas Rondbjerg,46,24,"6' 2""",203 lbs,L,RW
 37,5545,Mark Stone,61,31,"6' 3""",212 lbs,R,RW
 37,4565243,Tobias Bjornfot,7,22,"6' 0""",203 lbs,L,D
@@ -817,6 +821,7 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 37,3927,Alec Martinez,23,36,"6' 1""",210 lbs,L,D
 37,3149621,Dysin Mayo,65,27,"6' 2""",183 lbs,R,D
 37,5202,Brayden McNabb,3,33,"6' 4""",215 lbs,L,D
+37,4894820,Daniil Miromanov,42,26,"6' 4""",198 lbs,R,D
 37,4013,Alex Pietrangelo,7,34,"6' 3""",215 lbs,R,D
 37,3042055,Shea Theodore,27,28,"6' 2""",197 lbs,L,D
 37,4312877,Zach Whitecloud,2,27,"6' 2""",218 lbs,R,D
@@ -865,7 +870,6 @@ team_id,player_id,name,jersey_number,age,height,weight,shot,position
 28,3899952,Kyle Connor,81,27,"6' 1""",183 lbs,L,LW
 28,3114741,Nikolaj Ehlers,27,27,"6' 0""",172 lbs,L,LW
 28,3652598,Alex Iafallo,9,30,"6' 0""",201 lbs,L,LW
-28,4391251,Axel Jonsson-Fjallby,71,25,"6' 1""",189 lbs,L,LW
 28,5511,Nino Niederreiter,62,31,"6' 2""",218 lbs,L,RW
 28,2590861,Dylan DeMelo,2,30,"6' 1""",194 lbs,R,D
 28,2554903,Brenden Dillon,5,33,"6' 4""",225 lbs,L,D
