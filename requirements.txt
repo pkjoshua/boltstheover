@@ -3,3 +3,5 @@ csv
 requests
 time
 os
+selenium
+webdriver_manager

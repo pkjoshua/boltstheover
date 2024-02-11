@@ -5,6 +5,17 @@ import os
 
 db_path = os.path.join('assets', 'data.db')
 
+# Abbreviations
+team_ids = {
+    "ana": "25", "ari": "24", "bos": "1", "buf": "2", "cgy": "3",
+    "car": "7", "chi": "4", "col": "17", "cbj": "29", "dal": "9",
+    "det": "5", "edm": "6", "fla": "26", "la": "8", "min": "30",
+    "mtl": "10", "nsh": "27", "nj": "11", "nyi": "12", "nyr": "13",
+    "ott": "14", "phi": "15", "pit": "16", "sj": "18", "sea": "124292",
+    "stl": "19", "tb": "20", "tor": "21", "van": "22", "vgk": "37",
+    "wsh": "23", "wpg": "28"
+}
+
 def extract_game_id(result_link):
     if '/gameId/' in result_link:
         return result_link.split('/gameId/')[1].split('/')[0]
@@ -45,7 +56,6 @@ def insert_player_stats_into_db(all_player_stats):
     conn.commit()
     conn.close()
     print("Player stats data successfully inserted into the database.")
-
 def fetch_player_stats(team_player_id):
     team_id, player_id = team_player_id  # Unpack the tuple
     url = f"https://www.espn.com/nhl/player/gamelog/_/id/{player_id}"
@@ -64,15 +74,21 @@ def fetch_player_stats(team_player_id):
             game_id = extract_game_id(result_link['href']) if result_link else "N/A"
             win_loss = result_link.find('div', class_='ResultCell').text.strip() if result_link else "N/A"
             result_score = result_link.text.strip() if result_link else "N/A"
+            # Remove leading "W", "L", and trailing "OT" from the result score
+            result_score_cleaned = ''.join(filter(lambda x: x.isdigit() or x == '-', result_score.split(' ')[0]))
+
+            # Extract and clean up the opponent field
+            opponent_abbr = cols[1].text.strip().replace('vs', '').replace('@', '').lower()  # Remove 'vs' or '@'
+            opposing_team_id = team_ids.get(opponent_abbr, "UNK")  # Use the team_ids dictionary to get the ID
             
             stats = {
                 'team_id': team_id, 
                 'player_id': player_id,
                 'game_id': game_id,
                 'date': cols[0].text.strip(),
-                'opponent': cols[1].text.strip(),
+                'opponent': opposing_team_id,
                 'result': win_loss,
-                'score': result_score,
+                'score': result_score_cleaned,
                 'goals': cols[3].text.strip(),
                 'assists': cols[4].text.strip(),
                 'points': cols[5].text.strip(),
