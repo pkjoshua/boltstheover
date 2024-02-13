@@ -15,10 +15,13 @@ def main():
     scripts_dir = os.path.join(os.getcwd(), 'scripts')  # Assuming the current working directory is the base directory
 
     # Define the paths to the scripts
+    db_script_path = os.path.join(scripts_dir, 'create_db.py')
+    roster_script_path = os.path.join(scripts_dir, 'roster.py')
     schedule_script_path = os.path.join(scripts_dir, 'schedule.py')
     player_stats_script_path = os.path.join(scripts_dir, 'player_stats_per_game.py')
 
     # Run the scripts in sequence
+    run_script(roster_script_path)
     run_script(schedule_script_path)
     run_script(player_stats_script_path)
 
