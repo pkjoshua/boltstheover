@@ -1,95 +1,92 @@
 import sqlite3
 import os
 
-# Define the path to the SQLite database
-db_path = os.path.join('assets', 'data.db')
+# Database path
+db_path = 'assets/data.db'
 
-# Check if the database file already exists
-if os.path.exists(db_path):
-    print("Database already exists.")
+# Ensure the assets directory exists
+os.makedirs(os.path.dirname(db_path), exist_ok=True)
 
-# Connect to the SQLite database (this will create it if it doesn't exist)
+# Connect to the SQLite database (it will be created if it doesn't exist)
 conn = sqlite3.connect(db_path)
-cursor = conn.cursor()
+c = conn.cursor()
 
-# roster schema (unchanged)
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS roster (
-    team_id TEXT,
-    player_id TEXT PRIMARY KEY,
+# Create the 'teams' table
+c.execute('''
+CREATE TABLE IF NOT EXISTS teams (
+    league_id TEXT,
+    conference_id TEXT,
+    conference_name TEXT,
+    division_id TEXT,
+    division_name TEXT,
+    global_team_id TEXT,
+    team_id TEXT PRIMARY KEY,
     name TEXT,
-    jersey_number TEXT,
-    age TEXT,
-    height TEXT,
-    weight TEXT,
-    shot TEXT,
-    position TEXT
+    alias TEXT
 )
 ''')
 
-# Updated player_stats schema to match provided stats
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS player_stats (
-    team_id TEXT,
-    player_id TEXT,
-    game_id TEXT,
+# Create the 'schedule' table
+c.execute('''
+CREATE TABLE IF NOT EXISTS schedule (
+    season_id TEXT,
+    season INTEGER,
+    global_event_id TEXT,
+    status TEXT,
     date TEXT,
-    opponent TEXT,
-    result TEXT,
-    score TEXT,
-    goals TEXT,
-    assists TEXT,
-    points TEXT,
-    plus_minus TEXT,
-    penalty_minutes TEXT,
-    shots TEXT,
-    shot_percentage TEXT,
-    pp_goals TEXT,
-    pp_assists TEXT,
-    sh_goals TEXT,
-    sh_assists TEXT,
-    gw_goals TEXT,
-    toi TEXT,
-    pt TEXT,
-    PRIMARY KEY (player_id, game_id)
+    home_points INTEGER,
+    away_points INTEGER,
+    event_id TEXT,
+    home_id TEXT,
+    home_name TEXT,
+    home_alias TEXT,
+    home_team_id TEXT,
+    away_id TEXT,
+    away_name TEXT,
+    away_alias TEXT,
+    away_team_id TEXT,
+    winner_team_id TEXT,
+    winner_name TEXT,
+    FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
 )
 ''')
 
-# schedule schema (unchanged)
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS schedules (
+c.execute('''
+CREATE TABLE IF NOT EXISTS team_stats_per_game (
+    global_event_id TEXT,
+    event_id TEXT,
+    global_team_id TEXT,
     team_id TEXT,
-    gameid TEXT PRIMARY KEY,
+    name TEXT,
+    global_opponent_id TEXT,
+    opponent_id TEXT,
+    opponent_name TEXT,
+    season TEXT,
     date TEXT,
     home_away TEXT,
-    opponent TEXT,
-    win_loss TEXT,
-    result_score TEXT,
-    record TEXT,
-    goalie TEXT,
-    top_performer TEXT
+    result TEXT,
+    goals INTEGER,
+    assists INTEGER,
+    penalties INTEGER,
+    penalty_minutes INTEGER,
+    shots INTEGER,
+    blocked_att INTEGER,
+    missed_shots INTEGER,
+    hits INTEGER,
+    giveaways INTEGER,
+    takeaways INTEGER,
+    blocked_shots INTEGER,
+    faceoffs_won INTEGER,
+    faceoffs_lost INTEGER,
+    powerplays INTEGER,
+    points INTEGER,
+    PRIMARY KEY (global_event_id, global_team_id)
 )
 ''')
 
-# Commit the changes and close the connection
+# Commit the changes and close the database connection
 conn.commit()
 conn.close()
 
-def insert_player_stats_data(player_stats):
-    """Insert or update player stats data into the SQLite database."""
-    conn = sqlite3.connect(db_path)
-    cursor = conn.cursor()
-    
-    for stats in player_stats:
-        try:
-            cursor.execute('''
-            INSERT OR REPLACE INTO player_stats (team_id, player_id, game_id, date, opponent, result, score, goals, assists, points, plus_minus, penalty_minutes, shots, shot_percentage, pp_goals, pp_assists, sh_goals, sh_assists, gw_goals, toi, pt)
-            VALUES (:team_id, :player_id, :game_id, :date, :opponent, :result, :score, :goals, :assists, :points, :plus_minus, :penalty_minutes, :shots, :shot_percentage, :pp_goals, :pp_assists, :sh_goals, :sh_assists, :gw_goals, :toi, :pt)
-            ''', stats)
-        except sqlite3.IntegrityError as e:
-            print(f"Error inserting data: {e}")
-        except Exception as e:
-            print(f"Unexpected error: {e}")
-    
-    conn.commit()
-    conn.close()
+print("Database and tables have been successfully created.")
