@@ -85,6 +85,111 @@ CREATE TABLE IF NOT EXISTS team_stats_per_game (
 )
 ''')
 
+# Create the 'winner_odds' table
+c.execute('''
+CREATE TABLE IF NOT EXISTS winner_odds (
+    global_event_id TEXT,
+    event_id TEXT,
+    home_id TEXT,
+    home_team_id TEXT,
+    home_name TEXT,
+    away_id TEXT,
+    away_team_id TEXT,
+    away_name TEXT,
+    market_id TEXT,
+    book_id TEXT,
+    home_winner_odds TEXT,
+    away_winner_odds TEXT,
+    FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+)
+''')
+
+# Create the 'spread' table
+c.execute('''
+CREATE TABLE IF NOT EXISTS spread_odds (
+    global_event_id TEXT,
+    event_id TEXT,
+    home_id TEXT,
+    home_team_id TEXT,
+    home_name TEXT,
+    away_id TEXT,
+    away_team_id TEXT,
+    away_name TEXT,
+    market_id TEXT,
+    book_id TEXT,
+    home_spread TEXT,
+    home_spread_odds TEXT,
+    away_spread TEXT,
+    away_spread_odds TEXT,
+    FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+)
+''')
+
+# Create the 'total_odds' table
+c.execute('''
+CREATE TABLE IF NOT EXISTS total_odds (
+    global_event_id TEXT,
+    event_id TEXT,
+    home_id TEXT,
+    home_team_id TEXT,
+    home_name TEXT,
+    away_id TEXT,
+    away_team_id TEXT,
+    away_name TEXT,
+    market_id TEXT,
+    book_id TEXT,
+    game_total,
+    game_over_odds TEXT,
+    game_under_odds TEXT,
+    FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+)
+''')
+
+# Create the 'total_odds' table
+c.execute('''
+CREATE TABLE IF NOT EXISTS home_total_odds (
+    global_event_id TEXT,
+    event_id TEXT,
+    home_id TEXT,
+    home_team_id TEXT,
+    home_name TEXT,
+    away_id TEXT,
+    away_team_id TEXT,
+    away_name TEXT,
+    market_id TEXT,
+    book_id TEXT,
+    home_total TEXT,
+    home_over_odds TEXT,
+    home_under_odds TEXT,
+    FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+)
+''')
+
+# Create the 'total_odds' table
+c.execute('''
+CREATE TABLE IF NOT EXISTS away_total_odds (
+    global_event_id TEXT,
+    event_id TEXT,
+    home_id TEXT,
+    home_team_id TEXT,
+    home_name TEXT,
+    away_id TEXT,
+    away_team_id TEXT,
+    away_name TEXT,
+    market_id TEXT,
+    book_id TEXT,
+    away_total TEXT,
+    away_over_odds TEXT,
+    away_under_odds TEXT,
+    FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+)
+''')
+
 # Commit the changes and close the database connection
 conn.commit()
 conn.close()

@@ -47,13 +47,13 @@ def insert_schedule_data(db_path, data):
         event_id = extract_number(game.get('sr_id', ''))
 
         # Home team details
-        home_id = extract_number(game['home']['id'])
+        home_id = game['home']['id']
         home_name = game['home']['name']
         home_alias = game['home']['alias']
         home_team_id = extract_number(game['home'].get('sr_id', ''))
 
         # Away team details
-        away_id = extract_number(game['away']['id'])
+        away_id = game['away']['id']
         away_name = game['away']['name']
         away_alias = game['away']['alias']
         away_team_id = extract_number(game['away'].get('sr_id', ''))
