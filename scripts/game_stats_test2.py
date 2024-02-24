@@ -4,17 +4,38 @@ from datetime import datetime, timedelta
 import pytz
 import re
 import time
+import logging
 
+# Setup logging
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuration
 db_path = 'assets/data.db'
 api_key = '3s2jrxegxx8b7eqa6nay9898' 
 
-# Two Teams!
-teams = {
-    'One': 3678,
-    'Two': 3690,
-}
+# Teams by name
+teams = ['Lightning', 'Islanders']
+
+def get_team_id_from_name(team_name):
+    """Retrieve team ID from the database based on team name."""
+    logging.debug(f"Attempting to get team ID for: {team_name}")
+    with sqlite3.connect(db_path) as conn:
+        cursor = conn.cursor()
+        query = "SELECT team_id FROM teams WHERE name = ? LIMIT 1"
+        cursor.execute(query, (team_name,))
+        result = cursor.fetchone()
+        if result:
+            logging.debug(f"Found team ID {result[0]} for team name: {team_name}")
+            return result[0]
+        else:
+            logging.warning(f"No team found for name: {team_name}")
+            return None
+
+def data_exists_for_event(conn, global_event_id):
+    """Check if data for the global_event_id already exists."""
+    cursor = conn.cursor()
+    cursor.execute("SELECT EXISTS(SELECT 1 FROM team_stats_per_game WHERE global_event_id = ? LIMIT 1)", (global_event_id,))
+    return cursor.fetchone()[0]
 
 # Fetch previous game data 
 def fetch_previous_games(team_id):
@@ -49,17 +70,19 @@ def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
     print(f"Attempting to fetch data for game ID: {global_event_id}")
     url = f"http://api.sportradar.us/nhl/trial/v7/en/games/{global_event_id}/summary.json?api_key={api_key}"
     
-    try:
-        response = requests.get(url)
-        if response.status_code != 200:
-            print(f"Failed to fetch data for game {global_event_id}: HTTP {response.status_code}, skipping to next game.")
-            return  # Skip this game and continue with the next one
-        
-        game_data = response.json()
+    with sqlite3.connect(db_path) as conn:
+        if data_exists_for_event(conn, global_event_id):
+            print(f"Data already exists for game {global_event_id}, skipping.")
+            return  # Skip this game as data already exists
 
-        with sqlite3.connect(db_path) as conn:
-            purge_existing_data_for_event(conn, global_event_id)
+        try:
+            response = requests.get(url)
+            if response.status_code != 200:
+                print(f"Failed to fetch data for game {global_event_id}: HTTP {response.status_code}, skipping to next game.")
+                return  # Skip this game and continue with the next one
             
+            game_data = response.json()
+                
             c = conn.cursor()
             c.execute("SELECT date FROM schedule WHERE global_event_id = ?", (global_event_id,))
             date_row = c.fetchone()
@@ -68,7 +91,8 @@ def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
             else:
                 print(f"No schedule entry found for global_event_id {global_event_id}, skipping to next game.")
                 return  # Skip this game due to lack of schedule entry
-
+            
+            # This block must be outside the else clause above
             home_team_goals = game_data['home']['statistics']['total']['goals']
             away_team_goals = game_data['away']['statistics']['total']['goals']
 
@@ -93,18 +117,11 @@ def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
                 insert_team_stats(conn, global_event_id, game_data, team, opponent, season, date, home_away, result)
 
             print(f"Data successfully inserted for game {global_event_id}")
-            
-    except Exception as e:
-        print(f"An error occurred while processing game {global_event_id}: {e}, skipping to next game.")
-
-    finally:
-        time.sleep(2) 
-
-def purge_existing_data_for_event(conn, global_event_id):
-    cursor = conn.cursor()
-    cursor.execute("DELETE FROM team_stats_per_game WHERE global_event_id = ?", (global_event_id,))
-    conn.commit()
-    print(f"Purged existing data for global_event_id {global_event_id}")
+                
+        except Exception as e:
+            print(f"An error occurred while processing game {global_event_id}: {e}, skipping to next game.")
+        finally:
+            time.sleep(2)
 
 def insert_team_stats(conn, global_event_id, game_data, team, opponent, season, date, home_away, result):
     cursor = conn.cursor()
@@ -124,30 +141,44 @@ def insert_team_stats(conn, global_event_id, game_data, team, opponent, season, 
             stats.get('shots', 0), stats.get('blocked_att', 0), stats.get('missed_shots', 0), stats.get('hits', 0), 
             stats.get('giveaways', 0), stats.get('takeaways', 0), stats.get('blocked_shots', 0), stats.get('faceoffs_won', 0), 
             stats.get('faceoffs_lost', 0), stats.get('powerplays', 0), stats.get('points', 0))
+    try:
+        cursor.execute('''
+            INSERT INTO team_stats_per_game (global_event_id, event_id, global_team_id, team_id, name, 
+                global_opponent_id, opponent_id, opponent_name, season, date, home_away, result, 
+                goals, assists, penalties, penalty_minutes, shots, blocked_att, missed_shots, hits, 
+                giveaways, takeaways, blocked_shots, faceoffs_won, faceoffs_lost, 
+                powerplays, points) 
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ''', data)
 
-    cursor.execute('''
-        INSERT INTO team_stats_per_game (global_event_id, event_id, global_team_id, team_id, name, 
-            global_opponent_id, opponent_id, opponent_name, season, date, home_away, result, 
-            goals, assists, penalties, penalty_minutes, shots, blocked_att, missed_shots, hits, 
-            giveaways, takeaways, blocked_shots, faceoffs_won, faceoffs_lost, 
-            powerplays, points) 
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ''', data)
+        conn.commit()
+        print(f"Data successfully inserted for team {team['name']} in game {global_event_id}")
+    except Exception as e:
+        print(f"Failed to insert data for team {team['name']} in game {global_event_id}: {e}")
 
-    conn.commit()
 
 def main():
-    for team_name, team_id in teams.items():
-        print(f"Fetching previous games for {team_name}")
+    logging.info("Script started")
+    for team_name in teams:
+        logging.info(f"Processing team: {team_name}")
+        team_id = get_team_id_from_name(team_name)
+        
+        if team_id is None:
+            logging.error(f"Failed to get team ID for {team_name}, skipping.")
+            continue
+        
+        logging.debug(f"Fetching previous games for team ID: {team_id}")
         previous_games_ids = fetch_previous_games(team_id)
         
-        if not previous_games_ids:  # Check if the game IDs list is empty
-            print(f"No games found for {team_name}.")
-            continue  # Skip to the next team if no games found
+        if not previous_games_ids:
+            logging.info(f"No previous games found for {team_name}, skipping.")
+            continue
 
         for global_event_id in previous_games_ids:
-            print(f"Preparing to fetch stats for game ID: {global_event_id}")  # Log each game ID before the API call
+            logging.debug(f"Fetching and inserting stats for game ID: {global_event_id}")
             fetch_and_insert_team_stats(db_path, global_event_id, api_key)
+    
+    logging.info("Script completed")
 
 if __name__ == "__main__":
     main()
