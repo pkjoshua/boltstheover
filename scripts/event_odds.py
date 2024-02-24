@@ -10,12 +10,13 @@ api_key = 'j7k2wp4a2my3qj9sqhq8fkr5'  # Replace with your actual API key
 book_id = "sr:book:25080"
 
 # Fetch team IDs for input team names
-team_names = ["Sabres"]  
+team_names = ["Lightning"]  
 
 def fetch_event_odds(event_id, api_key):
     """Fetch odds data for a given event_id."""
     url = f"https://api.sportradar.us/oddscomparison-prematch/trial/v2/en/sport_events/sr:sport_event:{event_id}/sport_event_markets.json?api_key={api_key}"
     response = requests.get(url)
+    time.sleep(5)
     if response.status_code == 200:
         return response.json()
     else:
@@ -176,7 +177,7 @@ def insert_odds_data(game_details, winner_odds, spread_odds, total_odds, home_to
 
                 # Insertion for winner_odds - Repeat similar steps for spread_odds and total_odds
                 insert_query_winner = '''
-                INSERT INTO winner_odds (
+                INSERT OR REPLACE INTO winner_odds (
                     global_event_id, event_id, home_id, home_team_id, home_name,
                     away_id, away_team_id, away_name, market_id, book_id,
                     home_winner_odds, away_winner_odds
@@ -186,7 +187,7 @@ def insert_odds_data(game_details, winner_odds, spread_odds, total_odds, home_to
                 
                 # Insertion for winner_odds - Repeat similar steps for spread_odds and total_odds
                 insert_query_spread = '''
-                INSERT INTO spread_odds (
+                INSERT OR REPLACE INTO spread_odds (
                     global_event_id, event_id, home_id, home_team_id, home_name,
                     away_id, away_team_id, away_name, market_id, book_id, home_spread,
                     home_spread_odds, away_spread, away_spread_odds
@@ -196,7 +197,7 @@ def insert_odds_data(game_details, winner_odds, spread_odds, total_odds, home_to
 
                 # Insertion for winner_odds - Repeat similar steps for spread_odds and total_odds
                 insert_query_total = '''
-                INSERT INTO total_odds (
+                INSERT OR REPLACE INTO total_odds (
                     global_event_id, event_id, home_id, home_team_id, home_name,
                     away_id, away_team_id, away_name, market_id, book_id,
                     game_total, game_over_odds, game_under_odds
@@ -205,7 +206,7 @@ def insert_odds_data(game_details, winner_odds, spread_odds, total_odds, home_to
                 cursor.execute(insert_query_total, values_total)
 
                 insert_query_home_total = '''
-                INSERT INTO home_total_odds (
+                INSERT OR REPLACE INTO home_total_odds (
                     global_event_id, event_id, home_id, home_team_id, home_name,
                     away_id, away_team_id, away_name, market_id, book_id,
                     home_total, home_over_odds, home_under_odds
@@ -214,7 +215,7 @@ def insert_odds_data(game_details, winner_odds, spread_odds, total_odds, home_to
                 cursor.execute(insert_query_home_total, values_home_total)
 
                 insert_query_away_total = '''
-                INSERT INTO away_total_odds (
+                INSERT OR REPLACE INTO away_total_odds (
                     global_event_id, event_id, home_id, home_team_id, home_name,
                     away_id, away_team_id, away_name, market_id, book_id,
                     away_total, away_over_odds, away_under_odds
