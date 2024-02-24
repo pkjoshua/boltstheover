@@ -60,7 +60,14 @@ def find_next_game(team_ids):
             if result:
                 games[name] = {
                     'global_event_id': result[0],
-                    'event_id': result[1]
+                    'event_id': result[1],
+                    'date': result[2],
+                    'home_id': result[3],
+                    'home_team_id': result[4],
+                    'home_name': result[5],
+                    'away_id': result[6],
+                    'away_team_id': result[7],
+                    'away_name': result[8],
                 }
             else:
                 print(f"No upcoming games found for team: {name}")

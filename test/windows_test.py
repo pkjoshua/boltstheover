@@ -53,7 +53,7 @@ def display_in_window(dfs, table_names):
     window.mainloop()
 
 def main():
-    tables_to_examine = ['teams', 'schedule','team_stats_per_game']
+    tables_to_examine = ['teams', 'schedule','team_stats_per_game', 'winner_odds', 'spread_odds', 'total_odds', 'home_total_odds', 'away_total_odds']
     dfs = [fetch_random_samples(db_path, table_name) for table_name in tables_to_examine]
     display_in_window(dfs, tables_to_examine)
 

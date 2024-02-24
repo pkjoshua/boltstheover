@@ -12,8 +12,8 @@ api_key = '3s2jrxegxx8b7eqa6nay9898'
 
 # Two Teams!
 teams = {
-    'One': 3694,
-    'Two': 3700,
+    'One': 3678,
+    'Two': 3690,
 }
 
 # Fetch previous game data 
