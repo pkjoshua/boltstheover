@@ -14,7 +14,7 @@ db_path = 'assets/data.db'
 api_key = '3s2jrxegxx8b7eqa6nay9898' 
 
 # Teams by name
-teams = ['Devils', 'Lightning']
+teams = ['Lightning','Flyers']
 
 def get_team_id_from_name(team_name):
     """Retrieve team ID from the database based on team name."""
@@ -66,6 +66,9 @@ def extract_number(sr_id):
     match = re.search(r'\d+', sr_id)
     return match.group(0) if match else sr_id
 
+import requests
+import sqlite3
+
 def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
     print(f"Attempting to fetch data for game ID: {global_event_id}")
     url = f"http://api.sportradar.us/nhl/trial/v7/en/games/{global_event_id}/summary.json?api_key={api_key}"
@@ -73,13 +76,13 @@ def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
     with sqlite3.connect(db_path) as conn:
         if data_exists_for_event(conn, global_event_id):
             print(f"Data already exists for game {global_event_id}, skipping.")
-            return  # Skip this game as data already exists
+            return
 
         try:
             response = requests.get(url)
             if response.status_code != 200:
                 print(f"Failed to fetch data for game {global_event_id}: HTTP {response.status_code}, skipping to next game.")
-                return  # Skip this game and continue with the next one
+                return
             
             game_data = response.json()
                 
@@ -87,12 +90,11 @@ def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
             c.execute("SELECT date FROM schedule WHERE global_event_id = ?", (global_event_id,))
             date_row = c.fetchone()
             if date_row:
-                date = date_row[0]  # Use the date from the schedule table
+                date = date_row[0]
             else:
                 print(f"No schedule entry found for global_event_id {global_event_id}, skipping to next game.")
-                return  # Skip this game due to lack of schedule entry
+                return
             
-            # This block must be outside the else clause above
             home_team_goals = game_data['home']['statistics']['total']['goals']
             away_team_goals = game_data['away']['statistics']['total']['goals']
 
@@ -105,8 +107,20 @@ def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
                 home_result = "L"
                 away_result = "W"
             else:
-                home_result = "T"
-                away_result = "T"
+                # Check for shootout goals to determine the winner
+                home_shootout_goals = game_data['home'].get('shootout', {}).get('goals', 0)
+                away_shootout_goals = game_data['away'].get('shootout', {}).get('goals', 0)
+                if home_shootout_goals > away_shootout_goals:
+                    home_result = "W"
+                    away_result = "L"
+                elif home_shootout_goals < away_shootout_goals:
+                    home_result = "L"
+                    away_result = "W"
+                else:
+                    home_result = "?"
+                    away_result = "?"
+                    print("Unable to determine winner based on shootout data.")
+                    return
 
             for team_context in ['home', 'away']:
                 team = game_data[team_context]
@@ -117,6 +131,7 @@ def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
                 insert_team_stats(conn, global_event_id, game_data, team, opponent, season, date, home_away, result)
 
             print(f"Data successfully inserted for game {global_event_id}")
+
                 
         except Exception as e:
             print(f"An error occurred while processing game {global_event_id}: {e}, skipping to next game.")

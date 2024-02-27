@@ -7,7 +7,7 @@ def start_updater_script():
     script_path = os.path.join(os.path.dirname(__file__), 'scripts', 'updater.py')
     
     # Use subprocess to run the script
-    result = subprocess.run(['python', script_path], capture_output=True, text=True)
+    result = subprocess.run(['python3', script_path], capture_output=True, text=True)
     
     # Print the output and error (if any)
     print("Output:", result.stdout)

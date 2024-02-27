@@ -1,6 +1,7 @@
 import requests
 import sqlite3
 from datetime import datetime
+import time
 
 # Configuration
 db_path = 'assets/data.db'
@@ -22,9 +23,6 @@ def fetch_event_odds(event_id, api_key):
     else:
         print(f"Failed to fetch odds data for event {event_id}: HTTP {response.status_code}")
         return None
-
-# Configuration
-db_path = 'assets/data.db'
 
 def get_team_ids(team_names):
     """Fetch team_ids for given team names."""
@@ -224,7 +222,6 @@ def insert_odds_data(game_details, winner_odds, spread_odds, total_odds, home_to
                 cursor.execute(insert_query_away_total, values_away_total)
 
                 conn.commit()
-
 
 # Example input
 team_ids = get_team_ids(team_names)

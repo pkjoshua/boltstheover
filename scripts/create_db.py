@@ -101,7 +101,8 @@ CREATE TABLE IF NOT EXISTS winner_odds (
     home_winner_odds TEXT,
     away_winner_odds TEXT,
     FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
-    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id),
+    UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
 
@@ -123,7 +124,8 @@ CREATE TABLE IF NOT EXISTS spread_odds (
     away_spread TEXT,
     away_spread_odds TEXT,
     FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
-    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id),
+    UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
 
@@ -144,7 +146,8 @@ CREATE TABLE IF NOT EXISTS total_odds (
     game_over_odds TEXT,
     game_under_odds TEXT,
     FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
-    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id),
+    UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
 
@@ -165,7 +168,8 @@ CREATE TABLE IF NOT EXISTS home_total_odds (
     home_over_odds TEXT,
     home_under_odds TEXT,
     FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
-    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id),
+    UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
 
@@ -186,7 +190,8 @@ CREATE TABLE IF NOT EXISTS away_total_odds (
     away_over_odds TEXT,
     away_under_odds TEXT,
     FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
-    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id),
+    UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
 
