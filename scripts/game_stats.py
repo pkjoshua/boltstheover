@@ -14,7 +14,7 @@ db_path = 'assets/data.db'
 api_key = '3s2jrxegxx8b7eqa6nay9898' 
 
 # Teams by name
-teams = ['Lightning','Flyers']
+teams = ['Lightning','Sabres']
 
 def get_team_id_from_name(team_name):
     """Retrieve team ID from the database based on team name."""

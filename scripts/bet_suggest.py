@@ -21,14 +21,15 @@ def get_team_ids(team_names):
 def find_next_game(team_ids):
     """Find the next game for each team and indicate if they're home or away."""
     games = {}
-    today_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    # Get today's date without time for comparison
+    today_date = datetime.now().strftime('%Y-%m-%d')
     with sqlite3.connect(db_path) as conn:
         c = conn.cursor()
         for name, team_id in team_ids.items():
             c.execute("""
                 SELECT global_event_id, event_id, date, home_team_id, away_team_id
                 FROM schedule
-                WHERE date >= ? AND (home_team_id = ? OR away_team_id = ?)
+                WHERE date(date) >= date(?) AND (home_team_id = ? OR away_team_id = ?)
                 ORDER BY date ASC
                 LIMIT 1
             """, (today_date, team_id, team_id))
@@ -46,6 +47,7 @@ def find_next_game(team_ids):
             else:
                 print(f"No upcoming games found for team: {name}")
     return games
+
 
 def fetch_team_stats(team_id, home_or_away):
     """Fetch team statistics for calculating KPIs."""
@@ -185,6 +187,90 @@ def fetch_last_10_games_stats(team_id):
         else:
             return {'avg_goals': 0, 'avg_shots': 0, 'avg_powerplays': 0, 'avg_penalty_minutes': 0}
 
+def fetch_game_odds(event_id):
+    """Fetch odds information for a specific game across all odds tables."""
+    odds_info = {}
+    with sqlite3.connect(db_path) as conn:
+        c = conn.cursor()
+        
+        # Fetch winner odds
+        c.execute("""
+            SELECT home_winner_odds, away_winner_odds
+            FROM winner_odds
+            WHERE event_id = ?
+        """, (event_id,))
+        winner_odds = c.fetchone()
+        if winner_odds:
+            odds_info['winner_odds'] = {'home_winner_odds': winner_odds[0], 'away_winner_odds': winner_odds[1]}
+        
+        # Fetch spread odds
+        c.execute("""
+            SELECT home_spread, home_spread_odds, away_spread, away_spread_odds
+            FROM spread_odds
+            WHERE event_id = ?
+        """, (event_id,))
+        spread_odds = c.fetchone()
+        if spread_odds:
+            odds_info['spread_odds'] = {
+                'home_spread': spread_odds[0], 'home_spread_odds': spread_odds[1],
+                'away_spread': spread_odds[2], 'away_spread_odds': spread_odds[3]
+            }
+        
+        # Fetch total odds
+        c.execute("""
+            SELECT game_total, game_over_odds, game_under_odds
+            FROM total_odds
+            WHERE event_id = ?
+        """, (event_id,))
+        total_odds = c.fetchone()
+        if total_odds:
+            odds_info['total_odds'] = {
+                'game_total': total_odds[0], 'game_over_odds': total_odds[1], 'game_under_odds': total_odds[2]
+            }
+        
+        # Fetch home total odds
+        c.execute("""
+            SELECT home_total, home_over_odds, home_under_odds
+            FROM home_total_odds
+            WHERE event_id = ?
+        """, (event_id,))
+        home_total_odds = c.fetchone()
+        if home_total_odds:
+            odds_info['home_total_odds'] = {
+                'home_total': home_total_odds[0], 'home_over_odds': home_total_odds[1], 'home_under_odds': home_total_odds[2]
+            }
+        
+        # Fetch away total odds
+        c.execute("""
+            SELECT away_total, away_over_odds, away_under_odds
+            FROM away_total_odds
+            WHERE event_id = ?
+        """, (event_id,))
+        away_total_odds = c.fetchone()
+        if away_total_odds:
+            odds_info['away_total_odds'] = {
+                'away_total': away_total_odds[0], 'away_over_odds': away_total_odds[1], 'away_under_odds': away_total_odds[2]
+            }
+        
+    return odds_info
+
+def suggest_bets(team_name, opposing_team_name, team_stats, opposing_team_stats, head_to_head_stats, odds_info):
+    # Simplified version for demonstration. Adjust logic as needed.
+    suggestions = []
+    # Example logic for winner bet suggestion
+    if float(odds_info.get('winner_odds', {}).get('home_winner_odds', 0)) < float(odds_info.get('winner_odds', {}).get('away_winner_odds', 0)):
+        suggestions.append(f"Consider betting on {team_name} to win.")
+    else:
+        suggestions.append(f"Consider betting on {opposing_team_name} to win.")
+    
+    # Example logic for over/under bet suggestion
+    total_goals_predicted = (team_stats['avg_goals'] + opposing_team_stats['avg_goals']) / 2
+    if total_goals_predicted > float(odds_info.get('total_odds', {}).get('game_total', 0)):
+        suggestions.append("Consider betting on the Over.")
+    else:
+        suggestions.append("Consider betting on the Under.")
+    
+    return suggestions
 
 # Output to terminal
 team_names = ["Lightning"]
@@ -215,6 +301,12 @@ for team_name, game_details in next_games.items():
 
     # Fetch individual game stats for both teams
     individual_game_stats = fetch_individual_game_stats(team_ids[team_name], opposing_team_id)
+
+    # Fetch odds information for the event_id
+    event_id = game_details['event_id']
+    odds_info = fetch_game_odds(event_id)
+
+    bet_suggestions = suggest_bets(team_name, opposing_team_name, team_stats, opposing_team_stats, head_to_head_stats, odds_info)
 
     # Game details
     print(f"- {team_name}'s next game is {game_details['home_or_away']} against the {opposing_team_name} (Team ID: {opposing_team_id})")
@@ -260,3 +352,13 @@ for team_name, game_details in next_games.items():
     print(f"  Average Powerplays: {opposing_team_last_10_games_stats['avg_powerplays']}")
     print(f"  Average Penalty Minutes: {opposing_team_last_10_games_stats['avg_penalty_minutes']}")
 
+    # Display the odds information
+    print("\nOdds Information:")
+    for odds_type, odds_values in odds_info.items():
+        print(f"- {odds_type}:")
+        for key, value in odds_values.items():
+            print(f"  {key}: {value}")
+
+    print("\nBet Suggestions:")
+    for suggestion in bet_suggestions:
+        print(f"- {suggestion}")
