@@ -1,8 +1,9 @@
 from flask import Flask, request, render_template_string
+import subprocess
 
 app = Flask(__name__)
 
-# HTML template with inline CSS for the dashboard
+# Updated HTML_TEMPLATE with stats_content display
 HTML_TEMPLATE = """
 <!DOCTYPE html>
 <html>
@@ -16,6 +17,7 @@ HTML_TEMPLATE = """
         input[type="text"] { width: 100%; padding: 10px; margin-bottom: 10px; }
         input[type="submit"] { padding: 10px 20px; background-color: #00f; color: #fff; border: none; cursor: pointer; }
         input[type="submit"]:hover { background-color: #009; }
+        .stats pre { white-space: pre-wrap; word-wrap: break-word; }
     </style>
 </head>
 <body>
@@ -31,6 +33,12 @@ HTML_TEMPLATE = """
         {% if team_name %}
             <h3>You entered: {{ team_name }}</h3>
         {% endif %}
+        {% if stats_content %}
+        <div class="stats">
+            <h3>Stats and Odds</h3>
+            <pre>{{ stats_content }}</pre>
+        </div>
+        {% endif %}
     </div>
 </body>
 </html>
@@ -38,13 +46,16 @@ HTML_TEMPLATE = """
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
-    team_name = None  # Initialize team_name
+    team_name = None
+    stats_content = ""
     if request.method == 'POST':
-        team_name = request.form['teamName']
+        team_name = request.form['teamName'].title()
         with open('team_name.txt', 'w') as f:
             f.write(team_name)
-        print(f"Team Name Entered: {team_name}")  # Example of what you might do
-    return render_template_string(HTML_TEMPLATE, team_name=team_name)
+        subprocess.run(["python", "scripts/stats_and_odds.py"], check=True)
+        with open('betting_stats.txt', 'r') as file:
+            stats_content = file.read()
+    return render_template_string(HTML_TEMPLATE, team_name=team_name, stats_content=stats_content)
 
 if __name__ == '__main__':
     app.run(debug=True)

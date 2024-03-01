@@ -85,7 +85,7 @@ def fetch_opposing_team_stats(opposing_team_id, home_or_away):
             FROM team_stats_per_game
             WHERE team_id = ? AND home_away = ?
         """
-        c.execute(query, (team_id, home_or_away))
+        c.execute(query, (opposing_team_id, home_or_away))
         result = c.fetchone()
         if result:
             stats = {
@@ -277,93 +277,104 @@ def suggest_bets(team_name, opposing_team_name, team_stats, opposing_team_stats,
     
     return suggestions
 
-# Output to terminal
-team_names = get_latest_team_name_from_file()
-team_ids = get_team_ids([team_names])
+def print_and_write(line, file):
+    print(line)
+    file.write(line + "\n")
 
-print("Team IDs:")
-for team_name, team_id in team_ids.items():
-    print(f"- {team_name}: {team_id}")
+def main():
+    # Open a file for writing
+    with open('betting_stats.txt', 'w') as stats_file:
+        team_names = get_latest_team_name_from_file()
+        team_ids = get_team_ids([team_names])
 
-next_games = find_next_game(team_ids)
+        print_and_write("Team IDs:", stats_file)
+        for team_name, team_id in team_ids.items():
+            print_and_write(f"- {team_name}: {team_id}", stats_file)
 
-print("\nNext Game:")
-for team_name, game_details in next_games.items():
-    # Determine the opposing team's ID
-    opposing_team_id = game_details['away_team_id'] if game_details['home_team_id'] == team_ids[team_name] else game_details['home_team_id']
+        next_games = find_next_game(team_ids)
 
-    # Fetch the opponent's name using the opposing team's ID
-    opposing_team_name = get_opponent_name(opposing_team_id)
+        print_and_write("\nNext Game:", stats_file)
+        for team_name, game_details in next_games.items():
+            # Your existing logic to process each game and stats
+            # Determine the opposing team's ID
+            opposing_team_id = game_details['away_team_id'] if game_details['home_team_id'] == team_ids[team_name] else game_details['home_team_id']
 
-    team_stats = fetch_team_stats(team_ids[team_name], game_details['home_or_away'])
-    opposing_team_stats = fetch_team_stats(opposing_team_id, game_details['home_or_away'])
+            # Fetch the opponent's name using the opposing team's ID
+            opposing_team_name = get_opponent_name(opposing_team_id)
 
-    head_to_head_stats = fetch_head_to_head_stats(team_ids[team_name], opposing_team_id)
+            team_stats = fetch_team_stats(team_ids[team_name], game_details['home_or_away'])
+            opposing_team_stats = fetch_team_stats(opposing_team_id, game_details['home_or_away'])
 
-    # Fetch the last 10 games stats for both teams
-    team_last_10_games_stats = fetch_last_10_games_stats(team_ids[team_name])
-    opposing_team_last_10_games_stats = fetch_last_10_games_stats(opposing_team_id)
+            head_to_head_stats = fetch_head_to_head_stats(team_ids[team_name], opposing_team_id)
 
-    # Fetch individual game stats for both teams
-    individual_game_stats = fetch_individual_game_stats(team_ids[team_name], opposing_team_id)
+            # Fetch the last 10 games stats for both teams
+            team_last_10_games_stats = fetch_last_10_games_stats(team_ids[team_name])
+            opposing_team_last_10_games_stats = fetch_last_10_games_stats(opposing_team_id)
 
-    # Fetch odds information for the event_id
-    event_id = game_details['event_id']
-    odds_info = fetch_game_odds(event_id)
+            # Fetch individual game stats for both teams
+            individual_game_stats = fetch_individual_game_stats(team_ids[team_name], opposing_team_id)
 
-    bet_suggestions = suggest_bets(team_name, opposing_team_name, team_stats, opposing_team_stats, head_to_head_stats, odds_info)
+            # Fetch odds information for the event_id
+            event_id = game_details['event_id']
+            odds_info = fetch_game_odds(event_id)
 
-    # Game details
-    print(f"- {team_name}'s next game is {game_details['home_or_away']} against the {opposing_team_name} (Team ID: {opposing_team_id})")
-    print(f"  Global Event ID: {game_details['global_event_id']}")
-    print(f"  Event ID: {game_details['event_id']}")
-    print(f"  Date: {game_details['date']}")
-    print(f"  Home Team ID: {game_details['home_team_id']}")
-    print(f"  Away Team ID: {game_details['away_team_id']}")
-    # Team season KPIs
-    print(f"\n -- {team_name} KPIs --")
-    print(f"  Average Goals: {team_stats['avg_goals']}")
-    print(f"  Average Shots: {team_stats['avg_shots']}")
-    print(f"  Average Powerplays: {team_stats['avg_powerplays']}")
-    print(f"  Average Penalty Minutes: {team_stats['avg_penalty_minutes']}")
-    # Opponent season KPIs
-    print(f"\n -- {opposing_team_name} KPIs --")
-    print(f"  Average Goals: {opposing_team_stats['avg_goals']}")
-    print(f"  Average Shots: {opposing_team_stats['avg_shots']}")
-    print(f"  Average Powerplays: {opposing_team_stats['avg_powerplays']}")
-    print(f"  Average Penalty Minutes: {opposing_team_stats['avg_penalty_minutes']}")
-    # H2H KPIs
-    print(f"\n -- H2H KPIs --")
-    print(f"  Head-to-Head Stats {team_name} vs {get_opponent_name(opposing_team_id)}:")
-    print(f"  Total Goals: {head_to_head_stats['total_goals']}")
-    print(f"  Average Shots: {head_to_head_stats['avg_shots']}")
+            bet_suggestions = suggest_bets(team_name, opposing_team_name, team_stats, opposing_team_stats, head_to_head_stats, odds_info)
+            # Example of using print_and_write for one of the lines
+            print_and_write(f"- {team_name}'s next game is {game_details['home_or_away']} against the {opposing_team_name} (Team ID: {opposing_team_id})", stats_file)
+            # Game details
+            print_and_write(f"  Global Event ID: {game_details['global_event_id']}", stats_file)
+            print_and_write(f"  Event ID: {game_details['event_id']}", stats_file)
+            print_and_write(f"  Date: {game_details['date']}", stats_file)
+            print_and_write(f"  Home Team ID: {game_details['home_team_id']}", stats_file)
+            print_and_write(f"  Away Team ID: {game_details['away_team_id']}", stats_file)
+            # Team season KPIs
+            print_and_write(f"\n -- {team_name} KPIs --", stats_file)
+            print_and_write(f"  Average Goals: {team_stats['avg_goals']}", stats_file)
+            print_and_write(f"  Average Shots: {team_stats['avg_shots']}", stats_file)
+            print_and_write(f"  Average Powerplays: {team_stats['avg_powerplays']}", stats_file)
+            print_and_write(f"  Average Penalty Minutes: {team_stats['avg_penalty_minutes']}", stats_file)
+            # Opponent season KPIs
+            print_and_write(f"\n -- {opposing_team_name} KPIs --", stats_file)
+            print_and_write(f"  Average Goals: {opposing_team_stats['avg_goals']}", stats_file)
+            print_and_write(f"  Average Shots: {opposing_team_stats['avg_shots']}", stats_file)
+            print_and_write(f"  Average Powerplays: {opposing_team_stats['avg_powerplays']}", stats_file)
+            print_and_write(f"  Average Penalty Minutes: {opposing_team_stats['avg_penalty_minutes']}", stats_file)
+            # H2H KPIs
+            print_and_write(f"\n -- H2H KPIs --", stats_file)
+            print_and_write(f"  Head-to-Head Stats {team_name} vs {get_opponent_name(opposing_team_id)}:", stats_file)
+            print_and_write(f"  Total Goals: {head_to_head_stats['total_goals']}", stats_file)
+            print_and_write(f"  Average Shots: {head_to_head_stats['avg_shots']}", stats_file)
 
-    # Print individual game stats for both teams
-    print(f"\n -- Individual Game Stats: {team_name} vs {opposing_team_name} --")
-    for game_stat in individual_game_stats:
-        print(f"  Game ID: {game_stat['event_id']}, "
-            f"{team_name} Goals: {game_stat['team_goals']}, Shots: {game_stat['team_shots']}; "
-            f"{opposing_team_name} Goals: {game_stat['opp_goals']}, Shots: {game_stat['opp_shots']}")
+            # Print individual game stats for both teams
+            print_and_write(f"\n -- Individual Game Stats: {team_name} vs {opposing_team_name} --", stats_file)
+            for game_stat in individual_game_stats:
+                print_and_write(f"  Game ID: {game_stat['event_id']}, "
+                    f"{team_name} Goals: {game_stat['team_goals']}, Shots: {game_stat['team_shots']}; "
+                    f"{opposing_team_name} Goals: {game_stat['opp_goals']}, Shots: {game_stat['opp_shots']}", stats_file)
 
-    print(f"\n -- {team_name} Last 10 Games Stats --")
-    print(f"  Average Goals: {team_last_10_games_stats['avg_goals']}")
-    print(f"  Average Shots: {team_last_10_games_stats['avg_shots']}")
-    print(f"  Average Powerplays: {team_last_10_games_stats['avg_powerplays']}")
-    print(f"  Average Penalty Minutes: {team_last_10_games_stats['avg_penalty_minutes']}")
+            print_and_write(f"\n -- {team_name} Last 10 Games Stats --", stats_file)
+            print_and_write(f"  Average Goals: {team_last_10_games_stats['avg_goals']}", stats_file)
+            print_and_write(f"  Average Shots: {team_last_10_games_stats['avg_shots']}", stats_file)
+            print_and_write(f"  Average Powerplays: {team_last_10_games_stats['avg_powerplays']}", stats_file)
+            print_and_write(f"  Average Penalty Minutes: {team_last_10_games_stats['avg_penalty_minutes']}", stats_file)
 
-    print(f"\n -- {opposing_team_name} Last 10 Games Stats --")
-    print(f"  Average Goals: {opposing_team_last_10_games_stats['avg_goals']}")
-    print(f"  Average Shots: {opposing_team_last_10_games_stats['avg_shots']}")
-    print(f"  Average Powerplays: {opposing_team_last_10_games_stats['avg_powerplays']}")
-    print(f"  Average Penalty Minutes: {opposing_team_last_10_games_stats['avg_penalty_minutes']}")
+            print_and_write(f"\n -- {opposing_team_name} Last 10 Games Stats --", stats_file)
+            print_and_write(f"  Average Goals: {opposing_team_last_10_games_stats['avg_goals']}", stats_file)
+            print_and_write(f"  Average Shots: {opposing_team_last_10_games_stats['avg_shots']}", stats_file)
+            print_and_write(f"  Average Powerplays: {opposing_team_last_10_games_stats['avg_powerplays']}", stats_file)
+            print_and_write(f"  Average Penalty Minutes: {opposing_team_last_10_games_stats['avg_penalty_minutes']}", stats_file)
 
-    # Display the odds information
-    print("\nOdds Information:")
-    for odds_type, odds_values in odds_info.items():
-        print(f"- {odds_type}:")
-        for key, value in odds_values.items():
-            print(f"  {key}: {value}")
+            # Display the odds information
+            print_and_write("\nOdds Information:", stats_file)
+            for odds_type, odds_values in odds_info.items():
+                print_and_write(f"- {odds_type}:", stats_file)
+                for key, value in odds_values.items():
+                    print_and_write(f"  {key}: {value}", stats_file)            # Continue with the rest of your stats printing using print_and_write
 
-    print("\nBet Suggestions:")
-    for suggestion in bet_suggestions:
-        print(f"- {suggestion}")
+            # Example for bet suggestions
+            print_and_write("\nBet Suggestions:", stats_file)
+            for suggestion in bet_suggestions:
+                print_and_write(f"- {suggestion}", stats_file)
+
+if __name__ == "__main__":
+    main()

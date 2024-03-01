@@ -32,6 +32,36 @@ def get_team_ids(team_names):
                 print(f"No team found for name: {name}")
     return team_ids
 
+def find_next_game(team_ids):
+    """Find the next game for each team based on the current date."""
+    games = {}
+    today_date = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    with sqlite3.connect(db_path) as conn:
+        c = conn.cursor()
+        for name, team_id in team_ids.items():
+            c.execute("""
+                SELECT global_event_id, event_id, home_id, home_team_id, home_name, away_id, away_team_id, away_name
+                FROM schedule
+                WHERE date >= ? AND (home_team_id = ? OR away_team_id = ?)
+                ORDER BY date ASC
+                LIMIT 1
+            """, (today_date, team_id, team_id))
+            result = c.fetchone()
+            if result:
+                games[name] = {
+                    'global_event_id': result[0],
+                    'event_id': result[1],
+                    'home_id': result[2],
+                    'home_team_id': result[3],
+                    'home_name': result[4],
+                    'away_id': result[5],
+                    'away_team_id': result[6],
+                    'away_name': result[7],
+                }
+            else:
+                print(f"No upcoming games found for team: {name}")
+    return games
+
 def data_exists_for_event(conn, global_event_id):
     """Check if data for the global_event_id already exists."""
     cursor = conn.cursor()
@@ -169,36 +199,44 @@ def insert_team_stats(conn, global_event_id, game_data, team, opponent, season, 
     except Exception as e:
         print(f"Failed to insert data for team {team['name']} in game {global_event_id}: {e}")
 
-
 def main():
     logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
     
-    # Assuming get_latest_team_name_from_file returns a single team name
+    # Fetch the latest team name from file
     team_name = get_latest_team_name_from_file()
-    team_names = [team_name]  # Ensure we have a list of team names for get_team_ids
+    team_names = [team_name]  # Prepare for potentially getting multiple team names
     
-    # Fetch team IDs for the list of team names
+    # Fetch team IDs for the team names
     team_ids = get_team_ids(team_names)
     
-    for name in team_names:
-        logging.info(f"Processing team: {name}")
-        team_id = team_ids.get(name)
+    # Find the next game for the team(s)
+    next_games = find_next_game(team_ids)
+    
+    for name, game_info in next_games.items():
+        logging.info(f"Processing next game for team: {name}")
         
-        if team_id is None:
-            logging.error(f"Failed to get team ID for {name}, skipping.")
-            continue
+        # Process both teams involved in the next game
+        home_team_id = game_info['home_team_id']
+        away_team_id = game_info['away_team_id']
         
-        logging.debug(f"Fetching previous games for team ID: {team_id}")
-        previous_games_ids = fetch_previous_games(team_id)
+        for team_id in [home_team_id, away_team_id]:
+            logging.info(f"Fetching and inserting stats for team ID: {team_id}")
+            # This function call might need to be adjusted based on its implementation details
+            fetch_and_insert_team_stats(db_path, game_info['event_id'], api_key)
         
-        if not previous_games_ids:
-            logging.info(f"No previous games found for {team_name}, skipping.")
-            continue
+        # Process previous games for both teams
+        for team_id in [home_team_id, away_team_id]:
+            logging.debug(f"Fetching previous games for team ID: {team_id}")
+            previous_games_ids = fetch_previous_games(team_id)
+            
+            if not previous_games_ids:
+                logging.info(f"No previous games found for team ID: {team_id}, skipping.")
+                continue
 
-        for global_event_id in previous_games_ids:
-            logging.debug(f"Fetching and inserting stats for game ID: {global_event_id}")
-            fetch_and_insert_team_stats(db_path, global_event_id, api_key)
+            for global_event_id in previous_games_ids:
+                logging.debug(f"Fetching and inserting stats for game ID: {global_event_id}")
+                fetch_and_insert_team_stats(db_path, global_event_id, api_key)
     
     logging.info("Script completed")
 

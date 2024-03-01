@@ -1,0 +1,69 @@
+Team IDs:
+- Lightning: 3694
+
+Next Game:
+- Lightning's next game is home against the Canadiens (Team ID: 3690)
+  Global Event ID: f426ff64-7970-4d0f-8e03-f46ba390a036
+  Event ID: 41972843
+  Date: 2024-03-02 19:00:00
+  Home Team ID: 3694
+  Away Team ID: 3690
+
+ -- Lightning KPIs --
+  Average Goals: 3.7666666666666666
+  Average Shots: 31.7
+  Average Powerplays: 3.1
+  Average Penalty Minutes: 12.433333333333334
+
+ -- Canadiens KPIs --
+  Average Goals: 2.6774193548387095
+  Average Shots: 30.096774193548388
+  Average Powerplays: 3.5806451612903225
+  Average Penalty Minutes: 12.0
+
+ -- H2H KPIs --
+  Head-to-Head Stats Lightning vs Canadiens:
+  Total Goals: 15
+  Average Shots: 26.75
+
+ -- Individual Game Stats: Lightning vs Canadiens --
+  Game ID: sr:match:41971267, Lightning Goals: 5, Shots: 32; Canadiens Goals: 3, Shots: 26
+  Game ID: sr:match:41972049, Lightning Goals: 4, Shots: 20; Canadiens Goals: 3, Shots: 29
+
+ -- Lightning Last 10 Games Stats --
+  Average Goals: 3.3548387096774195
+  Average Shots: 29.483870967741936
+  Average Powerplays: 3.0
+  Average Penalty Minutes: 11.290322580645162
+
+ -- Canadiens Last 10 Games Stats --
+  Average Goals: 2.7666666666666666
+  Average Shots: 28.3
+  Average Powerplays: 3.25
+  Average Penalty Minutes: 10.3
+
+Odds Information:
+- winner_odds:
+  home_winner_odds: -250
+  away_winner_odds: +200
+- spread_odds:
+  home_spread: 1.5
+  home_spread_odds: -118
+  away_spread: -1.5
+  away_spread_odds: -103
+- total_odds:
+  game_total: 6.5
+  game_over_odds: -115
+  game_under_odds: -105
+- home_total_odds:
+  home_total: 3.5
+  home_over_odds: -156
+  home_under_odds: +114
+- away_total_odds:
+  away_total: 2.5
+  away_over_odds: -118
+  away_under_odds: -116
+
+Bet Suggestions:
+- Consider betting on Lightning to win.
+- Consider betting on the Under.
