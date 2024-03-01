@@ -68,7 +68,7 @@ def insert_schedule_data(db_path, data):
             winner_team_id, winner_name = None, None
 
         # Insert data into the schedule table
-        c.execute('''INSERT INTO schedule (season_id, season, global_event_id, status, date, home_points, away_points,
+        c.execute('''INSERT OR REPLACE INTO schedule (season_id, season, global_event_id, status, date, home_points, away_points,
                                            event_id, home_id, home_name, home_alias, home_team_id,
                                            away_id, away_name, away_alias, away_team_id, winner_team_id, winner_name)
                      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)''',

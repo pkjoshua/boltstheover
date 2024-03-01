@@ -10,8 +10,10 @@ api_key = 'j7k2wp4a2my3qj9sqhq8fkr5'  # Replace with your actual API key
 # Book ID we are searching for 
 book_id = "sr:book:25080"
 
-# Fetch team IDs for input team names
-team_names = ["Lightning"]  
+def get_latest_team_name_from_file():
+    with open('team_name.txt', 'r') as f:
+        team_name = f.read().strip()
+    return team_name
 
 def fetch_event_odds(event_id, api_key):
     """Fetch odds data for a given event_id."""
@@ -223,8 +225,8 @@ def insert_odds_data(game_details, winner_odds, spread_odds, total_odds, home_to
 
                 conn.commit()
 
-# Example input
-team_ids = get_team_ids(team_names)
+team_names = get_latest_team_name_from_file()
+team_ids = get_team_ids([team_names])
 
 games = find_next_game(team_ids)
 

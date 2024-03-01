@@ -48,7 +48,8 @@ CREATE TABLE IF NOT EXISTS schedule (
     winner_team_id TEXT,
     winner_name TEXT,
     FOREIGN KEY (home_team_id) REFERENCES teams(team_id),
-    FOREIGN KEY (away_team_id) REFERENCES teams(team_id)
+    FOREIGN KEY (away_team_id) REFERENCES teams(team_id),
+    UNIQUE(global_event_id)
 )
 ''')
 

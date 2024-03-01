@@ -13,23 +13,24 @@ logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %
 db_path = 'assets/data.db'
 api_key = '3s2jrxegxx8b7eqa6nay9898' 
 
-# Teams by name
-teams = ['Lightning','Sabres']
+def get_latest_team_name_from_file():
+    with open('team_name.txt', 'r') as f:
+        team_name = f.read().strip()
+    return team_name
 
-def get_team_id_from_name(team_name):
-    """Retrieve team ID from the database based on team name."""
-    logging.debug(f"Attempting to get team ID for: {team_name}")
+def get_team_ids(team_names):
+    """Fetch team_ids for given team names."""
+    team_ids = {}
     with sqlite3.connect(db_path) as conn:
-        cursor = conn.cursor()
-        query = "SELECT team_id FROM teams WHERE name = ? LIMIT 1"
-        cursor.execute(query, (team_name,))
-        result = cursor.fetchone()
-        if result:
-            logging.debug(f"Found team ID {result[0]} for team name: {team_name}")
-            return result[0]
-        else:
-            logging.warning(f"No team found for name: {team_name}")
-            return None
+        c = conn.cursor()
+        for name in team_names:
+            c.execute("SELECT team_id, name FROM teams WHERE name = ?", (name,))
+            result = c.fetchone()
+            if result:
+                team_ids[result[1]] = result[0]
+            else:
+                print(f"No team found for name: {name}")
+    return team_ids
 
 def data_exists_for_event(conn, global_event_id):
     """Check if data for the global_event_id already exists."""
@@ -65,9 +66,6 @@ def extract_number(sr_id):
     """Extracts numerical part from sr_id string."""
     match = re.search(r'\d+', sr_id)
     return match.group(0) if match else sr_id
-
-import requests
-import sqlite3
 
 def fetch_and_insert_team_stats(db_path, global_event_id, api_key):
     print(f"Attempting to fetch data for game ID: {global_event_id}")
@@ -173,13 +171,22 @@ def insert_team_stats(conn, global_event_id, game_data, team, opponent, season, 
 
 
 def main():
+    logging.basicConfig(level=logging.INFO)
     logging.info("Script started")
-    for team_name in teams:
-        logging.info(f"Processing team: {team_name}")
-        team_id = get_team_id_from_name(team_name)
+    
+    # Assuming get_latest_team_name_from_file returns a single team name
+    team_name = get_latest_team_name_from_file()
+    team_names = [team_name]  # Ensure we have a list of team names for get_team_ids
+    
+    # Fetch team IDs for the list of team names
+    team_ids = get_team_ids(team_names)
+    
+    for name in team_names:
+        logging.info(f"Processing team: {name}")
+        team_id = team_ids.get(name)
         
         if team_id is None:
-            logging.error(f"Failed to get team ID for {team_name}, skipping.")
+            logging.error(f"Failed to get team ID for {name}, skipping.")
             continue
         
         logging.debug(f"Fetching previous games for team ID: {team_id}")

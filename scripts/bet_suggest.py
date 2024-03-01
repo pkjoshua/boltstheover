@@ -4,6 +4,11 @@ from datetime import datetime
 # Configuration
 db_path = 'assets/data.db'
 
+def get_latest_team_name_from_file():
+    with open('team_name.txt', 'r') as f:
+        team_name = f.read().strip()
+    return team_name
+
 def get_team_ids(team_names):
     """Fetch team_ids for given team names."""
     team_ids = {}
@@ -273,8 +278,8 @@ def suggest_bets(team_name, opposing_team_name, team_stats, opposing_team_stats,
     return suggestions
 
 # Output to terminal
-team_names = ["Lightning"]
-team_ids = get_team_ids(team_names)
+team_names = get_latest_team_name_from_file()
+team_ids = get_team_ids([team_names])
 
 print("Team IDs:")
 for team_name, team_id in team_ids.items():

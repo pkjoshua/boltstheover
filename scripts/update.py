@@ -20,17 +20,20 @@ def main():
     # Define the paths to the scripts
     create_database = os.path.join(scripts_dir, 'create_db.py')
     teams = os.path.join(scripts_dir, 'teams.py')
-    schedule_script_path = os.path.join(scripts_dir, 'schedule.py')
+    schedule = os.path.join(scripts_dir, 'schedule.py')
     game_stats = os.path.join(scripts_dir, 'game_stats.py')
+    dashboard = os.path.join(scripts_dir, 'dashboard.py')
 
     # Run the scripts in sequence with a 5-second pause between each
     run_script(create_database)
     time.sleep(5)  # Wait for 5 seconds
     run_script(teams)
     time.sleep(5)  # Wait for 5 seconds
-    run_script(schedule_script_path)
+    run_script(schedule)
     time.sleep(5)  # Wait for 5 seconds
     run_script(game_stats)
+    time.sleep(5)  # Wait for 5 seconds
+    run_script(dashboard)
 
 if __name__ == "__main__":
     main()
