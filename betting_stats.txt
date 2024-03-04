@@ -2,68 +2,67 @@ Team IDs:
 - Lightning: 3694
 
 Next Game:
-- Lightning's next game is home against the Canadiens (Team ID: 3690)
-  Global Event ID: f426ff64-7970-4d0f-8e03-f46ba390a036
-  Event ID: 41972843
-  Date: 2024-03-02 19:00:00
+- Lightning's next game is home against the Flames (Team ID: 3679)
+  Global Event ID: a7f59e5d-9ff2-489a-9661-9eef3f9ae4dc
+  Event ID: 41972915
+  Date: 2024-03-07 19:00:00
   Home Team ID: 3694
-  Away Team ID: 3690
+  Away Team ID: 3679
 
  -- Lightning KPIs --
-  Average Goals: 3.7666666666666666
-  Average Shots: 31.7
-  Average Powerplays: 3.1
-  Average Penalty Minutes: 12.433333333333334
+  Average Goals: 3.7419354838709675
+  Average Shots: 31.64516129032258
+  Average Powerplays: 3.064516129032258
+  Average Penalty Minutes: 12.32258064516129
 
- -- Canadiens KPIs --
-  Average Goals: 2.6774193548387095
-  Average Shots: 30.096774193548388
-  Average Powerplays: 3.5806451612903225
-  Average Penalty Minutes: 12.0
+ -- Flames KPIs --
+  Average Goals: 2.966666666666667
+  Average Shots: 31.466666666666665
+  Average Powerplays: 3.033333333333333
+  Average Penalty Minutes: 7.533333333333333
 
  -- H2H KPIs --
-  Head-to-Head Stats Lightning vs Canadiens:
-  Total Goals: 15
-  Average Shots: 26.75
+  Head-to-Head Stats Lightning vs Flames:
+  Average Goals: 6.0
+  Average Shots: 59.0
+  Average Penalty Minutes: 18.0
 
- -- Individual Game Stats: Lightning vs Canadiens --
-  Game ID: sr:match:41971267, Lightning Goals: 5, Shots: 32; Canadiens Goals: 3, Shots: 26
-  Game ID: sr:match:41972049, Lightning Goals: 4, Shots: 20; Canadiens Goals: 3, Shots: 29
+ -- Previous Game Stats: Lightning vs Flames --
+  Game ID: sr:match:41971857, Lightning Goals: 2, Shots: 33; Flames Goals: 4, Shots: 26
 
  -- Lightning Last 10 Games Stats --
-  Average Goals: 3.3548387096774195
-  Average Shots: 29.483870967741936
-  Average Powerplays: 3.0
-  Average Penalty Minutes: 11.290322580645162
+  Average Goals: 3.3492063492063493
+  Average Shots: 29.49206349206349
+  Average Powerplays: 2.984126984126984
+  Average Penalty Minutes: 11.253968253968255
 
- -- Canadiens Last 10 Games Stats --
-  Average Goals: 2.7666666666666666
-  Average Shots: 28.3
-  Average Powerplays: 3.25
-  Average Penalty Minutes: 10.3
+ -- Flames Last 10 Games Stats --
+  Average Goals: 3.15
+  Average Shots: 31.3
+  Average Powerplays: 3.1166666666666667
+  Average Penalty Minutes: 8.966666666666667
 
 Odds Information:
 - winner_odds:
-  home_winner_odds: -250
-  away_winner_odds: +200
+  home_winner_odds: None
+  away_winner_odds: None
 - spread_odds:
-  home_spread: 1.5
-  home_spread_odds: -118
-  away_spread: -1.5
-  away_spread_odds: -103
+  home_spread: None
+  home_spread_odds: None
+  away_spread: None
+  away_spread_odds: None
 - total_odds:
-  game_total: 6.5
-  game_over_odds: -115
-  game_under_odds: -105
+  game_total: None
+  game_over_odds: None
+  game_under_odds: None
 - home_total_odds:
-  home_total: 3.5
-  home_over_odds: -156
-  home_under_odds: +114
+  home_total: None
+  home_over_odds: None
+  home_under_odds: None
 - away_total_odds:
-  away_total: 2.5
-  away_over_odds: -118
-  away_under_odds: -116
+  away_total: None
+  away_over_odds: None
+  away_under_odds: None
 
 Bet Suggestions:
-- Consider betting on Lightning to win.
-- Consider betting on the Under.
+- Odds not out yet. Check back the day of or before the game.

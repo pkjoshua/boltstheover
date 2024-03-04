@@ -116,9 +116,9 @@ def fetch_head_to_head_stats(team_id, opposing_team_id):
         # Adjust the query to fetch and sum/average the stats for both teams
         query = """
             SELECT 
-                SUM(goals) AS total_goals, 
-                AVG(shots) AS avg_shots, 
-                SUM(penalty_minutes) AS total_penalty_minutes
+                AVG(goals)*2 AS avg_goals_h2h, 
+                AVG(shots)*2 AS avg_shots, 
+                AVG(penalty_minutes)*2 AS avg_penalty_minutes_h2h
             FROM (
                 SELECT 
                     goals, 
@@ -139,13 +139,13 @@ def fetch_head_to_head_stats(team_id, opposing_team_id):
         result = c.fetchone()
         if result:
             head_to_head_stats = {
-                'total_goals': result[0],
+                'avg_goals_h2h': result[0],
                 'avg_shots': result[1],
-                'total_penalty_minutes': result[2]
+                'avg_penalty_minutes_h2h': result[2]
             }
         return head_to_head_stats
 
-def fetch_individual_game_stats(team_id, opposing_team_id):
+def fetch_previous_game_stats(team_id, opposing_team_id):
     """Fetch goals and shots for each game between the two teams, ensuring no duplicates."""
     game_stats = []
     with sqlite3.connect(db_path) as conn:
@@ -259,23 +259,68 @@ def fetch_game_odds(event_id):
         
     return odds_info
 
-def suggest_bets(team_name, opposing_team_name, team_stats, opposing_team_stats, head_to_head_stats, odds_info):
-    # Simplified version for demonstration. Adjust logic as needed.
+def suggest_bets(event_id, team_id, opposing_team_id, db_path):
+    # Initialize suggestions list at the beginning to ensure it's always available
     suggestions = []
-    # Example logic for winner bet suggestion
-    if float(odds_info.get('winner_odds', {}).get('home_winner_odds', 0)) < float(odds_info.get('winner_odds', {}).get('away_winner_odds', 0)):
-        suggestions.append(f"Consider betting on {team_name} to win.")
+
+    # Fetch odds information first to check if odds are available
+    odds_info = fetch_game_odds(event_id)
+
+    # Check for the presence of necessary odds data
+    if 'winner_odds' not in odds_info or not odds_info['winner_odds'] or \
+       'home_winner_odds' not in odds_info['winner_odds'] or 'away_winner_odds' not in odds_info['winner_odds'] or \
+       odds_info['winner_odds']['home_winner_odds'] is None or odds_info['winner_odds']['away_winner_odds'] is None:
+        suggestions.append("Odds not out yet. Check back the day of or before the game.")
+        return suggestions
+
+    # Since odds are available, proceed to fetch other necessary data
+    team_stats = fetch_last_10_games_stats(team_id)
+    opposing_team_stats = fetch_last_10_games_stats(opposing_team_id)
+    head_to_head_stats = fetch_head_to_head_stats(team_id, opposing_team_id)
+    team_name = fetch_team_name(team_id, db_path)
+    opposing_team_name = fetch_team_name(opposing_team_id, db_path)
+
+    # Determine favored team based on head-to-head average goals and shots
+    if head_to_head_stats['avg_goals_h2h'] > head_to_head_stats['avg_shots']:
+        favored_team_name = team_name
     else:
-        suggestions.append(f"Consider betting on {opposing_team_name} to win.")
+        favored_team_name = opposing_team_name
     
-    # Example logic for over/under bet suggestion
-    total_goals_predicted = (team_stats['avg_goals'] + opposing_team_stats['avg_goals']) / 2
-    if total_goals_predicted > float(odds_info.get('total_odds', {}).get('game_total', 0)):
-        suggestions.append("Consider betting on the Over.")
+    # Determine bet on winner based on odds
+    if odds_info['winner_odds']['home_winner_odds'] < odds_info['winner_odds']['away_winner_odds']:
+        winner_bet_team_name = team_name  # Assuming home team is the team_id
     else:
-        suggestions.append("Consider betting on the Under.")
+        winner_bet_team_name = opposing_team_name  # Assuming away team is the opposing_team_id
+
+    # Winner suggestion
+    winner_suggestion = f"Bet on {winner_bet_team_name} to win."
+
+    # Check if 'total_odds' data is available for Over/Under bet suggestion
+    if 'total_odds' in odds_info and 'game_total' in odds_info['total_odds'] and odds_info['total_odds']['game_total'] is not None:
+        if head_to_head_stats['avg_goals_h2h'] > float(odds_info['total_odds']['game_total']):
+            over_under_suggestion = "bet on the Over."
+        else:
+            over_under_suggestion = "bet on the Under."
+    else:
+        over_under_suggestion = "Odds for Over/Under not available yet."
+
+    # Combine suggestions into a two-leg parlay
+    parlay_suggestion = f"Two-leg parlay suggestion: {winner_suggestion} Also, {over_under_suggestion}"
+    
+    suggestions.append(parlay_suggestion)
     
     return suggestions
+
+def fetch_team_name(team_id, db_path):
+    """Fetch the team name given a team ID."""
+    with sqlite3.connect(db_path) as conn:
+        c = conn.cursor()
+        c.execute("SELECT name FROM teams WHERE team_id = ?", (team_id,))
+        result = c.fetchone()
+        if result:
+            return result[0]
+        else:
+            return None
 
 def print_and_write(line, file):
     print(line)
@@ -312,13 +357,13 @@ def main():
             opposing_team_last_10_games_stats = fetch_last_10_games_stats(opposing_team_id)
 
             # Fetch individual game stats for both teams
-            individual_game_stats = fetch_individual_game_stats(team_ids[team_name], opposing_team_id)
+            previous_game_stats = fetch_previous_game_stats(team_ids[team_name], opposing_team_id)
 
             # Fetch odds information for the event_id
             event_id = game_details['event_id']
             odds_info = fetch_game_odds(event_id)
 
-            bet_suggestions = suggest_bets(team_name, opposing_team_name, team_stats, opposing_team_stats, head_to_head_stats, odds_info)
+            bet_suggestions = suggest_bets(game_details['event_id'], team_ids[team_name], opposing_team_id, db_path)
             # Example of using print_and_write for one of the lines
             print_and_write(f"- {team_name}'s next game is {game_details['home_or_away']} against the {opposing_team_name} (Team ID: {opposing_team_id})", stats_file)
             # Game details
@@ -342,12 +387,13 @@ def main():
             # H2H KPIs
             print_and_write(f"\n -- H2H KPIs --", stats_file)
             print_and_write(f"  Head-to-Head Stats {team_name} vs {get_opponent_name(opposing_team_id)}:", stats_file)
-            print_and_write(f"  Total Goals: {head_to_head_stats['total_goals']}", stats_file)
+            print_and_write(f"  Average Goals: {head_to_head_stats['avg_goals_h2h']}", stats_file)
             print_and_write(f"  Average Shots: {head_to_head_stats['avg_shots']}", stats_file)
+            print_and_write(f"  Average Penalty Minutes: {head_to_head_stats['avg_penalty_minutes_h2h']}", stats_file)
 
             # Print individual game stats for both teams
-            print_and_write(f"\n -- Individual Game Stats: {team_name} vs {opposing_team_name} --", stats_file)
-            for game_stat in individual_game_stats:
+            print_and_write(f"\n -- Previous Game Stats: {team_name} vs {opposing_team_name} --", stats_file)
+            for game_stat in previous_game_stats:
                 print_and_write(f"  Game ID: {game_stat['event_id']}, "
                     f"{team_name} Goals: {game_stat['team_goals']}, Shots: {game_stat['team_shots']}; "
                     f"{opposing_team_name} Goals: {game_stat['opp_goals']}, Shots: {game_stat['opp_shots']}", stats_file)
@@ -369,9 +415,9 @@ def main():
             for odds_type, odds_values in odds_info.items():
                 print_and_write(f"- {odds_type}:", stats_file)
                 for key, value in odds_values.items():
-                    print_and_write(f"  {key}: {value}", stats_file)            # Continue with the rest of your stats printing using print_and_write
+                    print_and_write(f"  {key}: {value}", stats_file)   
 
-            # Example for bet suggestions
+            # Printing bet suggestions
             print_and_write("\nBet Suggestions:", stats_file)
             for suggestion in bet_suggestions:
                 print_and_write(f"- {suggestion}", stats_file)
