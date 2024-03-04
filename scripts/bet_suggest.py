@@ -259,12 +259,18 @@ def fetch_game_odds(event_id):
         
     return odds_info
 
-def suggest_bets(event_id, team_id, opposing_team_id, db_path):
-    # Initialize suggestions list at the beginning to ensure it's always available
+def suggest_bets(event_id, team_id, opposing_team_id, db_path, home_or_away):
+    # Initialize suggestions list
     suggestions = []
 
-    # Fetch odds information first to check if odds are available
+    # Fetch all necessary data
     odds_info = fetch_game_odds(event_id)
+    team_last_10_games_stats = fetch_last_10_games_stats(team_id)
+    opposing_team_last_10_games_stats = fetch_last_10_games_stats(opposing_team_id)
+    head_to_head_stats = fetch_head_to_head_stats(team_id, opposing_team_id)
+    previous_game_stats = fetch_previous_game_stats(team_id, opposing_team_id)
+    team_name = fetch_team_name(team_id, db_path)
+    opposing_team_name = fetch_team_name(opposing_team_id, db_path)
 
     # Check for the presence of necessary odds data
     if 'winner_odds' not in odds_info or not odds_info['winner_odds'] or \
@@ -273,34 +279,48 @@ def suggest_bets(event_id, team_id, opposing_team_id, db_path):
         suggestions.append("Odds not out yet. Check back the day of or before the game.")
         return suggestions
 
-    # Since odds are available, proceed to fetch other necessary data
-    team_stats = fetch_last_10_games_stats(team_id)
-    opposing_team_stats = fetch_last_10_games_stats(opposing_team_id)
-    head_to_head_stats = fetch_head_to_head_stats(team_id, opposing_team_id)
-    team_name = fetch_team_name(team_id, db_path)
-    opposing_team_name = fetch_team_name(opposing_team_id, db_path)
+    # Points initialization
+    team_points = 0
+    opposing_team_points = 0
+    total_goals_points = 0  # For over/under decision
 
-    # Determine favored team based on head-to-head average goals and shots
+    # Example point attributions
+    # Last 10 games performance
+    team_points += team_last_10_games_stats['avg_goals'] * 2  # Example: 2 points per average goal
+    opposing_team_points += opposing_team_last_10_games_stats['avg_goals'] * 2
+
+    # Head-to-head performance
     if head_to_head_stats['avg_goals_h2h'] > head_to_head_stats['avg_shots']:
-        favored_team_name = team_name
+        team_points += 5  # Example: Extra points if team has higher average goals in head-to-head
     else:
-        favored_team_name = opposing_team_name
-    
-    # Determine bet on winner based on odds
-    if odds_info['winner_odds']['home_winner_odds'] < odds_info['winner_odds']['away_winner_odds']:
-        winner_bet_team_name = team_name  # Assuming home team is the team_id
-    else:
-        winner_bet_team_name = opposing_team_name  # Assuming away team is the opposing_team_id
+        opposing_team_points += 5
 
-    # Winner suggestion
-    winner_suggestion = f"Bet on {winner_bet_team_name} to win."
-
-    # Check if 'total_odds' data is available for Over/Under bet suggestion
-    if 'total_odds' in odds_info and 'game_total' in odds_info['total_odds'] and odds_info['total_odds']['game_total'] is not None:
-        if head_to_head_stats['avg_goals_h2h'] > float(odds_info['total_odds']['game_total']):
-            over_under_suggestion = "bet on the Over."
+    # Previous game outcome (use the most recent game stats)
+    if previous_game_stats:
+        last_game = previous_game_stats[-1]  # Get the most recent game
+        if last_game['team_goals'] > last_game['opp_goals']:
+            team_points += 3  # Example: 3 points for a win in the last encounter
         else:
-            over_under_suggestion = "bet on the Under."
+            opposing_team_points += 3
+
+    # Home or away advantage
+    if home_or_away == 'home':
+        team_points += 3  # Example: 3 points for playing at home
+    else:
+        opposing_team_points += 3
+
+    # Total goals points for over/under
+    total_goals_points += (team_last_10_games_stats['avg_goals'] + opposing_team_last_10_games_stats['avg_goals']) / 2
+    total_goals_points += head_to_head_stats['avg_goals_h2h']
+
+    # Suggest bets based on total points
+    favored_team_name = team_name if team_points > opposing_team_points else opposing_team_name
+    winner_suggestion = f"Bet on {favored_team_name} to win."
+
+    # Over/Under suggestion based on total goals points compared to the game total odds
+    if 'total_odds' in odds_info and 'game_total' in odds_info['total_odds']:
+        game_total_odds = float(odds_info['total_odds']['game_total'])
+        over_under_suggestion = "bet on the Over." if total_goals_points > game_total_odds else "bet on the Under."
     else:
         over_under_suggestion = "Odds for Over/Under not available yet."
 
@@ -363,7 +383,7 @@ def main():
             event_id = game_details['event_id']
             odds_info = fetch_game_odds(event_id)
 
-            bet_suggestions = suggest_bets(game_details['event_id'], team_ids[team_name], opposing_team_id, db_path)
+            bet_suggestions = suggest_bets(game_details['event_id'], team_ids[team_name], opposing_team_id, db_path,game_details['home_or_away'])
             # Example of using print_and_write for one of the lines
             print_and_write(f"- {team_name}'s next game is {game_details['home_or_away']} against the {opposing_team_name} (Team ID: {opposing_team_id})", stats_file)
             # Game details
