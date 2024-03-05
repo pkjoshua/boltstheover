@@ -1,5 +1,8 @@
 import sqlite3
 import os
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Database path
 db_path = 'assets/data.db'
@@ -10,6 +13,8 @@ os.makedirs(os.path.dirname(db_path), exist_ok=True)
 # Connect to the SQLite database (it will be created if it doesn't exist)
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
+
+logging.info("Putting together sqlite database...")
 
 # Create the 'teams' table
 c.execute('''
@@ -25,6 +30,7 @@ CREATE TABLE IF NOT EXISTS teams (
     alias TEXT
 )
 ''')
+logging.info("Created teams table")
 
 # Create the 'schedule' table
 c.execute('''
@@ -52,6 +58,7 @@ CREATE TABLE IF NOT EXISTS schedule (
     UNIQUE(global_event_id)
 )
 ''')
+logging.info("Created schedule table")
 
 c.execute('''
 CREATE TABLE IF NOT EXISTS team_stats_per_game (
@@ -85,6 +92,7 @@ CREATE TABLE IF NOT EXISTS team_stats_per_game (
     PRIMARY KEY (global_event_id, global_team_id)
 )
 ''')
+logging.info("Created team_stats_per_game table")
 
 # Create the 'winner_odds' table
 c.execute('''
@@ -106,6 +114,7 @@ CREATE TABLE IF NOT EXISTS winner_odds (
     UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
+logging.info("Created winner_odds table")
 
 # Create the 'spread' table
 c.execute('''
@@ -129,6 +138,7 @@ CREATE TABLE IF NOT EXISTS spread_odds (
     UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
+logging.info("Creating spread_odds table")
 
 # Create the 'total_odds' table
 c.execute('''
@@ -151,6 +161,7 @@ CREATE TABLE IF NOT EXISTS total_odds (
     UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
+logging.info("Created total_odds table")
 
 # Create the 'total_odds' table
 c.execute('''
@@ -173,8 +184,9 @@ CREATE TABLE IF NOT EXISTS home_total_odds (
     UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
+logging.info("Created home_total_odds table")
 
-# Create the 'total_odds' table
+# Create the 'away_total_odds' table
 c.execute('''
 CREATE TABLE IF NOT EXISTS away_total_odds (
     global_event_id TEXT,
@@ -195,6 +207,7 @@ CREATE TABLE IF NOT EXISTS away_total_odds (
     UNIQUE(global_event_id, event_id, book_id)
 )
 ''')
+logging.info("Created away_total_odds table")
 
 # Commit the changes and close the database connection
 conn.commit()

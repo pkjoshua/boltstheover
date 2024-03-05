@@ -1,6 +1,9 @@
 import subprocess
 import os
 import time
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 def run_script(script_path):
     """Runs a Python script located at the given path."""
@@ -31,6 +34,8 @@ def main():
     run_script(event_odds)
     time.sleep(2)
     run_script(bet_suggest)
+    logging.info("Suggestion created.")
+
 
 if __name__ == "__main__":
     main()

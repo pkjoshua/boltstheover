@@ -1,6 +1,6 @@
 import requests
 import sqlite3
-import re  # Import the regex module
+import re
 from datetime import datetime
 import pytz
 

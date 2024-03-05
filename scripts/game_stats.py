@@ -196,6 +196,7 @@ def insert_team_stats(conn, global_event_id, game_data, team, opponent, season, 
 
         conn.commit()
         print(f"Data successfully inserted for team {team['name']} in game {global_event_id}")
+        logging.info("Stats inserted.")
     except Exception as e:
         print(f"Failed to insert data for team {team['name']} in game {global_event_id}: {e}")
 

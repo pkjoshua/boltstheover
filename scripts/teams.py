@@ -1,6 +1,10 @@
 import requests
 import sqlite3
-import re  # Import the regex module for regular expressions
+import re
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # API URL
 api_url = "http://api.sportradar.us/nhl/trial/v7/en/league/hierarchy.json?api_key=3s2jrxegxx8b7eqa6nay9898"
@@ -16,7 +20,7 @@ response = requests.get(api_url)
 if response.status_code == 200:
     data = response.json()
 else:
-    print(f"Failed to fetch data: HTTP {response.status_code}")
+    logging.error(f"Failed to fetch data: HTTP {response.status_code}")
     exit()
 
 # Database path
@@ -26,33 +30,39 @@ db_path = 'assets/data.db'
 conn = sqlite3.connect(db_path)
 c = conn.cursor()
 
-# Extract and insert league information
-league_id = data['league']['id']
+# Check if the teams table already has data
+c.execute('SELECT COUNT(*) FROM teams')
+if c.fetchone()[0] > 0:
+    logging.info("The teams table already has data. Exiting script.")
+    conn.close()
+    exit()
+else:
+    # Extract and insert league information
+    league_id = data['league']['id']
 
-# Extract and insert conference, division, and team information
-for conference in data['conferences']:
-    conference_id = conference['id']
-    conference_name = conference['name']
-    
-    for division in conference['divisions']:
-        division_id = division['id']
-        division_name = division['name']
-        
-        for team in division['teams']:
-            global_team_id = team['id']
-            name = team['name']
-            market = team['market']
-            alias = team['alias']
-            team_id = extract_number(team.get('sr_id', ''))  # Extract number from sr_id
-            
-            # Insert data into the teams table
-            c.execute('''
-                INSERT INTO teams (league_id, conference_id, conference_name, division_id, division_name, global_team_id, team_id, name, alias) 
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
-                ''', (league_id, conference_id, conference_name, division_id, division_name, global_team_id, team_id, name, alias))
+    # Extract and insert conference, division, and team information
+    for conference in data['conferences']:
+        conference_id = conference['id']
+        conference_name = conference['name']
 
-# Commit the changes and close the database connection
-conn.commit()
-conn.close()
+        for division in conference['divisions']:
+            division_id = division['id']
+            division_name = division['name']
 
-print("Team roster data has been successfully inserted into the database.")
+            for team in division['teams']:
+                global_team_id = team['id']
+                name = team['name']
+                market = team['market']
+                alias = team['alias']
+                team_id = extract_number(team.get('sr_id', ''))  # Extract number from sr_id
+
+                # Insert data into the teams table
+                c.execute('''
+                    INSERT INTO teams (league_id, conference_id, conference_name, division_id, division_name, global_team_id, team_id, name, alias) 
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    ''', (league_id, conference_id, conference_name, division_id, division_name, global_team_id, team_id, name, alias))
+
+    # Commit the changes and close the database connection
+    conn.commit()
+    conn.close()
+    logging.info("Team roster data has been successfully inserted into the database.")

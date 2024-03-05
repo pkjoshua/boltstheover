@@ -2,6 +2,9 @@ import requests
 import sqlite3
 from datetime import datetime
 import time
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuration
 db_path = 'assets/data.db'
@@ -237,7 +240,8 @@ for team_name, game_details in games.items():
     if odds_data:
         winner_odds, spread_odds, total_odds, home_total_odds, away_total_odds = parse_odds_data(odds_data)
         insert_odds_data(game_details, winner_odds, spread_odds, total_odds, home_total_odds, away_total_odds)
-        # Ensure to adapt the insert_odds_data function or create a new one that suits your actual database schema and requirements
+        logging.info("Stats inserted")
     else:
         print("Failed to fetch or parse odds data.")
+        logging.info("Fetching odds failed")
 

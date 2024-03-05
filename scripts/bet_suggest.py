@@ -1,5 +1,8 @@
 import sqlite3
 from datetime import datetime
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Configuration
 db_path = 'assets/data.db'
@@ -441,6 +444,8 @@ def main():
             print_and_write("\nBet Suggestions:", stats_file)
             for suggestion in bet_suggestions:
                 print_and_write(f"- {suggestion}", stats_file)
+    
+logging.info("Bet suggested.")
 
 if __name__ == "__main__":
     main()

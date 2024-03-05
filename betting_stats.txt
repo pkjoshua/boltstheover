@@ -16,10 +16,10 @@ Next Game:
   Average Penalty Minutes: 12.32258064516129
 
  -- Flames KPIs --
-  Average Goals: 2.966666666666667
-  Average Shots: 31.466666666666665
-  Average Powerplays: 3.033333333333333
-  Average Penalty Minutes: 7.533333333333333
+  Average Goals: 2.935483870967742
+  Average Shots: 31.64516129032258
+  Average Powerplays: 3.064516129032258
+  Average Penalty Minutes: 8.32258064516129
 
  -- H2H KPIs --
   Head-to-Head Stats Lightning vs Flames:
@@ -37,10 +37,10 @@ Next Game:
   Average Penalty Minutes: 11.253968253968255
 
  -- Flames Last 10 Games Stats --
-  Average Goals: 3.15
-  Average Shots: 31.3
-  Average Powerplays: 3.1166666666666667
-  Average Penalty Minutes: 8.966666666666667
+  Average Goals: 3.1311475409836067
+  Average Shots: 31.39344262295082
+  Average Powerplays: 3.1311475409836067
+  Average Penalty Minutes: 9.344262295081966
 
 Odds Information:
 - winner_odds:
